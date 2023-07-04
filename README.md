@@ -1,6 +1,8 @@
 # Haarstudio Pauli
 Website project.
 
+Mockup:
+https://play.teleporthq.io/projects/travel-agency-zf1to8
 ---
 
 # create-svelte
