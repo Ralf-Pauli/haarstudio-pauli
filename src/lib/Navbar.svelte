@@ -36,11 +36,11 @@
                 <div class="hidden sm:ml-6 sm:block">
                     <div class=" absolute inset-y-0 right-0 flex items-center space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                        <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-                        <a href="#" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white rounded-md px-3 py-2 text-sm font-medium">Team</a>
-                        <a href="#" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white rounded-md px-3 py-2 text-sm font-medium">Leistungen</a>
-                        <a href="#" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white rounded-md px-3 py-2 text-sm font-medium">Galerie</a>
-                        <a href="#" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white rounded-md px-3 py-2 text-sm font-medium">Kontakt</a>
+                        <a href="#" class="nav-item !text-white px-3 pt-2 pb-1 mb-1 text-sm font-medium border-b-2 !border-primary" aria-current="page">Home</a>
+                        <a href="#" class="nav-item text-gray-300 hover:text-white px-3 pt-2 pb-1 mb-1 text-sm font-medium">Team</a>
+                        <a href="#" class="nav-item text-gray-300 hover:text-white px-3 pt-2 pb-1 mb-1 text-sm font-medium">Leistungen</a>
+                        <a href="#" class="nav-item text-gray-300 hover:text-white px-3 pt-2 pb-1 mb-1 text-sm font-medium">Galerie</a>
+                        <a href="#" class="nav-item text-gray-300 hover:text-white px-3 pt-2 pb-1 mb-1 text-sm font-medium">Kontakt</a>
                     </div>
                 </div>
             </div>
@@ -59,3 +59,29 @@
         </div>
     </div>
 </nav>
+
+<style>
+.nav-item {
+    color: #D1D5DB;
+    border-bottom: transparent 2px solid;
+    background: linear-gradient(to top, var(--myColor1), var(--myColor2));
+    transition: --myColor1 350ms linear, --myColor2 350ms, all 350ms;
+}
+
+.nav-item:hover {
+    --myColor1: #bf8d30;
+    border-bottom: #bf8d30 2px solid;
+}
+
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: transparent;
+    inherits: false;
+}
+
+@property --myColor2 {
+    syntax: '<color>';
+    initial-value: transparent;
+    inherits: false;
+}
+</style>
