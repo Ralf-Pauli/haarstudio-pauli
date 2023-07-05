@@ -1,6 +1,6 @@
 <script>
-    let logoImage = "/images/Logo.png"
-    let logoNameImage = "/images/Logo Name.png"
+    import logoImage from "$lib/assets/logo.png"
+    import logoNameImage from "$lib/assets/logoName.png"
 </script>
 
 <nav class="bg-black">
