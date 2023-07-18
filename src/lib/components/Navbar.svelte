@@ -6,7 +6,7 @@
 
 </script>
 
-<nav class="bg-white dark:bg-black">
+<nav class="bg-black">
     <div class="mx-auto max-w-5xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-16 items-center justify-between">
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -30,11 +30,11 @@
                 </div>
                 <div class="hidden sm:ml-6 sm:block">
                     <div class="absolute inset-y-0 right-0 flex items-center space-x-4">
-                        <a href="#" class="nav-item dark:text-white px-3 pt-2 pb-1 mb-1 text-sm font-bold border-b-2 !border-primary" aria-current="page">Home</a>
-                        <a href="#" class="nav-item dark:text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Team</a>
-                        <a href="#" class="nav-item dark:text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Leistungen</a>
-                        <a href="#" class="nav-item dark:text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Galerie</a>
-                        <a href="#" class="nav-item dark:text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Kontakt</a>
+                        <a href="#" class="nav-item text-white px-3 pt-2 pb-1 mb-1 text-sm font-bold border-b-2 !border-primary" aria-current="page">Home</a>
+                        <a href="#" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Team</a>
+                        <a href="#" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Leistungen</a>
+                        <a href="#" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Galerie</a>
+                        <a href="#" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Kontakt</a>
                         <ThemeToggle />
                     </div>
                 </div>

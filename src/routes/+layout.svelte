@@ -1,7 +1,7 @@
 <script>
   import "../app.postcss";
-  import Navbar from "$lib/Navbar.svelte";
-  import Footer from "$lib/Footer.svelte";
+  import Navbar from "$lib/components/Navbar.svelte";
+  import Footer from "$lib/components/Footer.svelte";
 </script>
 
 <Navbar/>
