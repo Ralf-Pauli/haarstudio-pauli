@@ -6,8 +6,11 @@ const config = {
   theme: {
     extend: {
       colors: {
-        primary: "#bf8d30",
-      }
+        primary: "#d19555",
+      },
+      minWidth: {
+        "1/4": "25%",
+      },
     },
   },
   plugins: [],

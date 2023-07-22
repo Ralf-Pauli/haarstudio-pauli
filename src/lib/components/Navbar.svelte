@@ -3,7 +3,10 @@
     import logoNameImage from "$lib/assets/logoName.png"
     import ThemeToggle from "./ThemeToggle.svelte";
 
-
+    function toggleMobileMenu() {
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenu?.classList.toggle("hidden");
+    }
 </script>
 
 <nav class="bg-black">
@@ -11,7 +14,7 @@
         <div class="relative flex h-16 items-center justify-between">
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <!-- Mobile menu button-->
-                <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <button type="button" on:click={toggleMobileMenu} class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-white focus:outline-none ring-0" aria-controls="mobile-menu" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <!-- Icon when menu is closed. Menu open: "hidden", Menu closed: "block" -->
                     <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -43,14 +46,14 @@
     </div>
 
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" id="mobile-menu">
-        <div class="space-y-1 px-2 pb-3 pt-2">
+    <div class="sm:hidden hidden z-10 absolute bg-black w-full h-full" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2 flex flex-col">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#" class="bg-gray-900 !text-green-700 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-            <a href="#" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white rounded-md px-3 py-2 text-sm font-medium">Team</a>
-            <a href="#" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white rounded-md px-3 py-2 text-sm font-medium">Leistungen</a>
-            <a href="#" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white rounded-md px-3 py-2 text-sm font-medium">Galerie</a>
-            <a href="#" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white rounded-md px-3 py-2 text-sm font-medium">Kontakt</a>
+            <a href="#" class="bg-[#573e10] text-white px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+            <a href="#" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Team</a>
+            <a href="#" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Leistungen</a>
+            <a href="#" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Galerie</a>
+            <a href="#" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Kontakt</a>
         </div>
     </div>
 </nav>

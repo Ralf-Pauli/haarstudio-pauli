@@ -3,7 +3,7 @@
 </script>
 
 <div class="mx-auto max-w-screen-2xl flex">
-  <div class=" max-w-lg grid grid-rows-2 grid-flow-col gap-4">
+  <div class="min-w-1/4 max-w-lg grid grid-rows-2 grid-flow-col gap-4">
     <InfoCard>
       <p slot="title">Addresse</p>
       <div slot="content">
@@ -20,7 +20,7 @@
       <a slot="content" href="google.com">Google Bewertungen</a>
     </InfoCard>
   </div>
-  <div class="red max-w-lg">wb</div>
+  <div class="red min-w-1/4 max-w-lg">wb</div>
   <div class="red max-w-lg">g</div>
 </div>
 
