@@ -11,17 +11,26 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^2.1.0",
-    "@sveltejs/adapter-cloudflare": "^2.3.0",
-    "@sveltejs/kit": "^1.21.0",
+    "@sveltejs/adapter-cloudflare": "^2.3.1",
+    "@sveltejs/kit": "^1.22.3",
     "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.24",
+    "postcss": "^8.4.27",
     "postcss-load-config": "^4.0.1",
-    "svelte": "^4.0.3",
-    "svelte-check": "^3.4.4",
-    "tailwindcss": "^3.3.2",
+    "prettier-plugin-svelte": "^3.0.0",
+    "svelte": "^4.1.1",
+    "svelte-check": "^3.4.6",
+    "tailwindcss": "^3.3.3",
     "tslib": "^2.6.0",
     "typescript": "^5.1.6",
-    "vite": "^4.3.9"
+    "vite": "^4.4.6"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "lucide-svelte": "^0.263.0",
+    "radix-svelte": "^0.9.0",
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss-animate": "^1.0.6"
+  }
 }
