@@ -1,5 +1,7 @@
 <script>
   import InfoCard from "$lib/components/navbar/InfoCard.svelte";
+  export let footerData;
+  console.log(footerData)
 </script>
 
 <div class="mx-auto max-w-screen-2xl flex">
@@ -7,13 +9,13 @@
     <InfoCard>
       <p slot="title">Addresse</p>
       <div slot="content">
-        <p>Lerchenweg 9</p>
-        <p>94527 Aholming</p>
+        <p>{footerData.address[0].Street} {footerData.address[0].House_Number}</p>
+        <p>{footerData.address[0].Zip_Code} {footerData.address[0].City}</p>
       </div>
     </InfoCard>
     <InfoCard>
       <div slot="title">Kontakt</div>
-      <p slot="content"><a href="phone:+4915124235034">+4915124235034</a></p>
+      <p slot="content"><a href='phone:{footerData.contact.phone_number}'>{footerData.contact.phone_number}</a></p>
     </InfoCard>
     <InfoCard>
       <div slot="title">Links</div>
