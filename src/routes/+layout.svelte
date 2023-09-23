@@ -1,12 +1,14 @@
 <script lang="ts">
   import "../app.postcss";
-  import Navbar from "$lib/components/Navbar.svelte";
-  import Footer from "$components/Footer.svelte";
   import type { LayoutData } from "./$types";
+  import Navbar from "$components/navbar/Navbar.svelte";
+  import Footer from "$components/footer/Footer.svelte";
 
   export let data: LayoutData;
-  console.log(data)
+  const footerData = data?.footer;
+
 </script>
 
 <Navbar />
+<Footer {footerData} />
 <slot />
