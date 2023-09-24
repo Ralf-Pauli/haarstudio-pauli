@@ -1,21 +1,21 @@
-<script>
+<script lang="ts">
   import InfoCard from "$lib/components/navbar/InfoCard.svelte";
-  export let footerData;
-  console.log(footerData)
+  export let footerData: any;
+  const strapi = footerData.data;
 </script>
 
-<div class="mx-auto max-w-screen-2xl flex">
+<div class="mx-auto max-w-screen-2xl flex absolute bottom-0 inset-x-0 h-17">
   <div class="min-w-1/4 max-w-lg grid grid-rows-2 grid-flow-col gap-4">
     <InfoCard>
       <p slot="title">Addresse</p>
       <div slot="content">
-        <p>{footerData.address[0].Street} {footerData.address[0].House_Number}</p>
-        <p>{footerData.address[0].Zip_Code} {footerData.address[0].City}</p>
+        <p>{strapi.address.street} {strapi.address.house_number}</p>
+        <p>{strapi.address.zip_code} {strapi.address.city}</p>
       </div>
     </InfoCard>
     <InfoCard>
       <div slot="title">Kontakt</div>
-      <p slot="content"><a href='phone:{footerData.contact.phone_number}'>{footerData.contact.phone_number}</a></p>
+      <p slot="content"><a href='tel:{strapi.contact.phone_number}'>{strapi.contact.phone_number}</a></p>
     </InfoCard>
     <InfoCard>
       <div slot="title">Links</div>
