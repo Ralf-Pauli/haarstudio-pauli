@@ -2,7 +2,8 @@
   import Service from "./Service.svelte";
 
   export let category: any;
-  let services = category?.services.data;
+  console.log(Object.keys(category));
+  let services = category?.services;
 </script>
 
 <div class="mx-auto">
