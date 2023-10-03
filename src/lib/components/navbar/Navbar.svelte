@@ -51,7 +51,7 @@
           <div class="absolute inset-y-0 right-0 flex items-center space-x-4">
             <a href="#" class="nav-item text-white px-3 pt-2 pb-1 mb-1 text-sm font-bold border-b-2 !border-primary" aria-current="page">Home</a>
             <a href="#" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Team</a>
-            <a href="#" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Leistungen</a>
+            <a href="Leistungen" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Leistungen</a>
             <a href="#" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Galerie</a>
             <a href="#" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Kontakt</a>
             <ThemeToggle />
