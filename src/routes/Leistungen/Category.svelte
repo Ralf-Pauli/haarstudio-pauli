@@ -2,7 +2,6 @@
   import Service from "./Service.svelte";
 
   export let category: any;
-  console.log(Object.keys(category));
   let services = category?.services;
 </script>
 
