@@ -1,5 +1,5 @@
 <script lang="ts">
-  import InfoCard from "$lib/components/navbar/InfoCard.svelte";
+  import InfoCard from "$components/navbar/InfoCard.svelte";
   export let footerData: any;
   const strapi = footerData.data;
 </script>
