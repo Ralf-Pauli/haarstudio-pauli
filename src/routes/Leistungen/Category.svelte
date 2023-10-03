@@ -1,15 +1,15 @@
-<script>
-    import Service from "./Service.svelte";
+<script lang="ts">
+  import Service from "./Service.svelte";
 
-    export let category;
-    let services = category.attributes.Leistungen.data;
+  export let category: any;
+  let services = category?.services.data;
 </script>
 
 <div class="mx-auto">
-    <h2 class="text-2xl text-center">{category.attributes.Name}</h2>
-    <div class="flex flex-col">
-        {#each services as service}
-            <Service name={service.attributes.Name} price={service.attributes.Preis}/>
-        {/each}
-    </div>
+  <h2 class="text-2xl text-center">{category.name}</h2>
+  <div class="flex flex-col">
+    {#each services as service}
+      <Service name={service.name} price={service.price} />
+    {/each}
+  </div>
 </div>
