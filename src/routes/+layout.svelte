@@ -6,7 +6,6 @@
 
   export let data: LayoutData;
   const footerData = data?.footer;
-
 </script>
 
 <Navbar />
