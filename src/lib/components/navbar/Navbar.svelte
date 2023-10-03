@@ -1,16 +1,16 @@
 <script>
-  import logoImage from '$lib/assets/logo.png';
-  import logoNameImage from '$lib/assets/logoName.png';
-  import ThemeToggle from '../ThemeToggle.svelte';
-  import Separator from '$components/ui/separator/Separator.svelte';
+  import logoImage from "$lib/assets/logo.png";
+  import logoNameImage from "$lib/assets/logoName.png";
+  import ThemeToggle from "../ThemeToggle.svelte";
+  import Separator from "$components/ui/separator/Separator.svelte";
 
   function toggleMobileMenu() {
-    const buttonOpen = document.getElementById('mobile-menu-button-open');
-    const buttonClose = document.getElementById('mobile-menu-button-close');
-    buttonOpen?.classList.toggle('hidden');
-    buttonClose?.classList.toggle('hidden');
-    const mobileMenu = document.getElementById('mobile-menu');
-    mobileMenu?.classList.toggle('hidden');
+    const buttonOpen = document.getElementById("mobile-menu-button-open");
+    const buttonClose = document.getElementById("mobile-menu-button-close");
+    buttonOpen?.classList.toggle("hidden");
+    buttonClose?.classList.toggle("hidden");
+    const mobileMenu = document.getElementById("mobile-menu");
+    mobileMenu?.classList.toggle("hidden");
   }
 </script>
 
@@ -49,11 +49,11 @@
         </div>
         <div class="hidden sm:ml-6 sm:block">
           <div class="absolute inset-y-0 right-0 flex items-center space-x-4">
-            <a href="#" class="nav-item text-white px-3 pt-2 pb-1 mb-1 text-sm font-bold border-b-2 !border-primary" aria-current="page">Home</a>
-            <a href="#" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Team</a>
+            <a href="/" class="nav-item text-white px-3 pt-2 pb-1 mb-1 text-sm font-bold border-b-2 !border-primary" aria-current="page">Home</a>
+            <a href="Team" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Team</a>
             <a href="Leistungen" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Leistungen</a>
-            <a href="#" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Galerie</a>
-            <a href="#" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Kontakt</a>
+            <a href="Galerie" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Galerie</a>
+            <a href="Kontakt" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Kontakt</a>
             <ThemeToggle />
           </div>
         </div>
@@ -65,15 +65,15 @@
   <div class="sm:hidden hidden z-10 absolute bg-black w-full h-full top-0 pt-12" id="mobile-menu">
     <div class="space-y-1 px-2 pb-3 pt-2 flex flex-col gap-1">
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-      <a href="#" class="bg-[#573e10] text-white px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+      <a href="/" class="bg-[#573e10] text-white px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
       <Separator class="bg-primary" />
-      <a href="#" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Team</a>
+      <a href="Team" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Team</a>
       <Separator class="bg-primary" />
-      <a href="#" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Leistungen</a>
+      <a href="Leistungen" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Leistungen</a>
       <Separator class="bg-primary" />
-      <a href="#" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Galerie</a>
+      <a href="Galerie" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Galerie</a>
       <Separator class="bg-primary" />
-      <a href="#" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Kontakt</a>
+      <a href="Kontakt" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Kontakt</a>
     </div>
   </div>
 </nav>
@@ -94,13 +94,13 @@
   }
 
   @property --myColor1 {
-    syntax: '<color>';
+    syntax: "<color>";
     initial-value: transparent;
     inherits: false;
   }
 
   @property --myColor2 {
-    syntax: '<color>';
+    syntax: "<color>";
     initial-value: transparent;
     inherits: false;
   }
