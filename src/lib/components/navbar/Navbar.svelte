@@ -1,7 +1,7 @@
 <script>
   import logoImage from '$lib/assets/logo.png';
   import logoNameImage from '$lib/assets/logoName.png';
-  import ThemeToggle from './ThemeToggle.svelte';
+  import ThemeToggle from '../ThemeToggle.svelte';
   import Separator from '$components/ui/separator/Separator.svelte';
 
   function toggleMobileMenu() {
