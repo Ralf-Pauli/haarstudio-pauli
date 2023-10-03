@@ -1,6 +1,8 @@
 import { PUBLIC_API_TOKEN, PUBLIC_STRAPI_HOST } from "$env/static/public";
 import type { LayoutLoad } from "./$types";
 
+export const prerender = true;
+
 export const load: LayoutLoad = async ({ params }) => {
     const strapiHeaders = new Headers();
     strapiHeaders.append("Authorization", `Bearer ${PUBLIC_API_TOKEN}`);
