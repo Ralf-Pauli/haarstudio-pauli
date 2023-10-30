@@ -1,13 +1,23 @@
 <script lang="ts">
   import type { PageData } from "./$types";
-  import Category from "./Category.svelte";
+  import * as Tabs from "$lib/components/ui/tabs";
+  import Service from "./Service.svelte";
 
   export let data: PageData;
   let categories = data?.categories?.data;
 </script>
 
-<div class="flex flex-col items-center justify-center mt-5 gap-5">
-  {#each categories as category}
-    <Category {category} />
+<Tabs.Root value="categories" class="grid place-items-center">
+  <Tabs.List>
+    {#each categories as category}
+      <Tabs.Trigger value={category.name}>{category.name}</Tabs.Trigger>
+    {/each}
+  </Tabs.List>
+  {#each categories as category }
+    <Tabs.Content value={category.name}>
+      {#each category?.services as service}
+        <Service name={service.name} price={service.price} />
+      {/each}
+    </Tabs.Content>
   {/each}
-</div>
+</Tabs.Root>
