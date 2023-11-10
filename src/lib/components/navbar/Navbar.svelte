@@ -3,6 +3,7 @@
   import logoNameImage from "$lib/assets/logoName.png";
   import ThemeToggle from "../ThemeToggle.svelte";
   import Separator from "$components/ui/separator/Separator.svelte";
+  import { onMount } from "svelte";
 
   function toggleMobileMenu() {
     const buttonOpen = document.getElementById("mobile-menu-button-open");
@@ -12,6 +13,21 @@
     const mobileMenu = document.getElementById("mobile-menu");
     mobileMenu?.classList.toggle("hidden");
   }
+
+  onMount(() => {
+    const navlinkContainer = document.getElementById("navlinks");
+    const navlinks = navlinkContainer?.getElementsByClassName("nav-item");
+
+    if (navlinks) {
+      for (let i = 0; i < navlinks.length; i++) {
+        navlinks[i].addEventListener("click", function () {
+          let current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          navlinks[i].className += " active";
+        });
+      }
+    }
+  });
 </script>
 
 <nav class="bg-black">
@@ -48,12 +64,12 @@
           <img class="block h-9 w-auto lg:block" src={logoNameImage} alt="Logo Name" />
         </div>
         <div class="hidden sm:ml-6 sm:block">
-          <div class="absolute inset-y-0 right-0 flex items-center space-x-4">
-            <a href="/" class="nav-item text-white px-3 pt-2 pb-1 mb-1 text-sm font-bold border-b-2 !border-primary" aria-current="page">Home</a>
-            <a href="Team" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Team</a>
-            <a href="Leistungen" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Leistungen</a>
-            <a href="Galerie" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Galerie</a>
-            <a href="Kontakt" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Kontakt</a>
+          <div class="absolute inset-y-0 right-0 flex items-center space-x-4" id="navlinks">
+            <a href="/" class="nav-item text-white px-3 pt-2 pb-1 mb-1 text-sm font-bold border-b-2 active" aria-current="page">Home</a>
+            <a href="/Team" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Team</a>
+            <a href="/Leistungen" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Leistungen</a>
+            <a href="/Galerie" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Galerie</a>
+            <a href="/Kontakt" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Kontakt</a>
             <ThemeToggle />
           </div>
         </div>
@@ -81,11 +97,6 @@
 <style>
   .nav-item {
     border-bottom: transparent 2px solid;
-    background: linear-gradient(to top, var(--myColor1), var(--myColor2));
-    transition:
-      --myColor1 350ms linear,
-      --myColor2 350ms,
-      all 350ms;
   }
 
   .nav-item:hover {
@@ -93,15 +104,7 @@
     border-bottom: #bf8d30 2px solid;
   }
 
-  @property --myColor1 {
-    syntax: "<color>";
-    initial-value: transparent;
-    inherits: false;
-  }
-
-  @property --myColor2 {
-    syntax: "<color>";
-    initial-value: transparent;
-    inherits: false;
+  #navlinks .active {
+    @apply border-b-2 border-primary;
   }
 </style>
