@@ -1,9 +1,12 @@
-<script>
+<script lang="ts">
+  import { onMount } from "svelte";
   import logoImage from "$lib/assets/logo.png";
   import logoNameImage from "$lib/assets/logoName.png";
-  import ThemeToggle from "../ThemeToggle.svelte";
+  import navActive from "$lib/shared/stores/navActive";
+  import ThemeToggle from "$components/ThemeToggle.svelte";
   import Separator from "$components/ui/separator/Separator.svelte";
-  import { onMount } from "svelte";
+
+  $: currentNavActive = $navActive ?? "/";
 
   function toggleMobileMenu() {
     const buttonOpen = document.getElementById("mobile-menu-button-open");
@@ -14,23 +17,37 @@
     mobileMenu?.classList.toggle("hidden");
   }
 
-  onMount(() => {
-    const navlinkContainer = document.getElementById("navlinks");
-    const navlinks = navlinkContainer?.getElementsByClassName("nav-item");
+  function updateActiveNavItem() {
+    const navigationLinksContainer = document.getElementById("nav-links-container");
+    const navigationLinks: HTMLCollection | undefined = navigationLinksContainer?.getElementsByClassName("nav-item");
 
-    if (navlinks) {
-      for (let i = 0; i < navlinks.length; i++) {
-        navlinks[i].addEventListener("click", function () {
-          let current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          navlinks[i].className += " active";
-        });
+    if (!navigationLinks) return;
+    if (!currentNavActive) return;
+    navigationLinksContainer?.addEventListener("click", function (event) {
+      const target = event.target as HTMLElement;
+      if (target.classList.contains("nav-item")) {
+        const currentActive = navigationLinksContainer.querySelector(".navActive");
+        if (currentActive) currentActive.classList.remove("navActive");
+        target.classList.add("navActive");
+      }
+    });
+    for (let i = 0; i < navigationLinks.length; i++) {
+      const navigationLink = navigationLinks[i] as HTMLAnchorElement;
+      if (navigationLink.pathname === currentNavActive) {
+        navigationLink.classList.add("navActive");
+      } else {
+        navigationLink.classList.remove("navActive");
       }
     }
+  }
+
+  onMount(() => {
+    updateActiveNavItem();
   });
 </script>
 
 <nav class="bg-black">
+  <div class="navActive invisible"></div>
   <div class="mx-auto max-w-5xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-16 items-center justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -64,8 +81,8 @@
           <img class="block h-9 w-auto lg:block" src={logoNameImage} alt="Logo Name" />
         </div>
         <div class="hidden sm:ml-6 sm:block">
-          <div class="absolute inset-y-0 right-0 flex items-center space-x-4" id="navlinks">
-            <a href="/" class="nav-item text-white px-3 pt-2 pb-1 mb-1 text-sm font-bold border-b-2 active" aria-current="page">Home</a>
+          <div class="absolute inset-y-0 right-0 flex items-center space-x-4" id="nav-links-container">
+            <a href="/" class="nav-item text-white px-3 pt-2 pb-1 mb-1 text-sm font-bold border-b-2" aria-current="page">Home</a>
             <a href="/Team" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Team</a>
             <a href="/Leistungen" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Leistungen</a>
             <a href="/Galerie" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Galerie</a>
@@ -104,7 +121,8 @@
     border-bottom: #bf8d30 2px solid;
   }
 
-  #navlinks .active {
-    @apply border-b-2 border-primary;
+  .navActive {
+    border-bottom-width: 2px;
+    border-bottom-color: #d19555;
   }
 </style>
