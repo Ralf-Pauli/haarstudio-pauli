@@ -97,7 +97,7 @@
   </div>
 
   <!-- Mobile menu, show/hide based on menu state. -->
-  <div class="sm:hidden hidden z-10 absolute bg-black w-full h-full top-0 pt-12" id="mobile-menu">
+  <div class="sm:hidden hidden z-10 absolute w-full h-full top-0 pt-12" id="mobile-menu">
     <div class="space-y-1 px-2 pb-3 pt-2 flex flex-col gap-1">
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
       <a href="/" class="bg-[#573e10] text-white px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
