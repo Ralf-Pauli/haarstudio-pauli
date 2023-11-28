@@ -76,10 +76,12 @@
         </button>
       </div>
       <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-        <div class="flex flex-shrink-0 items-center cursor-pointer">
-          <img class="block h-9 w-auto lg:block" src={logoImage} alt="Logo" />
-          <img class="block h-9 w-auto lg:block" src={logoNameImage} alt="Logo Name" />
-        </div>
+        <a href="/">
+          <div class="flex flex-shrink-0 items-center cursor-pointer">
+            <img class="block h-9 w-auto lg:block" src={logoImage} alt="Logo" />
+            <img class="block h-9 w-auto lg:block" src={logoNameImage} alt="Logo Name" />
+          </div>
+        </a>
         <div class="hidden sm:ml-6 sm:block">
           <div class="absolute inset-y-0 right-0 flex items-center space-x-4" id="nav-links-container">
             <a href="/" class="nav-item text-white px-3 pt-2 pb-1 mb-1 text-sm font-bold border-b-2" aria-current="page">Home</a>
