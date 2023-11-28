@@ -22,8 +22,6 @@
       <a slot="content" href="https://google.com">Google Bewertungen</a>
     </InfoCard>
   </div>
-  <div class="red min-w-1/4 max-w-lg">wb</div>
-  <div class="red max-w-lg">g</div>
 </div>
 
 <style>

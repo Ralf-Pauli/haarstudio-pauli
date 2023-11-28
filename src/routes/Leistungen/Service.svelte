@@ -7,7 +7,7 @@
 </script>
 
 <div class="">
-    <div class="grid grid-cols-2 gap-4 ">
+    <div class="grid grid-cols-2 gap-4">
         <div class="">{name}</div>
         <div class="text-right">{price}</div>
     </div>
