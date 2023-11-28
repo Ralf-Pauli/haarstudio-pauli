@@ -4,7 +4,7 @@
   const strapi = footerData.data;
 </script>
 
-<div class="mx-auto max-w-screen-2xl flex absolute bottom-0 inset-x-0 h-17">
+<div class="mx-auto px-3 max-w-screen-2xl flex absolute bottom-0 inset-x-0 h-17">
   <div class="min-w-1/4 max-w-lg grid grid-rows-2 grid-flow-col gap-4">
     <InfoCard>
       <p slot="title">Addresse</p>
@@ -15,7 +15,7 @@
     </InfoCard>
     <InfoCard>
       <div slot="title">Kontakt</div>
-      <p slot="content"><a href='tel:{strapi.contact.phone_number}'>{strapi.contact.phone_number}</a></p>
+      <p slot="content"><a href="tel:{strapi.contact.phone_number}">{strapi.contact.phone_number}</a></p>
     </InfoCard>
     <InfoCard>
       <div slot="title">Links</div>

@@ -9,5 +9,5 @@
 </script>
 
 <Navbar />
-<Footer {footerData} />
 <slot />
+<Footer {footerData} />

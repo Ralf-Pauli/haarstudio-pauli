@@ -46,7 +46,7 @@
   });
 </script>
 
-<nav class="bg-black">
+<nav class="text-text">
   <div class="navActive invisible"></div>
   <div class="mx-auto max-w-5xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-16 items-center justify-between">
@@ -56,7 +56,7 @@
           id="mobile-menu-button-open"
           type="button"
           on:click={toggleMobileMenu}
-          class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-white focus:outline-none ring-0"
+          class="inline-flex items-center justify-center rounded-md p-2 text-text hover:text-white focus:outline-none ring-0"
           aria-controls="mobile-menu"
           aria-expanded="false">
           <span class="sr-only">Open main menu</span>
@@ -83,12 +83,12 @@
           </div>
         </a>
         <div class="hidden sm:ml-6 sm:block">
-          <div class="absolute inset-y-0 right-0 flex items-center space-x-4" id="nav-links-container">
-            <a href="/" class="nav-item text-white px-3 pt-2 pb-1 mb-1 text-sm font-bold border-b-2" aria-current="page">Home</a>
-            <a href="/Team" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Team</a>
-            <a href="/Leistungen" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Leistungen</a>
-            <a href="/Galerie" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Galerie</a>
-            <a href="/Kontakt" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Kontakt</a>
+          <div class="absolute inset-y-0 right-0 flex items-center space-x-4 font-medium" id="nav-links-container">
+            <a href="/" class="nav-item px-3 pt-2 pb-1 mb-1 text-sm font-bold" aria-current="page">Home</a>
+            <a href="/Team" class="nav-item px-3 pt-2 pb-1 mb-1 text-sm">Team</a>
+            <a href="/Leistungen" class="nav-item px-3 pt-2 pb-1 mb-1 text-sm">Leistungen</a>
+            <a href="/Galerie" class="nav-item px-3 pt-2 pb-1 mb-1 text-sm">Galerie</a>
+            <a href="/Kontakt" class="nav-item px-3 pt-2 pb-1 mb-1 text-sm">Kontakt</a>
             <ThemeToggle />
           </div>
         </div>
