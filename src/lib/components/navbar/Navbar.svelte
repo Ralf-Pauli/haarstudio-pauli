@@ -1,20 +1,53 @@
-<script>
-  import logoImage from '$lib/assets/logo.png';
-  import logoNameImage from '$lib/assets/logoName.png';
-  import ThemeToggle from '../ThemeToggle.svelte';
-  import Separator from '$components/ui/separator/Separator.svelte';
+<script lang="ts">
+  import { onMount } from "svelte";
+  import logoImage from "$lib/assets/logo.png";
+  import logoNameImage from "$lib/assets/logoName.png";
+  import navActive from "$lib/shared/stores/navActive";
+  import ThemeToggle from "$components/ThemeToggle.svelte";
+  import Separator from "$components/ui/separator/Separator.svelte";
+
+  $: currentNavActive = $navActive ?? "/";
 
   function toggleMobileMenu() {
-    const buttonOpen = document.getElementById('mobile-menu-button-open');
-    const buttonClose = document.getElementById('mobile-menu-button-close');
-    buttonOpen?.classList.toggle('hidden');
-    buttonClose?.classList.toggle('hidden');
-    const mobileMenu = document.getElementById('mobile-menu');
-    mobileMenu?.classList.toggle('hidden');
+    const buttonOpen = document.getElementById("mobile-menu-button-open");
+    const buttonClose = document.getElementById("mobile-menu-button-close");
+    buttonOpen?.classList.toggle("hidden");
+    buttonClose?.classList.toggle("hidden");
+    const mobileMenu = document.getElementById("mobile-menu");
+    mobileMenu?.classList.toggle("hidden");
   }
+
+  function updateActiveNavItem() {
+    const navigationLinksContainer = document.getElementById("nav-links-container");
+    const navigationLinks: HTMLCollection | undefined = navigationLinksContainer?.getElementsByClassName("nav-item");
+
+    if (!navigationLinks) return;
+    if (!currentNavActive) return;
+    navigationLinksContainer?.addEventListener("click", function (event) {
+      const target = event.target as HTMLElement;
+      if (target.classList.contains("nav-item")) {
+        const currentActive = navigationLinksContainer.querySelector(".navActive");
+        if (currentActive) currentActive.classList.remove("navActive");
+        target.classList.add("navActive");
+      }
+    });
+    for (let i = 0; i < navigationLinks.length; i++) {
+      const navigationLink = navigationLinks[i] as HTMLAnchorElement;
+      if (navigationLink.pathname === currentNavActive) {
+        navigationLink.classList.add("navActive");
+      } else {
+        navigationLink.classList.remove("navActive");
+      }
+    }
+  }
+
+  onMount(() => {
+    updateActiveNavItem();
+  });
 </script>
 
 <nav class="bg-black">
+  <div class="navActive invisible"></div>
   <div class="mx-auto max-w-5xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-16 items-center justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -48,12 +81,12 @@
           <img class="block h-9 w-auto lg:block" src={logoNameImage} alt="Logo Name" />
         </div>
         <div class="hidden sm:ml-6 sm:block">
-          <div class="absolute inset-y-0 right-0 flex items-center space-x-4">
-            <a href="#" class="nav-item text-white px-3 pt-2 pb-1 mb-1 text-sm font-bold border-b-2 !border-primary" aria-current="page">Home</a>
-            <a href="#" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Team</a>
-            <a href="Leistungen" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Leistungen</a>
-            <a href="#" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Galerie</a>
-            <a href="#" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Kontakt</a>
+          <div class="absolute inset-y-0 right-0 flex items-center space-x-4" id="nav-links-container">
+            <a href="/" class="nav-item text-white px-3 pt-2 pb-1 mb-1 text-sm font-bold border-b-2" aria-current="page">Home</a>
+            <a href="/Team" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Team</a>
+            <a href="/Leistungen" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Leistungen</a>
+            <a href="/Galerie" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Galerie</a>
+            <a href="/Kontakt" class="nav-item text-gray-300 px-3 pt-2 pb-1 mb-1 text-sm font-medium">Kontakt</a>
             <ThemeToggle />
           </div>
         </div>
@@ -65,15 +98,15 @@
   <div class="sm:hidden hidden z-10 absolute bg-black w-full h-full top-0 pt-12" id="mobile-menu">
     <div class="space-y-1 px-2 pb-3 pt-2 flex flex-col gap-1">
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-      <a href="#" class="bg-[#573e10] text-white px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+      <a href="/" class="bg-[#573e10] text-white px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
       <Separator class="bg-primary" />
-      <a href="#" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Team</a>
+      <a href="Team" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Team</a>
       <Separator class="bg-primary" />
-      <a href="#" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Leistungen</a>
+      <a href="Leistungen" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Leistungen</a>
       <Separator class="bg-primary" />
-      <a href="#" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Galerie</a>
+      <a href="Galerie" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Galerie</a>
       <Separator class="bg-primary" />
-      <a href="#" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Kontakt</a>
+      <a href="Kontakt" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Kontakt</a>
     </div>
   </div>
 </nav>
@@ -81,11 +114,6 @@
 <style>
   .nav-item {
     border-bottom: transparent 2px solid;
-    background: linear-gradient(to top, var(--myColor1), var(--myColor2));
-    transition:
-      --myColor1 350ms linear,
-      --myColor2 350ms,
-      all 350ms;
   }
 
   .nav-item:hover {
@@ -93,15 +121,8 @@
     border-bottom: #bf8d30 2px solid;
   }
 
-  @property --myColor1 {
-    syntax: '<color>';
-    initial-value: transparent;
-    inherits: false;
-  }
-
-  @property --myColor2 {
-    syntax: '<color>';
-    initial-value: transparent;
-    inherits: false;
+  .navActive {
+    border-bottom-width: 2px;
+    border-bottom-color: #d19555;
   }
 </style>

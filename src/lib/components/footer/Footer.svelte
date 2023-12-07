@@ -1,5 +1,5 @@
 <script lang="ts">
-  import InfoCard from "$lib/components/navbar/InfoCard.svelte";
+  import InfoCard from "$components/navbar/InfoCard.svelte";
   export let footerData: any;
   const strapi = footerData.data;
 </script>
@@ -19,7 +19,7 @@
     </InfoCard>
     <InfoCard>
       <div slot="title">Links</div>
-      <a slot="content" href="google.com">Google Bewertungen</a>
+      <a slot="content" href="https://google.com">Google Bewertungen</a>
     </InfoCard>
   </div>
   <div class="red min-w-1/4 max-w-lg">wb</div>
