@@ -25,7 +25,7 @@
     <Tabs.Content value={category.name}>
       {#each category?.services as service, serviceIndex}
         {#if serviceIndex !== 0 && hasServiceTypeChanged(categoryIndex, serviceIndex)}
-          <Separator />
+          <Separator class="my-2"/>
         {/if}
         <Service name={service.name} price={service.price} />
       {/each}
