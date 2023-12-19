@@ -4,10 +4,10 @@
   import Navbar from "$components/navbar/Navbar.svelte";
   import Footer from "$components/footer/Footer.svelte";
 
-  export let data: LayoutData;
-  const footerData = data?.footer;
+  // export let data: LayoutData;
+  // const footerData = data?.footer;
 </script>
 
 <Navbar />
-<Footer {footerData} />
+<!--<Footer {footerData} />-->
 <slot />
