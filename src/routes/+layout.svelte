@@ -5,7 +5,7 @@
   import Footer from "$components/footer/Footer.svelte";
 
   export let data: LayoutData;
-  const footerData = data?.footer;
+  const footer = data?.footer;
 </script>
 
 <div class="min-h-full !h-auto m-[0_auto_-11rem]">
@@ -13,4 +13,4 @@
   <slot />
   <div class="h-44"></div>
 </div>
-<Footer {footerData} />
+<Footer {footer} />

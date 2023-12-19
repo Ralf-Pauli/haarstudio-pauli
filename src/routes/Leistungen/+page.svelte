@@ -15,7 +15,7 @@
 
 </script>
 
-<Tabs.Root value="categories" class="grid place-items-center">
+<Tabs.Root value="{categories[0].name}" class="grid place-items-center">
   <Tabs.List>
     {#each categories as category}
       <Tabs.Trigger value={category.name}>{category.name}</Tabs.Trigger>
