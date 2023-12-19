@@ -2,7 +2,7 @@
   import type { PageData } from "./$types";
   import * as Tabs from "$lib/components/ui/tabs";
   import Service from "./Service.svelte";
-  import { Separator } from "$lib/components/ui/separator";
+  import { Separator } from "$components/ui/separator";
   export let data: PageData;
   let categories = data?.categories?.data;
 
@@ -25,7 +25,7 @@
     <Tabs.Content value={category.name}>
       {#each category?.services as service, serviceIndex}
         {#if serviceIndex !== 0 && hasServiceTypeChanged(categoryIndex, serviceIndex)}
-          <Separator class="my-2"/>
+          <Separator class="my-2 bg-primary"/>
         {/if}
         <Service name={service.name} price={service.price} />
       {/each}
