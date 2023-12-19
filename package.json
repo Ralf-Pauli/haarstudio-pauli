@@ -26,11 +26,13 @@
   },
   "type": "module",
   "dependencies": {
+    "bits-ui": "^0.5.7",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "lucide-svelte": "^0.263.0",
     "radix-svelte": "^0.9.0",
     "tailwind-merge": "^1.14.0",
+    "tailwind-variants": "^0.1.14",
     "tailwindcss-animate": "^1.0.7"
   }
 }

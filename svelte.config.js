@@ -18,7 +18,9 @@ const config = {
     }),
     alias: {
       $components: "src/lib/components",
-      "$components/*": "src/lib/components/*"
+      "$components/*": "src/lib/components/*",
+      $lib: "./src/lib",
+      "$lib/*": "./src/lib/*"
     }
   },
   shadcn: {

@@ -4,8 +4,8 @@
   import Navbar from "$components/navbar/Navbar.svelte";
   import Footer from "$components/footer/Footer.svelte";
 
-  export let data: LayoutData;
-  const footerData = data?.footer;
+  // export let data: LayoutData;
+  // const footerData = data?.footer;
 </script>
 
 <div class="min-h-full !h-auto m-[0_auto_-11rem]">

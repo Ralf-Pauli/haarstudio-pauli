@@ -5,7 +5,7 @@
   import navActive from "$lib/shared/stores/navActive";
   import ThemeToggle from "$components/ThemeToggle.svelte";
   import Separator from "$components/ui/separator/Separator.svelte";
-
+  
   $: currentNavActive = $navActive ?? "/";
 
   function toggleMobileMenu() {
@@ -40,11 +40,11 @@
       }
     }
   }
-
   onMount(() => {
     updateActiveNavItem();
   });
 </script>
+
 
 <nav class="text-text">
   <div class="navActive invisible"></div>
