@@ -18,8 +18,8 @@
   }
 </script>
 
-<div class="toggle-switch-container">
-  <input type="checkbox" class="hidden absolute" id="toggle-switch-cb" />
+<div class="toggle-switch-container relative w-[24px]">
+  <input type="checkbox" class="hidden" id="toggle-switch-cb" />
   <label for="toggle-switch-cb" class="absolute top-0 left-0 svg-overlay">
     <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24" class="night-icon" {...$$props}
       ><path
@@ -34,7 +34,6 @@
 
 <style>
   .toggle-switch-container {
-    position: relative;
     margin-top: -1.4em;
   }
   label {
