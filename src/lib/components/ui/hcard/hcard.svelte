@@ -10,8 +10,6 @@
   export { className as class, img };
 </script>
 
-<div class={cn("", className)} {...$$restProps}>
-  <Card {img} href="/" horizontal class="mb-4">
-    <slot />
-  </Card>
-</div>
+<Card {img} horizontal class={cn("dark:bg-transparent dark:hover:bg-secondary !border-[#e1a847]/[.20]", className)} {...$$restProps}>
+  <slot />
+</Card>

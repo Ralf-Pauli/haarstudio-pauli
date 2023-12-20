@@ -11,11 +11,11 @@
   const splitCategories = Array.from({ length: rows }, (_, i) => categories.slice(i * categoriesPerRow, i * categoriesPerRow + categoriesPerRow));
 </script>
 
-<div class="flex flex-col items-center justify-center gap-4">
+<div class="flex flex-col items-stretch justify-center gap-4 max-w-5xl mx-auto">
   {#each splitCategories as row}
     <div class="flex justify-center gap-4">
       {#each row as category}
-        <HCard.Root img="https://picsum.photos/150">
+        <HCard.Root img="https://picsum.photos/150" href="/Leistungen?tab={category.name}">
           <HCard.Title>{category.name}</HCard.Title>
           <HCard.Description>very important description</HCard.Description>
         </HCard.Root>
