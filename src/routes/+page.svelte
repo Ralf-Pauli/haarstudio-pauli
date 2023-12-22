@@ -4,7 +4,7 @@
 
   export let data: PageData;
   let { categories } = data;
-
+  console.log(categories.data);
   const categoriesPerRow = 3;
   const rows = Math.ceil(categories.length / categoriesPerRow);
 

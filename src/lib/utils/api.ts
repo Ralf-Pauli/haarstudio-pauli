@@ -1,36 +1,29 @@
-import { PUBLIC_STRAPI_HOST, PUBLIC_API_TOKEN } from "$env/static/public";
+import { PUBLIC_API_TOKEN, PUBLIC_STRAPI_HOST } from "$env/static/public";
 
-interface ResponseData {
-    [key: string]: any;
-}
+export async function strapiFetch(
+  fetch: (input: RequestInfo, init?: RequestInit) => Promise<Response>,
+  url: String,
+): Promise<any> {
+  const headers = new Headers();
+  headers.append("Authorization", `Bearer ${PUBLIC_API_TOKEN}`);
 
-export const strapiFetch = async (url: string): Promise<any> => {
-    const headers = new Headers();
-    headers.append("Authorization", `Bearer ${PUBLIC_API_TOKEN}`);
-    let response;
-    try {
-        response = await fetch(`${PUBLIC_STRAPI_HOST}/${url}`, {
-            method: "GET",
-            headers: headers
-        });
-    } catch (error) {
-        console.error(error);
-        throw new Error("Network error");
-    }
+  try {
+    // Fetch data
+    const response = await fetch(`${PUBLIC_STRAPI_HOST}/${url}`, {
+      method: "GET",
+      headers,
+    });
 
+    // Check if response is ok
     if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    // If response is successful, convert it to JSON format
-    let responseData: ResponseData;
-    try {
-        responseData = await response.json();
-    } catch (error) {
-        // Handle JSON parsing error
-        console.error(error);
-        throw new Error("Invalid JSON response");
-    }
-
-    return responseData;
-};
+    // Parse JSON response
+    return await response.json();
+  } catch (error) {
+    // Log and re-throw the error
+    console.error(error);
+    throw error instanceof Error ? error : new Error("Invalid JSON response");
+  }
+}

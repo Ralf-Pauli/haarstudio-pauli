@@ -1,7 +1,9 @@
-import type { PageLoad } from "./$types";
 import { strapiFetch } from "$lib/utils/api";
 
-export const load: PageLoad = async () => {
-  const categories = await strapiFetch("api/categories?populate=*");
+export async function load({ fetch }: {
+  fetch: (input: RequestInfo, init?: RequestInit) => Promise<Response>;
+  params: any;
+}) {
+  const categories = await strapiFetch(fetch, "api/categories?populate=*");
   return { categories: categories.data };
-};
+}
