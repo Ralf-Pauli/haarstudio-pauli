@@ -29,6 +29,7 @@
         const currentActive = navigationLinksContainer.querySelector(".navActive");
         if (currentActive) currentActive.classList.remove("navActive");
         target.classList.add("navActive");
+        navActive.set(target.getAttribute("href")!);
       }
     });
     for (let i = 0; i < navigationLinks.length; i++) {
@@ -45,7 +46,7 @@
   });
 </script>
 
-<nav class="text-text">
+<nav class="mb-2">
   <div class="navActive invisible"></div>
   <div class="mx-auto max-w-5xl">
     <div class="relative flex h-16 items-center justify-between">
