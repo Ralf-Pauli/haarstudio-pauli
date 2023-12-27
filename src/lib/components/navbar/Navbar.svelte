@@ -67,7 +67,7 @@
         </button>
       </div>
       <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-        <a
+        <button
           on:click={() => {
             document.getElementById("homeLink")?.click();
           }}>
@@ -75,7 +75,7 @@
             <img class="block h-9 w-auto lg:block" src={logoImage} alt="Logo" />
             <img class="block h-9 w-auto lg:block" src={logoNameImage} alt="Logo Name" />
           </div>
-        </a>
+        </button>
         <div class="hidden sm:ml-6 sm:block">
           <div class="absolute inset-y-0 right-0 flex items-center space-x-4 font-medium" id="nav-links-container">
             <a id="homeLink" href="/" class="nav-item px-3 pt-2 pb-1 mb-1 text-sm font-bold" aria-current="page">Home</a>
