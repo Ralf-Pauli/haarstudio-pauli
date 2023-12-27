@@ -1,12 +1,15 @@
 <script lang="ts">
-  import { onMount } from "svelte";
   import logoImage from "$lib/assets/logo.png";
   import logoNameImage from "$lib/assets/logoName.png";
-  import navActive from "$lib/shared/stores/navActive";
+  import { createLocalStorage } from "$lib/shared/stores/local-storage";
   import ThemeToggle from "$components/ThemeToggle.svelte";
   import { Separator } from "$components/ui/separator";
+  import { page } from "$app/stores";
+  import { afterNavigate } from "$app/navigation";
 
-  $: currentNavActive = $navActive ?? "/";
+  $: pathName = $page.url.pathname;
+
+  const navActive = createLocalStorage("active-nav");
 
   function toggleMobileMenu() {
     const buttonOpen = document.getElementById("mobile-menu-button-open");
@@ -18,30 +21,18 @@
   }
 
   function updateActiveNavItem() {
+    // set active nav into localstorage
+    navActive.set(pathName);
     const navigationLinksContainer = document.getElementById("nav-links-container");
     const navigationLinks: HTMLCollection | undefined = navigationLinksContainer?.getElementsByClassName("nav-item");
 
-    if (!navigationLinks) return;
-    if (!currentNavActive) return;
-    navigationLinksContainer?.addEventListener("click", function (event) {
-      const target = event.target as HTMLElement;
-      if (target.classList.contains("nav-item")) {
-        const currentActive = navigationLinksContainer.querySelector(".navActive");
-        if (currentActive) currentActive.classList.remove("navActive");
-        target.classList.add("navActive");
-        navActive.set(target.getAttribute("href")!);
-      }
-    });
-    for (let i = 0; i < navigationLinks.length; i++) {
-      const navigationLink = navigationLinks[i] as HTMLAnchorElement;
-      if (navigationLink.pathname === currentNavActive) {
-        navigationLink.classList.add("navActive");
-      } else {
-        navigationLink.classList.remove("navActive");
-      }
+    for (const navigationLink of navigationLinks! as unknown as HTMLAnchorElement[]) {
+      if (navigationLink.pathname == navActive.get()) navigationLink.classList.add("navActive");
+      else navigationLink.classList.remove("navActive");
     }
   }
-  onMount(() => {
+
+  afterNavigate(function () {
     updateActiveNavItem();
   });
 </script>
