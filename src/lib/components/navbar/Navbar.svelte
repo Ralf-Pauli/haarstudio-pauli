@@ -79,10 +79,10 @@
         <div class="hidden sm:ml-6 sm:block">
           <div class="absolute inset-y-0 right-0 flex items-center space-x-4 font-medium" id="nav-links-container">
             <a id="homeLink" href="/" class="nav-item px-3 pt-2 pb-1 mb-1 text-sm font-bold" aria-current="page">Home</a>
-            <a href="/Team" class="nav-item px-3 pt-2 pb-1 mb-1 text-sm">Team</a>
-            <a href="/Leistungen" class="nav-item px-3 pt-2 pb-1 mb-1 text-sm">Leistungen</a>
-            <a href="/Galerie" class="nav-item px-3 pt-2 pb-1 mb-1 text-sm">Galerie</a>
-            <a href="/Kontakt" class="nav-item px-3 pt-2 pb-1 mb-1 text-sm">Kontakt</a>
+            <a href="/team" class="nav-item px-3 pt-2 pb-1 mb-1 text-sm">Team</a>
+            <a href="/leistungen" class="nav-item px-3 pt-2 pb-1 mb-1 text-sm">Leistungen</a>
+            <a href="/galerie" class="nav-item px-3 pt-2 pb-1 mb-1 text-sm">Galerie</a>
+            <a href="/kontakt" class="nav-item px-3 pt-2 pb-1 mb-1 text-sm">Kontakt</a>
             <ThemeToggle />
           </div>
         </div>
@@ -96,13 +96,13 @@
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
       <a href="/" class="bg-[#573e10] text-white px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
       <Separator class="bg-primary" />
-      <a href="Team" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Team</a>
+      <a href="/team" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Team</a>
       <Separator class="bg-primary" />
-      <a href="Leistungen" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Leistungen</a>
+      <a href="/leistungen" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Leistungen</a>
       <Separator class="bg-primary" />
-      <a href="Galerie" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Galerie</a>
+      <a href="/galerie" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Galerie</a>
       <Separator class="bg-primary" />
-      <a href="Kontakt" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Kontakt</a>
+      <a href="/kontakt" class="text-gray-300 hover:bg-[#BF8D30] hover:text-white px-3 py-2 text-sm font-medium">Kontakt</a>
     </div>
   </div>
 </nav>
