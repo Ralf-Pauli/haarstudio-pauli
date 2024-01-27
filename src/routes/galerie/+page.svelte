@@ -1,7 +1,6 @@
 <script lang="ts">
   import { PUBLIC_STRAPI_HOST } from "$env/static/public";
   import type { PageData } from "../$types";
-  import { Gallery } from "flowbite-svelte";
 
   export let data: PageData;
 
@@ -22,7 +21,6 @@
 
   function moveImageLeft() {
     let currIndex = allImages.findIndex((elem: any) => headerImage.src === elem.src);
-    // currIndex = currIndex === 0 ? allImages.length - 1 : currIndex - 1;
     if (currIndex != 0) {
       currIndex = currIndex - 1;
     }
