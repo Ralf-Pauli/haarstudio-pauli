@@ -8,9 +8,8 @@
   const footer = data?.footer;
 </script>
 
-<div class="min-h-full !h-auto m-[0_auto_-11rem]">
+<div class="h-screen px-3">
   <Navbar />
   <slot />
-  <div class="h-44"></div>
+  <Footer {footer} />
 </div>
-<Footer {footer} />

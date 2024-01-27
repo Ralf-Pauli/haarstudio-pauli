@@ -4,7 +4,7 @@
   export let footer: any;
 </script>
 
-<div class="mx-auto px-3 max-w-screen-2xl flex inset-x-0 h-44">
+<div class="mx-auto pt-4 flex inset-x-0 h-44 max-w-5xl sticky top-[100vh]">
   <div class="min-w-1/4 max-w-lg grid grid-rows-2 grid-flow-col gap-4">
     <InfoCard>
       <p slot="title">Addresse</p>
@@ -23,11 +23,3 @@
     </InfoCard>
   </div>
 </div>
-
-<style>
-    .red {
-        margin: 10px;
-        background-color: red;
-        flex-grow: 1;
-    }
-</style>
