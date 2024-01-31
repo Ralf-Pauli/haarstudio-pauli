@@ -9,12 +9,12 @@
 
 <!-- Embed Google Maps for the location -->
 
-<!--<div class="map-container">-->
-<!--  <iframe class="w-full h-1/2"-->
-<!--          referrerpolicy="no-referrer-when-downgrade"-->
-<!--          src="https://www.google.com/maps/embed/v1/place?key={PUBLIC_GOOGLE_MAPS_API_KEY}&q=Haarstudio-Pauli"-->
-<!--          title="Google Maps"></iframe>-->
-<!--</div>-->
+<div class="map-container">
+  <iframe class="w-full h-1/2"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed/v1/place?key={PUBLIC_GOOGLE_MAPS_API_KEY}&q=Haarstudio-Pauli"
+          title="Google Maps"></iframe>
+<div>
 
 <!-- Contact Information Section -->
 <div class="contact-section text-center">
