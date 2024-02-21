@@ -9,12 +9,12 @@
 
 <!-- Embed Google Maps for the location -->
 
-<div class="map-container">
-  <iframe class="w-full h-1/2"
+<div class="map-container w-3/5 h-2/5">
+  <iframe class="w-full h-full"
           referrerpolicy="no-referrer-when-downgrade"
           src="https://www.google.com/maps/embed/v1/place?key={PUBLIC_GOOGLE_MAPS_API_KEY}&q=Haarstudio-Pauli"
           title="Google Maps"></iframe>
-<div>
+</div>
 
 <!-- Contact Information Section -->
 <div class="contact-section text-center">
