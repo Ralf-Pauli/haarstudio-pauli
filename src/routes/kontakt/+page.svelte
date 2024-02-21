@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { PageData } from "../../../.svelte-kit/types/src/routes/$types.js";
-  import { PUBLIC_STRAPI_HOST } from "$env/static/public";
+  import { PUBLIC_STRAPI_HOST, PUBLIC_GOOGLE_MAPS_API_KEY } from "$env/static/public";
 
   export let data: PageData;
   let contactPage = data.contact_page;
