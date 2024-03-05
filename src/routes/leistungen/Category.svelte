@@ -1,14 +1,13 @@
-<script lang="ts">
+<script>
   import Service from "./Service.svelte";
 
-  export let category: any;
-  let services = category?.services;
+  export let category;
+  export let activeServiceId;
+  export let toggleService; // Ensure toggleService is declared as a prop
 </script>
 
-<div class="mx-auto">
-  <div class="flex flex-col">
-    {#each services as service}
-      <Service name={service.name} price={service.price} />
-    {/each}
-  </div>
+<div>
+  {#each category.services as service}
+    <Service {service} {activeServiceId} {toggleService} />
+  {/each}
 </div>
