@@ -1,43 +1,56 @@
 <script lang="ts">
   import type { PageData } from "../../../.svelte-kit/types/src/routes/$types.js";
   import { PUBLIC_GOOGLE_MAPS_API_KEY, PUBLIC_PLACE_ID, PUBLIC_STRAPI_HOST } from "$env/static/public";
-  import Map from "./Map.svelte";
-  import { onMount } from "svelte";
-
-  // onMount(() => {
-  //   const script = document.createElement('script');
-  //   script.src = `https://maps.googleapis.com/maps/api/js?key=${PUBLIC_GOOGLE_MAPS_API_KEY}&callback=initMap`;
-  //   script.defer = true;
-  //   script.async = true;
-  //
-  //   window.initMap = () => {
-  //     var map = new google.maps.Map(document.getElementById('map'), {
-  //       zoom: 8,
-  //       center: {lat: -34.397, lng: 150.644},
-  //     });
-  //   };
-  //
-  //   document.head.appendChild(script);
-  // });
+  import placeholderImage from "$lib/assets/31.jpg";
+  import { createLocalStorage } from "$lib/shared/stores/local-storage";
 
   export let data: PageData;
   let contactPage = data.contact_page;
+  let loadGoogleMap = createLocalStorage<boolean>("load-google-map", false);
+  let shouldLoad = false;
+
+  function handleAlwaysLoadChange(event) {
+    const shouldAlwaysLoad = event.target.checked;
+    loadGoogleMap.set(shouldAlwaysLoad);
+  }
 </script>
 
+<div class="map-container w-3/5 h-2/5 block relative mx-auto">
+  {#if shouldLoad || loadGoogleMap.get()}
+    <iframe
+      allowfullscreen
+      class="w-full h-full" frameborder="0"
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed/v1/place?key={PUBLIC_GOOGLE_MAPS_API_KEY}&q=place_id:{PUBLIC_PLACE_ID}"
+      style="border:0">
+    </iframe>
+  {:else}
+    <img class="w-full h-full object-cover" src={placeholderImage} alt="">
 
-
-<div class="map-container w-3/5 h-2/5 block m-auto">
-<!--  <Map class="h-full w-full mb-5"></Map>-->
-<!--  <div id="map" class="w-full h-full"></div>-->
-  <iframe
-    class="w-full h-full"
-    frameborder="0" style="border:0"
-    referrerpolicy="no-referrer-when-downgrade"
-    src="https://www.google.com/maps/embed/v1/place?key={PUBLIC_GOOGLE_MAPS_API_KEY}&q=place_id:{PUBLIC_PLACE_ID}"
-    allowfullscreen>
-  </iframe>
-
+    <div class="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50">
+      <div class="text-center text-white p-4">
+        <p>Mit dem Laden der Karte akzeptieren Sie die Datenschutzerklärung von Google.<br>
+          <a href="https://policies.google.com/privacy" class="text-blue-300 hover:text-blue-500"
+             rel="nofollow noopener noreferrer" target="_blank">Mehr erfahren</a>
+        </p>
+        <p class="my-2">
+          <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                  on:click={() => {
+                    shouldLoad = true;
+                  }}>Karte laden
+          </button>
+        </p>
+        <div class="flex justify-center">
+          <label class="flex items-center">
+            <input type="checkbox" class="mr-2" on:change="{handleAlwaysLoadChange}" checked="{loadGoogleMap.get()}">
+            <small>Google Maps immer entsperren</small>
+          </label>
+        </div>
+      </div>
+    </div>
+  {/if}
 </div>
+
 
 <!-- Contact Information Section -->
 <div class="contact-section text-center">
