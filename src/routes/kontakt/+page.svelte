@@ -18,8 +18,9 @@
 <div class="map-container w-3/5 h-2/5 block relative mx-auto">
   {#if shouldLoad || loadGoogleMap.get()}
     <iframe
+      title="Google Map"
       allowfullscreen
-      class="w-full h-full" frameborder="0"
+      class="w-full h-full"
       referrerpolicy="no-referrer-when-downgrade"
       src="https://www.google.com/maps/embed/v1/place?key={PUBLIC_GOOGLE_MAPS_API_KEY}&q=place_id:{PUBLIC_PLACE_ID}"
       style="border:0">
@@ -35,9 +36,7 @@
         </p>
         <p class="my-2">
           <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                  on:click={() => {
-                    shouldLoad = true;
-                  }}>Karte laden
+                  on:click={() => shouldLoad = true}>Karte laden
           </button>
         </p>
         <div class="flex justify-center">
