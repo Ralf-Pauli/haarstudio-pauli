@@ -1,36 +1,50 @@
-<script>
-  import { fly } from "svelte/transition";
-  import { cubicOut } from "svelte/easing";
+<script lang="ts">
+  import { Separator } from "$components/ui/separator";
+  import * as Collapsible from "$lib/components/ui/collapsible";
+  import { ChevronUp, ChevronDown } from "lucide-svelte";
 
-  export let service;
-  export let activeServiceId;
-  export let toggleService;
+  export let service: any, activeServiceId: any, toggleService: any;
+
+  let collapsibleOpen = false;
+
+  let formatPrice = (price: any) => {
+    return new Intl.NumberFormat("de-DE", {
+      style: "currency",
+      currency: "EUR",
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    }).format(price);
+  };
 </script>
 
 <div>
   {#if service.sub_services.length > 0}
-    <button class="flex items-center cursor-pointer" on:click={() => toggleService(service.id)}>
-      <div class="inline">{service.name}</div>
-      <div>
-        <svg class="inline" data-cy="chevron" width="24" height="24" viewBox="0 0 24 24">
-          <g fill="none">
-            <path style="stroke:#000" stroke-width="2" d="M5 8l7 7 7-7"></path>
-          </g>
-        </svg>
-      </div>
-    </button>
-    {#if activeServiceId === service.id}
-      <div transition:fly="{{ duration: 300, easing: cubicOut }}">
-        {#each service.sub_services as subService}
-          <div class="ml-6">{subService.name} - {subService.price}</div>
+    <Collapsible.Root bind:open={collapsibleOpen}>
+      <Collapsible.Trigger class="flex flex-row gap-2 items-center w-80">
+        <div class="inline font-bold">{service.name}</div>
+        {#if collapsibleOpen}
+          <ChevronUp class="h-5 w-5 align-middle ml-auto" />
+        {:else}
+          <ChevronDown class="h-5 w-5 ml-auto" />
+        {/if}
+      </Collapsible.Trigger>
+      <Collapsible.Content class="flex flex-col gap-1 ml-6 mt-3">
+        {#each service.sub_services as subService, index}
+          <div class="flex flex-row gap-8">
+            <div>{subService.name}</div>
+            <div class="font-bold ml-auto">{formatPrice(subService.price)}</div>
+          </div>
+          {#if index !== service.sub_services.length - 1}
+            <Separator class="bg-gray-700" />
+          {/if}
         {/each}
-      </div>
-    {/if}
+      </Collapsible.Content>
+    </Collapsible.Root>
   {:else}
     <div class="flex items-center">
       <div class="inline">{service.name}</div>
       {#if service.price !== null}
-        <div class="ml-4">{service.price}</div>
+        <div class="ml-4">{formatPrice(service.price)}</div>
       {/if}
     </div>
   {/if}

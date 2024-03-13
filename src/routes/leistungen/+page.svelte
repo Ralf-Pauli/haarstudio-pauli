@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import Tabs from './Tabs.svelte';
-  import Category from './Category.svelte';
+  import Tabs from "./Tabs.svelte";
+  import Category from "./Category.svelte";
   import type { PageData } from "./$types";
 
   export let data: PageData;
@@ -11,7 +11,7 @@
 
   onMount(() => {
     if (tabsValueParam) {
-      const activeCategory = categories.find(category => category.name === tabsValueParam);
+      const activeCategory = categories.find((category: any) => category.name === tabsValueParam);
       if (activeCategory) {
         activeCategoryId = activeCategory.id;
       }
@@ -30,7 +30,7 @@
 <div class="max-w-5xl mx-auto mt-10 flex gap-20">
   <Tabs {categories} {activeCategoryId} {setActiveCategory} />
 
-  <div>
+  <div class="flex gap-3">
     {#each categories as category}
       {#if activeCategoryId === category.id}
         <Category {category} {activeServiceId} {toggleService} />
