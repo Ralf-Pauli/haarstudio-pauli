@@ -9,12 +9,14 @@
   let loadGoogleMap = createLocalStorage<boolean>("load-google-map", false);
   let shouldLoad = false;
 
-  function handleAlwaysLoadChange(event) {
-    const shouldAlwaysLoad = event.target.checked;
-    loadGoogleMap.set(shouldAlwaysLoad);
+  function handleAlwaysLoadChange(event: Event) {
+    const target = event.target as HTMLInputElement;
+    loadGoogleMap.set(target.checked);
   }
 </script>
 
+
+<!-- Map Section -->
 <div class="map-container w-3/5 h-2/5 block relative mx-auto">
   {#if shouldLoad || loadGoogleMap.get()}
     <iframe
@@ -26,70 +28,51 @@
       style="border:0">
     </iframe>
   {:else}
-    <img class="w-full h-full object-cover" src={placeholderImage} alt="">
-
-    <div class="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50">
-      <div class="text-center text-white p-4">
-        <p>Mit dem Laden der Karte akzeptieren Sie die Datenschutzerklärung von Google.<br>
-          <a href="https://policies.google.com/privacy" class="text-blue-300 hover:text-blue-500"
-             rel="nofollow noopener noreferrer" target="_blank">Mehr erfahren</a>
-        </p>
-        <p class="my-2">
-          <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                  on:click={() => shouldLoad = true}>Karte laden
-          </button>
-        </p>
-        <div class="flex justify-center">
-          <label class="flex items-center">
-            <input type="checkbox" class="mr-2" on:change="{handleAlwaysLoadChange}" checked="{loadGoogleMap.get()}">
-            <small>Google Maps immer entsperren</small>
-          </label>
-        </div>
+    <img class="w-full h-full object-cover" src={placeholderImage} alt="Placeholder Map Image">
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50">
+      <p class="text-center mb-4">Mit dem Laden der Karte akzeptieren Sie die Datenschutzerklärung von Google.</p>
+      <div class="flex flex-col items-center">
+        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-2"
+                on:click={() => shouldLoad = true}>Karte laden
+        </button>
+        <label class="flex items-center text-sm">
+          <input type="checkbox" class="mr-2" on:change="{handleAlwaysLoadChange}" checked="{loadGoogleMap.get()}">
+          <span>Google Maps immer entsperren</span>
+        </label>
       </div>
     </div>
   {/if}
 </div>
 
-
-<!-- Contact Information Section -->
-<div class="contact-section text-center">
-
-  <!-- Address Section -->
-  <div class="address-info">
-    <h3 class="font-bold">Adresse</h3>
-    <div>
-      <p>{contactPage.address.zip_code} {contactPage.address.city}</p>
-      <p>{contactPage.address.street} {contactPage.address.house_number}</p>
-    </div>
+<!-- Contact Information -->
+<div class="contact-info mb-8 text-center">
+  <h2 class="text-2xl font-bold mb-4">Kontaktinformationen</h2>
+  <!-- Address -->
+  <div class="address mb-4">
+    <p><strong>Adresse:</strong> {contactPage.address.street} {contactPage.address.house_number}
+      , {contactPage.address.zip_code} {contactPage.address.city}</p>
   </div>
-
-  <!-- Contact Details Section -->
-  <div class="contact-info">
-    <h3 class="font-bold">Kontakt</h3>
-    <div>
-      <div>Tel: <a href="tel:{contactPage.details.phone_number}">{contactPage.details.phone_number}</a></div>
-    </div>
+  <!-- Phone Number -->
+  <div class="phone mb-4">
+    <p><strong>Telefon:</strong> <a href="tel:{contactPage.details.phone_number}">{contactPage.details.phone_number}</a>
+    </p>
   </div>
-
-  <!-- Opening Hours Section -->
+  <!-- Opening Hours -->
   <div class="opening-hours">
-    <h3 class="font-bold">Öffnungszeiten</h3>
-    <div>
-      {#each contactPage.opening_hours as openingHour}
-        {#if openingHour.closed}
-          <div>{openingHour.day}: Geschlossen</div>
-        {:else}
-          <div>{openingHour.day}: {openingHour.begin.slice(0, 5)} - {openingHour.end.slice(0, 5)}</div>
-        {/if}
-      {/each}
-    </div>
+    <h3 class="text-xl font-semibold mb-2">Öffnungszeiten</h3>
+    {#each contactPage.opening_hours as openingHour}
+      <p>
+        {openingHour.days} : {openingHour.closed ? 'Geschlossen' : `${openingHour.begin.slice(0, 5)} - ${openingHour.end.slice(0, 5)}`}
+      </p>
+    {/each}
   </div>
 </div>
 
-<div>
-  {#each contactPage.social_media as social_media}
-    <a href="{social_media.url}">
-      <img src="{PUBLIC_STRAPI_HOST}{social_media.icon.formats.thumbnail.url}" class="object-contain h-[30px]"
-           alt="{social_media.name}"></a>
+<!-- Social Media Links -->
+<div class="social-media flex justify-center gap-4">
+  {#each contactPage.social_media as social}
+    <a href="{social.url}" title="{social.name}" target="_blank" rel="noopener noreferrer">
+      <img src={`${PUBLIC_STRAPI_HOST}${social.icon.formats.thumbnail.url}`} alt="{social.name}" class="h-8">
+    </a>
   {/each}
 </div>

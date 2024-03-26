@@ -10,7 +10,7 @@
   const splitCategories = Array.from({ length: rows }, (_, i) => categories.slice(i * categoriesPerRow, i * categoriesPerRow + categoriesPerRow));
 </script>
 
-<div class="flex flex-col items-stretch justify-center gap-4 max-w-5xl mx-auto">
+<div class="flex flex-col items-stretch justify-center gap-4 max-w-5xl mx-auto font-montserrat">
   <h2 class="font-bold">Unsere Leistungen</h2>
   {#each splitCategories as row}
     <div class="flex justify-center gap-4">
