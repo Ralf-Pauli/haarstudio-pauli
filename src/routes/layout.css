@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@layer base {
+    :root {
+        --text: 30 17% 9%;
+        --background: 270 6% 91%;
+        --primary: 39 73% 42%;
+        --secondary: 40 33% 96%;
+        --accent: 195 76% 46%;
+        --border: 270 6% 85%;
+        --input: 270 6% 85%;
+        --radius: 0.5rem;
+        margin-left: calc(100vw - 100%);
+        margin-right: 0;
+    }
+
+    .dark {
+        --border: 216 34% 17%;
+        --input: 216 34% 17%;
+        --foreground: 213 31% 91%;
+        --text: 40 33% 92%;
+        --background: 300 8% 10%;
+        --primary: 41 66% 58%;
+        --secondary: 40 20% 3%;
+        --accent: 192 64% 54%;
+    }
+
+    body {
+        background-color: hsl(var(--background));
+        color: hsl(var(--text));
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+
+    body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@theme inline {
+    --color-text: hsl(var(--text));
+    --color-background: hsl(var(--background));
+    --color-primary: hsl(var(--primary));
+    --color-secondary: hsl(var(--secondary));
+    --color-accent: hsl(var(--accent));
+    --color-border: hsl(var(--border));
+    --color-input: hsl(var(--input));
+    --color-foreground: hsl(var(--foreground));
+}

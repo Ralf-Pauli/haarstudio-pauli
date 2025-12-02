@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lib/assets/galerie/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/data/services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Haarstudio_Pauli.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.npmrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.postcss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/assets/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/assets/Facebook_Logo_Primary.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/assets/facebook.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Map.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Map.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ScrollToTop.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ScrollToTop.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ThemeToggle.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ThemeToggle.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/footer/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Footer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/navbar/InfoCard.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/navbar/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Navbar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/button/button.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/button/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/card/card-content.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/card/card-description.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/card/card-footer.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/card/card-header.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/card/card-title.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/card/card.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/card/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/checkbox/checkbox.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/checkbox/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/collapsible/collapsible-content.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/collapsible/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/hcard/hcard-description.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/hcard/hcard-title.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/hcard/hcard.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/hcard/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/separator/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/separator/separator.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/tabs/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/tabs/tabs-content.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/tabs/tabs-list.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ui/tabs/tabs-trigger.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/data/contact.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/data/services.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/utils/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/datenschutz/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/datenschutz/+page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/galerie/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/galerie/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/galerie/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/galerie/+page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/impressum/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/impressum/+page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/kontakt/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/kontakt/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/kontakt/+page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/+page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/Category.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/Category.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/Service.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/Service.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/Tab.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/Tab.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/Tabs.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/Tabs.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/sitemap.xml/+server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/favicon-180.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/assets/favicon-180.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/favicon-192.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/assets/favicon-192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/favicon-32.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/assets/favicon-32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/assets/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="+page" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="36IXBSGxRCU1Cnlw2YutiPWph9y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "feature/v2",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "D:/Projects/2025/haarstudio-pauli/src/lib/assets/galerie",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "ml.llm.LLMThirdPartyAiProvidersConfigurable",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "D:\\Projects\\2025\\haarstudio-pauli\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets\galerie" />
+      <recent name="D:\Projects\2025\haarstudio-pauli\src\routes" />
+      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\components" />
+      <recent name="D:\Projects\2025\haarstudio-pauli\src\routes\leistungen" />
+      <recent name="D:\Projects\2025\haarstudio-pauli\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib" />
+      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\components" />
+      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\components\util" />
+      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets" />
+      <recent name="D:\Projects\2025\haarstudio-pauli\static" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-WS-252.28238.10" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="" />
+      <created>1764694924363</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764694924363</updated>
+      <workItem from="1764694925699" duration="1705000" />
+      <workItem from="1764699926753" duration="2183000" />
+      <workItem from="1764702160516" duration="13329000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
