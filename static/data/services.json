@@ -1,0 +1,229 @@
+{
+  "data": [
+    {
+      "id": 3,
+      "name": "Bleaching",
+      "createdAt": "2023-09-12T14:05:52.214Z",
+      "updatedAt": "2024-03-04T20:16:47.943Z",
+      "publishedAt": "2023-11-28T20:04:54.539Z",
+      "services": [
+        {
+          "id": 51,
+          "name": "Strähnen",
+          "createdAt": "2024-03-04T19:57:43.151Z",
+          "updatedAt": "2024-03-04T20:02:17.618Z",
+          "publishedAt": "2024-03-04T20:02:17.578Z",
+          "price": null,
+          "sub_services": [
+            {
+              "id": 2,
+              "name": "Deckhaar und Seiten",
+              "price": 53,
+              "createdAt": "2024-03-04T20:00:16.632Z",
+              "updatedAt": "2024-03-04T20:00:23.004Z",
+              "publishedAt": "2024-03-04T20:04:57.109Z"
+            },
+            {
+              "id": 1,
+              "name": "Highlights",
+              "price": 29.5,
+              "createdAt": "2024-03-04T19:59:57.896Z",
+              "updatedAt": "2024-03-04T19:59:57.896Z",
+              "publishedAt": "2024-03-04T20:04:57.109Z"
+            },
+            {
+              "id": 3,
+              "name": "ganzer Kopf",
+              "price": 74,
+              "createdAt": "2024-03-04T20:00:44.249Z",
+              "updatedAt": "2024-03-04T20:00:44.249Z",
+              "publishedAt": "2024-03-04T20:04:57.109Z"
+            }
+          ]
+        },
+        {
+          "id": 52,
+          "name": "Farbabzug",
+          "createdAt": "2024-03-04T19:58:44.229Z",
+          "updatedAt": "2024-03-04T20:04:13.341Z",
+          "publishedAt": "2024-03-04T20:04:13.323Z",
+          "price": null,
+          "sub_services": [
+            {
+              "id": 4,
+              "name": "50ml",
+              "price": 51,
+              "createdAt": "2024-03-04T20:02:44.303Z",
+              "updatedAt": "2024-03-04T20:02:44.303Z",
+              "publishedAt": "2024-03-04T20:04:57.109Z"
+            },
+            {
+              "id": 5,
+              "name": "100ml",
+              "price": 56.5,
+              "createdAt": "2024-03-04T20:03:01.703Z",
+              "updatedAt": "2024-03-04T20:03:10.527Z",
+              "publishedAt": "2024-03-04T20:04:57.109Z"
+            }
+          ]
+        },
+        {
+          "id": 53,
+          "name": "Aufhellung",
+          "createdAt": "2024-03-04T19:58:59.816Z",
+          "updatedAt": "2024-03-04T20:04:27.378Z",
+          "publishedAt": "2024-03-04T20:04:39.073Z",
+          "price": null,
+          "sub_services": [
+            {
+              "id": 6,
+              "name": "Ansatz",
+              "price": 30,
+              "createdAt": "2024-03-04T20:03:34.414Z",
+              "updatedAt": "2024-03-04T20:03:34.414Z",
+              "publishedAt": "2024-03-04T20:04:57.109Z"
+            },
+            {
+              "id": 7,
+              "name": "Komplett",
+              "price": 60,
+              "createdAt": "2024-03-04T20:03:46.267Z",
+              "updatedAt": "2024-03-04T20:03:46.267Z",
+              "publishedAt": "2024-03-04T20:04:57.109Z"
+            }
+          ]
+        },
+        {
+          "id": 54,
+          "name": "Glossing",
+          "createdAt": "2024-03-04T19:59:11.871Z",
+          "updatedAt": "2024-03-04T20:07:05.959Z",
+          "publishedAt": "2024-03-04T20:08:01.235Z",
+          "price": null,
+          "sub_services": [
+            {
+              "id": 8,
+              "name": "Kurzes Haar",
+              "price": 18.5,
+              "createdAt": "2024-03-04T20:05:50.446Z",
+              "updatedAt": "2024-03-04T20:05:50.446Z",
+              "publishedAt": "2024-03-04T20:08:16.534Z"
+            },
+            {
+              "id": 9,
+              "name": "Mittellanges Haar",
+              "price": 28,
+              "createdAt": "2024-03-04T20:06:07.350Z",
+              "updatedAt": "2024-03-04T20:06:07.350Z",
+              "publishedAt": "2024-03-04T20:08:16.534Z"
+            },
+            {
+              "id": 10,
+              "name": "Langes Haar",
+              "price": 56,
+              "createdAt": "2024-03-04T20:06:24.328Z",
+              "updatedAt": "2024-03-04T20:06:24.328Z",
+              "publishedAt": "2024-03-04T20:08:16.534Z"
+            }
+          ]
+        },
+        {
+          "id": 55,
+          "name": "Painting",
+          "createdAt": "2024-03-04T19:59:20.225Z",
+          "updatedAt": "2024-03-04T20:14:31.369Z",
+          "publishedAt": "2024-03-04T20:08:01.235Z",
+          "price": null,
+          "sub_services": [
+            {
+              "id": 12,
+              "name": "Mittellanges Haar",
+              "price": 56,
+              "createdAt": "2024-03-04T20:12:49.268Z",
+              "updatedAt": "2024-03-04T20:12:49.268Z",
+              "publishedAt": "2024-03-04T20:16:00.056Z"
+            },
+            {
+              "id": 13,
+              "name": "Langes Haar",
+              "price": 106.5,
+              "createdAt": "2024-03-04T20:13:03.973Z",
+              "updatedAt": "2024-03-04T20:13:03.973Z",
+              "publishedAt": "2024-03-04T20:16:00.056Z"
+            }
+          ]
+        },
+        {
+          "id": 56,
+          "name": "Keraplex",
+          "createdAt": "2024-03-04T19:59:28.970Z",
+          "updatedAt": "2024-06-12T21:43:54.697Z",
+          "publishedAt": "2024-03-04T20:08:01.235Z",
+          "price": null,
+          "sub_services": [
+            {
+              "id": 14,
+              "name": "Kurzes Haar",
+              "price": 20,
+              "createdAt": "2024-03-04T20:13:17.897Z",
+              "updatedAt": "2024-03-04T20:13:17.897Z",
+              "publishedAt": "2024-03-04T20:16:00.056Z"
+            },
+            {
+              "id": 15,
+              "name": "Langes Haar",
+              "price": 40,
+              "createdAt": "2024-03-04T20:13:25.968Z",
+              "updatedAt": "2024-03-04T20:13:25.968Z",
+              "publishedAt": "2024-03-04T20:16:00.056Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Damen",
+      "createdAt": "2023-10-10T21:09:58.883Z",
+      "updatedAt": "2024-03-05T20:06:01.690Z",
+      "publishedAt": "2023-11-28T20:04:54.539Z",
+      "services": [
+        {
+          "id": 57,
+          "name": "Waschen, Schneiden, Föhnen",
+          "createdAt": "2024-03-04T20:10:23.912Z",
+          "updatedAt": "2024-03-05T20:06:54.856Z",
+          "publishedAt": "2024-03-04T20:16:12.242Z",
+          "price": null,
+          "sub_services": [
+            {
+              "id": 16,
+              "name": "Spitzen",
+              "price": 40,
+              "createdAt": "2024-03-05T20:04:22.262Z",
+              "updatedAt": "2024-03-05T20:04:22.262Z",
+              "publishedAt": "2024-03-05T20:05:21.642Z"
+            },
+            {
+              "id": 17,
+              "name": "Komplett",
+              "price": 45,
+              "createdAt": "2024-03-05T20:04:35.512Z",
+              "updatedAt": "2024-03-05T20:04:35.512Z",
+              "publishedAt": "2024-03-05T20:05:21.642Z"
+            }
+          ]
+        },
+        {
+          "id": 58,
+          "name": "Pony schneiden",
+          "createdAt": "2024-03-05T20:05:05.019Z",
+          "updatedAt": "2024-03-05T20:05:09.190Z",
+          "publishedAt": "2024-03-05T20:05:09.162Z",
+          "price": 5,
+          "sub_services": []
+        }
+      ]
+    }
+  ]
+}
