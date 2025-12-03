@@ -1,60 +1,38 @@
 <script lang="ts">
     import Tabs from "./Tabs.svelte";
-    import type {PageProps} from './$types';
-    import {onMount} from "svelte";
-    import {browser} from "$app/environment";
+    import type { PageProps } from "./$types";
+    import type { Category as CategoryType } from "$lib/utils/types";
     import Category from "./Category.svelte";
 
-    let {data}: PageProps = $props();
-    const categories = () => data.categories;
+    let { data }: PageProps = $props();
+    const categories = data.categories;
 
-    const tabsValueParam = data.tabsValueParam;
-    let activeCategoryId = $state<number | null>(null);
+    const getCategoryFromQueryParam = () => {
+        if (!data.tabsValueParam) return false;
+        return (
+            categories.find(
+                (category) => category.name === data.tabsValueParam,
+            ) ?? false
+        );
+    };
 
-    onMount(() => {
-        setActiveCategory(categories()[0].id);
+    let activeCategory = $state(getCategoryFromQueryParam() || categories[0]);
 
-        if (tabsValueParam) {
-            const activeCategory = categories().find((category: any) => category.name === tabsValueParam);
-            if (activeCategory) {
-                setActiveCategory(activeCategory.id);
-            }
-        }
-    });
-
-    $effect(() => {
-        if (browser) {
-            const tabContainer = document.getElementById("tabcon");
-
-            if (tabContainer) {
-                tabContainer.childNodes.forEach((node: any) => {
-                    if (node.classList === undefined) return;
-                    if (getActiveCategory()?.name === node.textContent.trim()) {
-                        node.classList.replace("border-transparent", "border-primary");
-                    } else {
-                        node.classList.replace("border-primary", "border-transparent");
-                    }
-                });
-            }
-        }
-    });
-
-    const getActiveCategory = () => categories().find((c: any) => c.id === activeCategoryId) || categories()[0];
-
-    function setActiveCategory(categoryId: number) {
-        activeCategoryId = categoryId;
-    }
+    const setActiveCategory = (category: CategoryType) => {
+        activeCategory = category;
+    };
 </script>
 
 <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-5 md:gap-20">
-    <Tabs categories={categories()} {setActiveCategory}/>
+    <Tabs { categories } { setActiveCategory } />
     <div class="flex gap-3 pt-3 w-full">
-        {#key activeCategoryId}
-            {#if activeCategoryId === null}
-                <div class="m-auto w-8 h-8 border-4 border-dashed rounded-full animate-spin border-t-primary"/>
+        {#key activeCategory}
+            {#if activeCategory === null}
+                <div class="m-auto w-8 h-8 border-4 border-dashed rounded-full animate-spin border-t-primary"></div>
             {:else}
-                <Category category={getActiveCategory()}/>
+                <Category category={ activeCategory }/>
             {/if}
         {/key}
     </div>
 </div>
+

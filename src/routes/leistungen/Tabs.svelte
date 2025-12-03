@@ -4,8 +4,10 @@
     import Tab from "./Tab.svelte";
     import type {Category} from "$utils/types";
 
-    export let categories: Category[];
-    export let setActiveCategory: Function;
+    let {
+        categories,
+        setActiveCategory,
+    }: { categories: Category[]; setActiveCategory: Function } = $props();
 
     let buttonRow: any;
 

@@ -1,14 +1,7 @@
 <script lang="ts">
-    export let service: any;
+    import { formatPrice } from "$lib/utils";
 
-    let formatPrice = (price: any) => {
-        return new Intl.NumberFormat("de-DE", {
-            style: "currency",
-            currency: "EUR",
-            minimumFractionDigits: 2,
-            maximumFractionDigits: 2,
-        }).format(price);
-    };
+    let { service } = $props();
 </script>
 
 <div class="md:w-1/2 px-6 pb-10">
