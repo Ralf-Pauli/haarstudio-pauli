@@ -88,7 +88,7 @@
                         <a href="/leistungen" class="nav-item px-3 pt-2 pb-1 mb-1 text-sm">Leistungen</a>
                         <a href="/galerie" class="nav-item px-3 pt-2 pb-1 mb-1 text-sm">Galerie</a>
                         <a href="/kontakt" class="nav-item px-3 pt-2 pb-1 mb-1 text-sm">Kontakt</a>
-                        <ThemeToggle/>
+<!--                        <ThemeToggle/>-->
                     </div>
                 </div>
             </div>

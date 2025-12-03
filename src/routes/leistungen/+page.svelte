@@ -1,7 +1,6 @@
 <script lang="ts">
     import Tabs from "./Tabs.svelte";
     import type { PageProps } from "./$types";
-    import type { Category as CategoryType } from "$lib/utils/types";
     import Category from "./Category.svelte";
 
     let { data }: PageProps = $props();
@@ -17,14 +16,10 @@
     };
 
     let activeCategory = $state(getCategoryFromQueryParam() || categories[0]);
-
-    const setActiveCategory = (category: CategoryType) => {
-        activeCategory = category;
-    };
 </script>
 
 <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-5 md:gap-20">
-    <Tabs { categories } { setActiveCategory } />
+    <Tabs { categories } bind:activeCategory={ activeCategory } />
     <div class="flex gap-3 pt-3 w-full">
         {#key activeCategory}
             {#if activeCategory === null}

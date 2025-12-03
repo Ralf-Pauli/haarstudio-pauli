@@ -1,22 +1,22 @@
 <script lang="ts">
-    import {Button} from "$lib/components/ui/button";
-    import {ChevronLeft, ChevronRight} from "lucide-svelte";
+    import { Button } from "$lib/components/ui/button";
+    import { ChevronLeft, ChevronRight } from "lucide-svelte";
     import Tab from "./Tab.svelte";
-    import type {Category} from "$utils/types";
+    import type { Category } from "$utils/types";
 
     let {
         categories,
-        setActiveCategory,
-    }: { categories: Category[]; setActiveCategory: Function } = $props();
+        activeCategory = $bindable(),
+    }: { categories: Category[]; activeCategory: Category } = $props();
 
     let buttonRow: any;
 
     const scrollLeft = () => {
-        buttonRow.scrollBy({left: -100, behavior: "smooth"});
+        buttonRow.scrollBy({ left: -100, behavior: "smooth" });
     };
 
     const scrollRight = () => {
-        buttonRow.scrollBy({left: 100, behavior: "smooth"});
+        buttonRow.scrollBy({ left: 100, behavior: "smooth" });
     };
 </script>
 
@@ -27,7 +27,7 @@
     <div bind:this={buttonRow} id="tabcon"
          class="flex md:flex-col items-start overflow-x-auto md:overflow-x-visible scroll-smooth">
         {#each categories as category}
-            <Tab {category} {setActiveCategory}/>
+            <Tab {category} bind:activeCategory isActive={activeCategory.name === category.name}/>
         {/each}
     </div>
     <Button class="md:hidden p-2 hover:bg-transparent" size="icon" variant="ghost" onclick={scrollRight}>

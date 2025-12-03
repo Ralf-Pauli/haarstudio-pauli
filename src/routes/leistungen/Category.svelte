@@ -3,7 +3,7 @@
     import type { Category } from "$utils/types";
     import { formatPrice } from "$lib/utils";
 
-    let { category = $bindable() }: { category: Category } = $props();
+    let { category }: { category: Category } = $props();
 
     let serviceWithSubServices = category.services.filter(
         (service: any) => service.sub_services.length > 0,
