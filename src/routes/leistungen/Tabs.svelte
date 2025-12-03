@@ -4,9 +4,7 @@
     import Tab from "./Tab.svelte";
     import type {Category} from "$utils/types";
 
-    export let categories: Category[];
-    export let setActiveCategory: Function;
-
+    let {categories, activeCategory = $bindable()}: { categories: Category[], activeCategory: Category } = $props();
     let buttonRow: any;
 
     const scrollLeft = () => {
@@ -25,7 +23,7 @@
     <div bind:this={buttonRow} id="tabcon"
          class="flex md:flex-col items-start overflow-x-auto md:overflow-x-visible scroll-smooth">
         {#each categories as category}
-            <Tab {category} {setActiveCategory}/>
+            <Tab {category} bind:activeCategory isActive={activeCategory.name === category.name}/>
         {/each}
     </div>
     <Button class="md:hidden p-2 hover:bg-transparent" size="icon" variant="ghost" onclick={scrollRight}>

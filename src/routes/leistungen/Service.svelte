@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let service: any;
+    let { service }: { service: any } = $props();
 
     let formatPrice = (price: any) => {
         return new Intl.NumberFormat("de-DE", {

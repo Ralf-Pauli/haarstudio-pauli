@@ -2,10 +2,14 @@
     import Service from "./Service.svelte";
     import type {Category} from "$utils/types";
 
-    export let category: Category;
+    let { category }: { category: Category } = $props();
 
-    let serviceWithSubServices = category.services.filter((service: any) => service.sub_services.length > 0);
-    let otherServices = category.services.filter((service: any) => service.sub_services.length === 0);
+    let serviceWithSubServices = $derived(
+        category.services.filter((service: any) => service.sub_services.length > 0)
+    );
+    let otherServices = $derived(
+        category.services.filter((service: any) => service.sub_services.length === 0)
+    );
 
     let formatPrice = (price: any) => {
         return new Intl.NumberFormat("de-DE", {
