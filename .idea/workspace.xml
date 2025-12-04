@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="add .nvmrc">
-      <change afterPath="$PROJECT_DIR$/static/data/categories.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/data/categories.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="Improve &quot;Leistungen&quot; page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Navbar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/utils/api.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/leistungen/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/+page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/Category.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/Category.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/Service.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/Service.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/Tab.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/Tab.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/Tabs.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/Tabs.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/data/services.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,11 +26,45 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="ref/services" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
+    {
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOJ3KQ9M627ECy&quot;,
+        &quot;number&quot;: 41
+      },
+      &quot;lastSeen&quot;: 1764867559955
+    }
+  ]
+}</component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+      </list>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Ralf-Pauli/haarstudio-pauli.git&quot;,
+    &quot;accountId&quot;: &quot;879a7459-4da8-4df5-8c4f-378a19283866&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -49,30 +73,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "database.data.extractors.current.export.id": "Semicolon-separated_id",
-    "database.data.extractors.current.id": "Semicolon-separated_id",
-    "git-widget-placeholder": "feature/v2",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "D:/Projects/2025/haarstudio-pauli/static/data",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "database.data.views.appearance",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "D:\\Projects\\2025\\haarstudio-pauli\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Semicolon-separated_id&quot;,
+    &quot;database.data.extractors.current.id&quot;: &quot;Semicolon-separated_id&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/v2&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/2025/haarstudio-pauli&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Projects\\2025\\haarstudio-pauli\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\2025\haarstudio-pauli\static\data" />
@@ -119,6 +144,7 @@
       <workItem from="1764699926753" duration="2183000" />
       <workItem from="1764702160516" duration="14138000" />
       <workItem from="1764788509908" duration="4750000" />
+      <workItem from="1764874155727" duration="695000" />
     </task>
     <task id="LOCAL-00001" summary="Update dependencies and remove cms">
       <option name="closed" value="true" />

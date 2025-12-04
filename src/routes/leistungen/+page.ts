@@ -6,7 +6,7 @@ export const load: PageLoad = async ({ fetch, url }) => {
     const data: {data: Category[]} = await response.json();
 
     return {
-        categories: data.data,
+        categories: data,
         tabsValueParam: url.searchParams.get("tab")
     };
 };
