@@ -1,11 +1,11 @@
 [
   {
     "id": 41,
-    "name": "Bleaching",
+    "name": "Bleaching EDIT 1",
     "services": [
       {
         "id": 52,
-        "name": "Farbabzug",
+        "name": "Farbabzug EDIT 2",
         "price": null,
         "sub_services": [
           {
@@ -44,7 +44,7 @@
         "sub_services": [
           {
             "id": 8,
-            "name": "Kurzes Haar",
+            "name": "Kurzes Haar EDIT 3",
             "price": 18.5
           },
           {
@@ -118,7 +118,7 @@
       },
       {
         "id": 58,
-        "name": "Pony schneiden",
+        "name": "Pony schneiden EDIT",
         "price": 5,
         "sub_services": []
       }
@@ -166,7 +166,7 @@
     "services": [
       {
         "id": 65,
-        "name": "Jungs",
+        "name": "Jungs EDIT",
         "price": null,
         "sub_services": [
           {
@@ -229,7 +229,7 @@
         "sub_services": [
           {
             "id": 27,
-            "name": "30ml",
+            "name": "30ml EDIT",
             "price": 21.5
           },
           {
@@ -358,6 +358,37 @@
       {
         "id": 2,
         "name": "Service 2 ",
+        "price": 15,
+        "sub_services": []
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Test 2",
+    "services": [
+      {
+        "id": 1,
+        "name": "Sub 1",
+        "price": null,
+        "sub_services": [
+          {
+            "id": 1,
+            "name": "Sub Sub 1",
+            "price": 15,
+            "sub_services": null
+          },
+          {
+            "id": 2,
+            "name": "Sub Sub 2",
+            "price": 30,
+            "sub_services": null
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Sub 2",
         "price": 15,
         "sub_services": []
       }
