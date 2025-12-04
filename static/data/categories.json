@@ -331,5 +331,36 @@
         "sub_services": []
       }
     ]
+  },
+  {
+    "id": 47,
+    "name": "Test Category",
+    "services": [
+      {
+        "id": 1,
+        "name": "Service 1",
+        "price": null,
+        "sub_services": [
+          {
+            "id": 1,
+            "name": "Sub-Service 1",
+            "price": 50,
+            "sub_services": null
+          },
+          {
+            "id": 2,
+            "name": "Sub-Service 2",
+            "price": 60,
+            "sub_services": null
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Service 2 ",
+        "price": 15,
+        "sub_services": []
+      }
+    ]
   }
 ]
