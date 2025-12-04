@@ -6,16 +6,10 @@
     let { data }: PageProps = $props();
     const categories = data.categories;
 
-    const getCategoryFromQueryParam = () => {
-        if (!data.tabsValueParam) return false;
-        return (
-            categories.find(
-                (category) => category.name === data.tabsValueParam,
-            ) ?? false
-        );
-    };
-
-    let activeCategory = $state(getCategoryFromQueryParam() || categories[0]);
+    let activeCategory = $state(
+        categories.find((category) => category.name === data.tabsValueParam) ||
+            categories[0],
+    );
 </script>
 
 <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-5 md:gap-20">

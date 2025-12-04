@@ -6,10 +6,10 @@
     let { category }: { category: Category } = $props();
 
     let serviceWithSubServices = category.services.filter(
-        (service: any) => service.sub_services.length > 0,
+        (service: any) => service.sub_services.length > 0
     );
     let otherServices = category.services.filter(
-        (service: any) => service.sub_services.length === 0,
+        (service: any) => service.sub_services.length === 0
     );
 </script>
 
