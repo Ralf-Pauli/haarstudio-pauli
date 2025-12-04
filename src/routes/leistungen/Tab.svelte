@@ -1,10 +1,14 @@
 <script lang="ts">
-    import type {Category} from "$utils/types";
+    import type { Category } from "$utils/types";
 
-    let {category, activeCategory = $bindable(), isActive = false}: {
-        category: Category,
-        activeCategory: Category,
-        isActive?: boolean
+    let {
+        category,
+        activeCategory = $bindable(),
+        isActive = false,
+    }: {
+        category: Category;
+        activeCategory: Category;
+        isActive?: boolean;
     } = $props();
 </script>
 
