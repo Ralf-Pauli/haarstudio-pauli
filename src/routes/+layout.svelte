@@ -8,6 +8,11 @@
 
     let {children} = $props();
 
+    let isMobileMenuOpen: boolean = $state(false);
+
+    function toggleMobileMenu() {
+        isMobileMenuOpen = !isMobileMenuOpen;
+    }
 
 </script>
 
@@ -16,11 +21,11 @@
 </svelte:head>
 
 <div class="h-screen sm:px-3">
-    <Navbar/>
-    <main>
+    <Navbar {isMobileMenuOpen} {toggleMobileMenu}/>
+    <main class:overflow-hidden={isMobileMenuOpen} class:h-screen={isMobileMenuOpen} class="pt-5 sm:pt-10">
         {@render children()}
     </main>
-    <Footer />
-    <ScrollToTop />
+    <Footer/>
+    <ScrollToTop/>
 
 </div>

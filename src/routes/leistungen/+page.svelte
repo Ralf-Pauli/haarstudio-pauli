@@ -6,6 +6,7 @@
     import Category from "./Category.svelte";
 
     let {data}: PageProps = $props();
+    console.log(data.categories)
     const categories = $derived(data.categories);
     const tabsValueParam = $derived(data.tabsValueParam);
 
