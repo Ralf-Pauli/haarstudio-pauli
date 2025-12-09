@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="upload dummy images">
+    <list default="true" id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="fix types">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/+page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +152,7 @@
       <workItem from="1765297685647" duration="464000" />
       <workItem from="1765298154900" duration="4061000" />
       <workItem from="1765302269431" duration="238000" />
-      <workItem from="1765302519163" duration="5319000" />
+      <workItem from="1765302519163" duration="8377000" />
     </task>
     <task id="LOCAL-00001" summary="Update dependencies and remove cms">
       <option name="closed" value="true" />
@@ -203,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765308704835</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix types">
+      <option name="closed" value="true" />
+      <created>1765308978791</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1765308978791</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +234,7 @@
     <MESSAGE value="Simplify category json" />
     <MESSAGE value="Improve Navbar and mobile integration" />
     <MESSAGE value="upload dummy images" />
-    <option name="LAST_COMMIT_MESSAGE" value="upload dummy images" />
+    <MESSAGE value="fix types" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix types" />
   </component>
 </project>

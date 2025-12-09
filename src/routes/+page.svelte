@@ -4,10 +4,14 @@
     import BookingWidget from "$components/BookingWidget.svelte";
     import type {Category} from "$utils/types";
 
-    // Import images
-    // import BleachingImage from 'src/lib/assets/categories/bleaching.jpg'
+    // Import all category images at build time using Vite glob
+    const categoryImages = import.meta.glob('$lib/assets/categories/*.{jpg,png,webp}', { eager: true, query: '?url', import: 'default' }) as Record<string, string>;
 
-    // TODO add url to categories
+    function getCategoryImage(filename: string | undefined): string {
+        if (!filename) return '';
+        const key = Object.keys(categoryImages).find(k => k.endsWith(`/${filename}`));
+        return key ? categoryImages[key] : '';
+    }
 
     const COLUMNS_PER_ROW = 3;
     let {data}: PageProps = $props();
@@ -57,8 +61,7 @@
                         <a href="/leistungen?tab={category.name}" class="flex flex-col items-center text-center w-60">
                             <div class="flex flex-col items-center text-center w-60">
                                 <div class="text-lg font-bold border-b-primary pb-1 underline decoration-primary decoration-2 underline-offset-4">{category.name}</div>
-                                <img class="w-full h-40 object-cover rounded-md mt-2"
-                                     src="src/lib/assets/categories/{category?.image}" alt={category.name}/>
+                                <img class="w-full h-40 object-cover rounded-md mt-2" src={getCategoryImage(category?.image)} alt={category.name}/>
                             </div>
                         </a>
                     {/each}
