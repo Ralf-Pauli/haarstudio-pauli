@@ -2,7 +2,7 @@
   {
     "id": 41,
     "name": "Bleaching",
-    "image": "wallpaperflare_com_wallpaper_1765314332706.jpg",
+    "image": "img_20200701_214421_1765315914757.jpg",
     "services": [
       {
         "id": 52,
@@ -372,7 +372,8 @@
   {
     "id": 48,
     "name": "Test 2",
-    "services": []
+    "services": [],
+    "image": "wallpaperflare_com_wallpaper_1765314332706.jpg"
   },
   {
     "id": 49,
