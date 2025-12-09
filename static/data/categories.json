@@ -1,11 +1,11 @@
 [
   {
     "id": 41,
-    "name": "Bleaching EDIT 7",
+    "name": "Bleaching EDIT 8",
     "services": [
       {
         "id": 52,
-        "name": "Farbabzug EDIT 2",
+        "name": "Farbabzug EDIT 3",
         "price": null,
         "sub_services": [
           {
@@ -367,5 +367,17 @@
     "id": 48,
     "name": "Test 2",
     "services": []
+  },
+  {
+    "id": 49,
+    "name": "TEst 3",
+    "services": [
+      {
+        "id": 1,
+        "name": "TEWSt ",
+        "price": 15,
+        "sub_services": []
+      }
+    ]
   }
 ]
