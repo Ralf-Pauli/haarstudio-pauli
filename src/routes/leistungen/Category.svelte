@@ -1,24 +1,16 @@
 <script lang="ts">
     import Service from "./Service.svelte";
-    import type {Category} from "$utils/types";
+    import type { Category } from "$utils/types";
+    import { formatPrice } from "$lib/utils";
 
     let { category }: { category: Category } = $props();
 
-    let serviceWithSubServices = $derived(
-        category.services.filter((service: any) => service.sub_services.length > 0)
+    let serviceWithSubServices = category.services.filter(
+        (service: any) => service.sub_services.length > 0
     );
-    let otherServices = $derived(
-        category.services.filter((service: any) => service.sub_services.length === 0)
+    let otherServices = category.services.filter(
+        (service: any) => service.sub_services.length === 0
     );
-
-    let formatPrice = (price: any) => {
-        return new Intl.NumberFormat("de-DE", {
-            style: "currency",
-            currency: "EUR",
-            minimumFractionDigits: 2,
-            maximumFractionDigits: 2,
-        }).format(price);
-    };
 </script>
 
 <div class="flex flex-col md:flex-row w-full flex-wrap">
@@ -75,3 +67,4 @@
         </div>
     {/if}
 </div>
+

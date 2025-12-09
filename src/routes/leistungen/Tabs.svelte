@@ -1,18 +1,22 @@
 <script lang="ts">
-    import {Button} from "$lib/components/ui/button";
-    import {ChevronLeft, ChevronRight} from "lucide-svelte";
+    import { Button } from "$lib/components/ui/button";
+    import { ChevronLeft, ChevronRight } from "lucide-svelte";
     import Tab from "./Tab.svelte";
-    import type {Category} from "$utils/types";
+    import type { Category } from "$utils/types";
 
-    let {categories, activeCategory = $bindable()}: { categories: Category[], activeCategory: Category } = $props();
+    let {
+        categories,
+        activeCategory = $bindable(),
+    }: { categories: Category[]; activeCategory: Category } = $props();
+
     let buttonRow: any;
 
     const scrollLeft = () => {
-        buttonRow.scrollBy({left: -100, behavior: "smooth"});
+        buttonRow.scrollBy({ left: -100, behavior: "smooth" });
     };
 
     const scrollRight = () => {
-        buttonRow.scrollBy({left: 100, behavior: "smooth"});
+        buttonRow.scrollBy({ left: 100, behavior: "smooth" });
     };
 </script>
 
