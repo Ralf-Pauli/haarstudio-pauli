@@ -4,26 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="Improve Navbar and mobile integration">
-      <change afterPath="$PROJECT_DIR$/src/lib/assets/categories/bleaching.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/assets/categories/color_fresh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/assets/categories/coloration.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/assets/categories/damen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/assets/categories/herren.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/assets/categories/kinder.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/assets/gallery/bleaching.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/assets/gallery/color_fresh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/assets/gallery/coloration.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/assets/gallery/damen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/assets/gallery/herren.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/assets/gallery/kinder.jpg" afterDir="false" />
+    <list default="true" id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="upload dummy images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/assets/galerie/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/assets/gallery/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/galerie/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/galerie/+page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/data/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/categories.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/+page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,32 +76,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;Semicolon-separated_id&quot;,
-    &quot;database.data.extractors.current.id&quot;: &quot;Semicolon-separated_id&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/v2&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/2025/haarstudio-pauli/src/lib/assets/gallery&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\Projects\\2025\\haarstudio-pauli\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "database.data.extractors.current.export.id": "Semicolon-separated_id",
+    "database.data.extractors.current.id": "Semicolon-separated_id",
+    "git-widget-placeholder": "feature/v2",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "D:/Projects/2025/haarstudio-pauli/src/lib/assets/gallery",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "configurable.tailwindcss",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "D:\\Projects\\2025\\haarstudio-pauli\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets\gallery" />
@@ -169,7 +153,7 @@
       <workItem from="1765297685647" duration="464000" />
       <workItem from="1765298154900" duration="4061000" />
       <workItem from="1765302269431" duration="238000" />
-      <workItem from="1765302519163" duration="4852000" />
+      <workItem from="1765302519163" duration="5319000" />
     </task>
     <task id="LOCAL-00001" summary="Update dependencies and remove cms">
       <option name="closed" value="true" />
@@ -211,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765303880049</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="upload dummy images">
+      <option name="closed" value="true" />
+      <created>1765308704835</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1765308704835</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,6 +226,7 @@
     <MESSAGE value="add .nvmrc" />
     <MESSAGE value="Simplify category json" />
     <MESSAGE value="Improve Navbar and mobile integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improve Navbar and mobile integration" />
+    <MESSAGE value="upload dummy images" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload dummy images" />
   </component>
 </project>

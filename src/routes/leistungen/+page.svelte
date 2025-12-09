@@ -2,12 +2,13 @@
     import Tabs from "./Tabs.svelte";
     import type { PageProps } from "./$types";
     import Category from "./Category.svelte";
+    import type { Category as CategoryType } from '$lib/utils/types';
 
     let { data }: PageProps = $props();
     const categories = data.categories;
 
     let activeCategory = $state(
-        categories.find((category) => category.name === data.tabsValueParam) ||
+        categories.find((category : CategoryType) => category.name === data.tabsValueParam) ||
             categories[0],
     );
 </script>
