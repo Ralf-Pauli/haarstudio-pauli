@@ -10,10 +10,6 @@
 
     let isMobileMenuOpen: boolean = $state(false);
 
-    function toggleMobileMenu() {
-        isMobileMenuOpen = !isMobileMenuOpen;
-    }
-
 </script>
 
 <svelte:head>
@@ -21,7 +17,7 @@
 </svelte:head>
 
 <div class="h-screen sm:px-3">
-    <Navbar {isMobileMenuOpen} {toggleMobileMenu}/>
+    <Navbar {isMobileMenuOpen} />
     <main class:overflow-hidden={isMobileMenuOpen} class:h-screen={isMobileMenuOpen} class="pt-5 sm:pt-10">
         {@render children()}
     </main>

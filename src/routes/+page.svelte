@@ -4,13 +4,16 @@
     import BookingWidget from "$components/BookingWidget.svelte";
     import type {Category} from "$utils/types";
 
+    // Import images
+    // import BleachingImage from 'src/lib/assets/categories/bleaching.jpg'
+
     // TODO add url to categories
 
     const COLUMNS_PER_ROW = 3;
     let {data}: PageProps = $props();
-    const categories = () => data.categories;
+    const categories: Category[] = data.categories;
 
-    let categoryRows = chunkCategoriesIntoRows(categories(), COLUMNS_PER_ROW);
+    let categoryRows = chunkCategoriesIntoRows(categories, COLUMNS_PER_ROW);
 
     function chunkCategoriesIntoRows(categories: Category[], columns: number): any[] {
         const rows: any[] = [];
@@ -24,13 +27,15 @@
 <div class="flex flex-col gap-5">
     <section class="relative flex justify-center items-center">
         <div class="w-11/12 md:w-4/5 h-[24rem] md:h-[40rem] max-h-screen max-w-5xl mx-auto relative">
-            <enhanced:img src="$lib/assets/hero.jpg" alt="Hero Image" class="w-full h-full object-cover rounded-xl absolute opacity-10"/>
+            <enhanced:img src="$lib/assets/hero.jpg" alt="Hero Image"
+                          class="w-full h-full object-cover rounded-xl absolute opacity-10"/>
             <div class="relative h-full text-white">
                 <div class="flex flex-col items-center justify-center h-full bg-opacity-10 p-4 rounded-xl relative">
                     <h1 class="text-2xl md:text-4xl font-bold inline border-b-primary mb-2 underline decoration-primary decoration-4 underline-offset-4 text-center">
                         Willkommen bei Haarstudio&nbsp;Pauli
                     </h1>
-                    <p class="text-base md:text-xl my-1 text-center">Erleben Sie Exzellenz und Präzision bei&nbsp;jedem Termin.</p>
+                    <p class="text-base md:text-xl my-1 text-center">Erleben Sie Exzellenz und Präzision bei&nbsp;jedem
+                        Termin.</p>
                     <Button
                             target="_blank"
                             href="https://connect.shore.com/bookings/haarstudio-pauli/services?locale=de"
@@ -52,7 +57,8 @@
                         <a href="/leistungen?tab={category.name}" class="flex flex-col items-center text-center w-60">
                             <div class="flex flex-col items-center text-center w-60">
                                 <div class="text-lg font-bold border-b-primary pb-1 underline decoration-primary decoration-2 underline-offset-4">{category.name}</div>
-                                <img class="w-full h-40 object-cover rounded-md mt-2" src={category?.url} alt={category.name}/>
+                                <img class="w-full h-40 object-cover rounded-md mt-2"
+                                     src="src/lib/assets/categories/{category?.image}" alt={category.name}/>
                             </div>
                         </a>
                     {/each}

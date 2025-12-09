@@ -4,12 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="Simplify category json">
+    <list default="true" id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="Improve Navbar and mobile integration">
+      <change afterPath="$PROJECT_DIR$/src/lib/assets/categories/bleaching.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/assets/categories/color_fresh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/assets/categories/coloration.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/assets/categories/damen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/assets/categories/herren.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/assets/categories/kinder.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/assets/gallery/bleaching.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/assets/gallery/color_fresh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/assets/gallery/coloration.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/assets/gallery/damen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/assets/gallery/herren.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/assets/gallery/kinder.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Navbar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/assets/galerie/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/assets/gallery/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/galerie/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/galerie/+page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/data/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/categories.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +105,7 @@
     &quot;git-widget-placeholder&quot;: &quot;feature/v2&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/2025/haarstudio-pauli&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/2025/haarstudio-pauli/src/lib/assets/gallery&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -106,11 +120,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets\gallery" />
+      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets\categories" />
       <recent name="D:\Projects\2025\haarstudio-pauli\static\data" />
       <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets\galerie" />
       <recent name="D:\Projects\2025\haarstudio-pauli\src\routes" />
-      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\components" />
-      <recent name="D:\Projects\2025\haarstudio-pauli\src\routes\leistungen" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\2025\haarstudio-pauli\src\lib" />
@@ -155,7 +169,7 @@
       <workItem from="1765297685647" duration="464000" />
       <workItem from="1765298154900" duration="4061000" />
       <workItem from="1765302269431" duration="238000" />
-      <workItem from="1765302519163" duration="1272000" />
+      <workItem from="1765302519163" duration="4852000" />
     </task>
     <task id="LOCAL-00001" summary="Update dependencies and remove cms">
       <option name="closed" value="true" />
@@ -189,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764878717717</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Improve Navbar and mobile integration">
+      <option name="closed" value="true" />
+      <created>1765303880049</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1765303880049</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +233,7 @@
     <MESSAGE value="Remove files" />
     <MESSAGE value="add .nvmrc" />
     <MESSAGE value="Simplify category json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplify category json" />
+    <MESSAGE value="Improve Navbar and mobile integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve Navbar and mobile integration" />
   </component>
 </project>

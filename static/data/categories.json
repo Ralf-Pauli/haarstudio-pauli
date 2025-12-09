@@ -2,6 +2,7 @@
   {
     "id": 41,
     "name": "Bleaching",
+    "image": "bleaching.jpg",
     "services": [
       {
         "id": 52,
@@ -98,6 +99,7 @@
   {
     "id": 42,
     "name": "Damen",
+    "image": "damen.jpg",
     "services": [
       {
         "id": 57,
@@ -127,6 +129,7 @@
   {
     "id": 43,
     "name": "Herren",
+    "image": "herren.jpg",
     "services": [
       {
         "id": 60,
@@ -163,6 +166,7 @@
   {
     "id": 44,
     "name": "Kinder",
+    "image": "kinder.jpg",
     "services": [
       {
         "id": 65,
@@ -221,6 +225,7 @@
   {
     "id": 45,
     "name": "Coloration",
+    "image": "coloration.jpg",
     "services": [
       {
         "id": 69,
@@ -311,6 +316,7 @@
   {
     "id": 46,
     "name": "Color fresh",
+    "image": "color_fresh.jpg",
     "services": [
       {
         "id": 71,
