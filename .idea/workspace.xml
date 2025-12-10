@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="fix types">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="82" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="+page" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ref/services" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
+    {
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOJ3KQ9M627ECy&quot;,
+        &quot;number&quot;: 41
+      },
+      &quot;lastSeen&quot;: 1764867559955
+    }
+  ]
+}</component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+      </list>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Ralf-Pauli/haarstudio-pauli.git&quot;,
+    &quot;accountId&quot;: &quot;879a7459-4da8-4df5-8c4f-378a19283866&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="36IXBSGxRCU1Cnlw2YutiPWph9y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "database.data.extractors.current.export.id": "Semicolon-separated_id",
+    "database.data.extractors.current.id": "Semicolon-separated_id",
+    "git-widget-placeholder": "feature/v2",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "D:/Projects/2025/haarstudio-pauli/src/lib/assets/gallery",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "configurable.tailwindcss",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "D:\\Projects\\2025\\haarstudio-pauli\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets\gallery" />
+      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets\categories" />
+      <recent name="D:\Projects\2025\haarstudio-pauli\static\data" />
+      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets\galerie" />
+      <recent name="D:\Projects\2025\haarstudio-pauli\src\routes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib" />
+      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\components" />
+      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\components\util" />
+      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets" />
+      <recent name="D:\Projects\2025\haarstudio-pauli\static" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-WS-253.28294.332" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="" />
+      <created>1764694924363</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764694924363</updated>
+      <workItem from="1764694925699" duration="1705000" />
+      <workItem from="1764699926753" duration="2183000" />
+      <workItem from="1764702160516" duration="14138000" />
+      <workItem from="1764788509908" duration="4750000" />
+      <workItem from="1764874155727" duration="2666000" />
+      <workItem from="1764956038563" duration="606000" />
+      <workItem from="1765297685647" duration="464000" />
+      <workItem from="1765298154900" duration="4061000" />
+      <workItem from="1765302269431" duration="238000" />
+      <workItem from="1765302519163" duration="8377000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update dependencies and remove cms">
+      <option name="closed" value="true" />
+      <created>1764715777959</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764715777959</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Remove files">
+      <option name="closed" value="true" />
+      <created>1764715808544</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764715808544</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add .nvmrc">
+      <option name="closed" value="true" />
+      <created>1764716159722</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764716159722</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Simplify category json">
+      <option name="closed" value="true" />
+      <created>1764878717717</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764878717717</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Improve Navbar and mobile integration">
+      <option name="closed" value="true" />
+      <created>1765303880049</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1765303880049</updated>
+    </task>
+    <task id="LOCAL-00006" summary="upload dummy images">
+      <option name="closed" value="true" />
+      <created>1765308704835</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1765308704835</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix types">
+      <option name="closed" value="true" />
+      <created>1765308978791</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1765308978791</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update dependencies and remove cms" />
+    <MESSAGE value="Remove files" />
+    <MESSAGE value="add .nvmrc" />
+    <MESSAGE value="Simplify category json" />
+    <MESSAGE value="Improve Navbar and mobile integration" />
+    <MESSAGE value="upload dummy images" />
+    <MESSAGE value="fix types" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix types" />
+  </component>
+</project>

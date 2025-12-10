@@ -1,38 +1,11 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Pauli Haarstudio</title>
-    <link rel="icon" href="%sveltekit.assets%/favicon.ico" sizes="48x48" />
-    <link rel="icon" href="%sveltekit.assets%/favicon-32.png" sizes="32x32" />
-    <link
-      rel="icon"
-      href="%sveltekit.assets%/favicon-192.png"
-      sizes="192x192" />
-    <link
-      rel="apple-touch-icon"
-      href="%sveltekit.assets%/favicon-180.png"
-      sizes="180x180" />
-    <meta name="description" content="Webseite von dem Haarstudio Pauli" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="sourceMap" content="none">
-    <script>
-      try {
-        if (!("theme" in localStorage)) {
-          // TODO: #39 allow only dark mode as light mode isn't finished
-          localStorage.theme = window.matchMedia("(prefers-color-scheme: dark)")
-            .matches
-            ? "dark"
-            : "dark";
-        }
-        document.querySelector("html").classList.add(localStorage.theme);
-      } catch (error) {
-        console.log(error);
-      }
-    </script>
-    %sveltekit.head%
-  </head>
-  <body data-sveltekit-preload-data="hover" class="dark:bg-background">
-    <div>%sveltekit.body%</div>
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover" class="dark">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
 </html>

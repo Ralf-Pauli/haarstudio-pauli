@@ -1,20 +1,23 @@
 node_modules
-package-lock.json
-pnpm-lock.yaml
 
-.DS_Store
-/build
+# Output
+.output
+.vercel
+.netlify
+.wrangler
 /.svelte-kit
-/package
+/build
 
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
 .env
 .env.*
 !.env.example
+!.env.test
 
+# Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
-
-*.iml
-/.idea
-.idea
-.vscode

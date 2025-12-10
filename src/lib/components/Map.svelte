@@ -2,9 +2,7 @@
   import { PUBLIC_GOOGLE_MAPS_API_KEY, PUBLIC_PLACE_ID } from "$env/static/public";
 
   import { onMount } from "svelte";
-
   import { createLocalStorage } from "$lib/shared/stores/local-storage";
-
   import { Checkbox } from "$lib/components/ui/checkbox";
 
   const loadGoogleMap = createLocalStorage<boolean>("load-google-map", false);
