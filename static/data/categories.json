@@ -6,7 +6,7 @@
     "services": [
       {
         "id": 52,
-        "name": "Farbabzug EDIT 3",
+        "name": "Farbabzug",
         "price": null,
         "sub_services": [
           {
@@ -120,7 +120,7 @@
       },
       {
         "id": 58,
-        "name": "Pony schneiden EDIT",
+        "name": "Pony schneiden",
         "price": 5,
         "sub_services": []
       }
@@ -170,7 +170,7 @@
     "services": [
       {
         "id": 65,
-        "name": "Jungs EDIT",
+        "name": "Jungs",
         "price": null,
         "sub_services": [
           {
@@ -310,80 +310,6 @@
             "price": 55
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": 46,
-    "name": "Test Category",
-    "image": "color_fresh.jpg",
-    "services": [
-      {
-        "id": 71,
-        "name": "Kurzes Haar",
-        "price": 18.5,
-        "sub_services": []
-      },
-      {
-        "id": 72,
-        "name": "Mittellanges Haar",
-        "price": 28,
-        "sub_services": []
-      },
-      {
-        "id": 73,
-        "name": "Langes Haar",
-        "price": 56,
-        "sub_services": []
-      }
-    ]
-  },
-  {
-    "id": 47,
-    "name": "Test Category",
-    "services": [
-      {
-        "id": 1,
-        "name": "Service 1",
-        "price": null,
-        "sub_services": [
-          {
-            "id": 1,
-            "name": "Sub-Service 1",
-            "price": 50,
-            "sub_services": null
-          },
-          {
-            "id": 2,
-            "name": "Sub-Service 2",
-            "price": 60,
-            "sub_services": null
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "name": "Service 2 ",
-        "price": 15,
-        "sub_services": []
-      }
-    ]
-  },
-  {
-    "id": 48,
-    "name": "Test 2",
-    "services": [],
-    "image": "wallpaperflare_com_wallpaper_1765314332706.jpg"
-  },
-  {
-    "id": 49,
-    "name": "TEst 3",
-    "services": [
-      {
-        "id": 1,
-        "name": "TEWSt ",
-        "price": 15,
-        "sub_services": []
       }
     ]
   }
