@@ -36,9 +36,9 @@
             <div class="relative h-full text-white">
                 <div class="flex flex-col items-center justify-center h-full bg-opacity-10 p-4 rounded-xl relative">
                     <h1 class="text-2xl md:text-4xl font-bold inline border-b-primary mb-2 underline decoration-primary decoration-4 underline-offset-4 text-center">
-                        Willkommen bei Haarstudio&nbsp;Pauli
+                        Willkommen bei Haarstudio Pauli
                     </h1>
-                    <p class="text-base md:text-xl my-1 text-center">Erleben Sie Exzellenz und Präzision bei&nbsp;jedem
+                    <p class="text-base md:text-xl my-1 text-center">Erleben Sie Exzellenz und Präzision bei jedem
                         Termin.</p>
                     <Button
                             target="_blank"

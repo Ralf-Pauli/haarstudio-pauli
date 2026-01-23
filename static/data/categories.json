@@ -7,19 +7,16 @@
       {
         "id": 101,
         "name": "Kranzschnitt",
-        "price": 15,
-        "sub_services": []
+        "price": 15
       },
       {
         "id": 102,
         "name": "Haarschnitt",
-        "price": 23,
-        "sub_services": []
+        "price": 23
       },
       {
         "id": 103,
         "name": "Maschinenschnitt",
-        "price": null,
         "sub_services": [
           {
             "id": 1001,
@@ -36,7 +33,6 @@
       {
         "id": 104,
         "name": "Bart",
-        "price": null,
         "sub_services": [
           {
             "id": 1003,
@@ -53,38 +49,32 @@
       {
         "id": 105,
         "name": "Farbe",
-        "price": 21,
-        "sub_services": []
+        "price": 21
       },
       {
         "id": 106,
         "name": "Oberkopf Strähnen",
-        "price": 25,
-        "sub_services": []
+        "price": 25
       },
       {
         "id": 107,
         "name": "Graukaschierung",
-        "price": 17,
-        "sub_services": []
+        "price": 17
       },
       {
         "id": 108,
         "name": "Waschen, Styling",
-        "price": 11,
-        "sub_services": []
+        "price": 11
       },
       {
         "id": 109,
         "name": "Kopfmassage mit Haarwasser",
-        "price": 5.5,
-        "sub_services": []
+        "price": 5.5
       },
       {
         "id": 110,
         "name": "Permanente Umformung",
-        "price": 37,
-        "sub_services": []
+        "price": 37
       }
     ]
   },
@@ -96,13 +86,11 @@
       {
         "id": 201,
         "name": "Calligraphy Cut",
-        "price": 47,
-        "sub_services": []
+        "price": 47
       },
       {
         "id": 202,
         "name": "Haarschnitt",
-        "price": null,
         "sub_services": [
           {
             "id": 2001,
@@ -119,7 +107,6 @@
       {
         "id": 203,
         "name": "Waschen, Schneiden, Föhnen",
-        "price": null,
         "sub_services": [
           {
             "id": 2003,
@@ -136,13 +123,11 @@
       {
         "id": 204,
         "name": "Pony schneiden",
-        "price": 6,
-        "sub_services": []
+        "price": 6
       },
       {
         "id": 205,
         "name": "Waschen, Föhnen",
-        "price": null,
         "sub_services": [
           {
             "id": 2005,
@@ -159,8 +144,7 @@
       {
         "id": 206,
         "name": "American Airtouch (Dauer 45 Min.)",
-        "price": 51.5,
-        "sub_services": []
+        "price": 51.5
       }
     ]
   },
@@ -172,7 +156,6 @@
       {
         "id": 301,
         "name": "Haarschnitt",
-        "price": null,
         "sub_services": [
           {
             "id": 3001,
@@ -196,8 +179,7 @@
       {
         "id": 401,
         "name": "Farbe / Tönung je nach Menge / Aufwand",
-        "price": "36 - 77",
-        "sub_services": []
+        "price": "36 - 77"
       }
     ]
   },
@@ -209,7 +191,6 @@
       {
         "id": 501,
         "name": "Strähnen / Highlights",
-        "price": null,
         "sub_services": [
           {
             "id": 5001,
@@ -226,13 +207,11 @@
       {
         "id": 502,
         "name": "Farbabzug nach Menge / Aufwand",
-        "price": "36 - 77",
-        "sub_services": []
+        "price": "36 - 77"
       },
       {
         "id": 503,
         "name": "Aufhellung",
-        "price": null,
         "sub_services": [
           {
             "id": 5003,
@@ -256,7 +235,6 @@
       {
         "id": 601,
         "name": "Glossing",
-        "price": null,
         "sub_services": [
           {
             "id": 6001,
@@ -278,7 +256,6 @@
       {
         "id": 602,
         "name": "Painting / Balayage",
-        "price": null,
         "sub_services": [
           {
             "id": 6004,
@@ -302,7 +279,6 @@
       {
         "id": 701,
         "name": "Keraphlex",
-        "price": null,
         "sub_services": [
           {
             "id": 7001,
@@ -326,20 +302,17 @@
       {
         "id": 801,
         "name": "Wimpern färben",
-        "price": 11.5,
-        "sub_services": []
+        "price": 11.5
       },
       {
         "id": 802,
         "name": "Augenbrauen färben",
-        "price": 8,
-        "sub_services": []
+        "price": 8
       },
       {
         "id": 803,
         "name": "Augenbrauen zupfen",
-        "price": 10.5,
-        "sub_services": []
+        "price": 10.5
       }
     ]
   },
@@ -351,7 +324,6 @@
       {
         "id": 901,
         "name": "Dauerwelle (inkl. Waschen u. Föhnen)",
-        "price": null,
         "sub_services": [
           {
             "id": 9001,
@@ -375,20 +347,17 @@
       {
         "id": 1001,
         "name": "Teilhochstecken",
-        "price": 40,
-        "sub_services": []
+        "price": 40
       },
       {
         "id": 1002,
         "name": "Einfache Hochsteckfrisur",
-        "price": 65,
-        "sub_services": []
+        "price": 65
       },
       {
         "id": 1003,
         "name": "Hochzeitfrisur mit 2× Probestecken",
-        "price": 180,
-        "sub_services": []
+        "price": 180
       }
     ]
   },
@@ -400,20 +369,17 @@
       {
         "id": 1101,
         "name": "Purify Kopfhautbehandlung",
-        "price": 11,
-        "sub_services": []
+        "price": 11
       },
       {
         "id": 1102,
         "name": "Pflegebehandlung f. strapaziertes Haar",
-        "price": 7.5,
-        "sub_services": []
+        "price": 7.5
       },
       {
         "id": 1103,
         "name": "Marula Oil Blend Behandlung",
-        "price": 4,
-        "sub_services": []
+        "price": 4
       }
     ]
   }

@@ -23,7 +23,7 @@
     <div class="md:ml-auto pb-3">
         <a href="/impressum">Impressum</a>
         <span>|</span>
-        <a href="/datenschutz">Datenschutzerklärung</a>
+        <a href="/datenschutz">Datenschutz</a>
     </div>
 </footer>
 
