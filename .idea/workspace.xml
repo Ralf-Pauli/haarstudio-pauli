@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AIDiffSettings">
+    <option name="showAIDiff" value="true" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="fix types">
+      <change afterPath="$PROJECT_DIR$/static/data/categories.json.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/data/data.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/utils/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/Service.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/Service.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/data/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/categories.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +75,10 @@
     &quot;accountId&quot;: &quot;879a7459-4da8-4df5-8c4f-378a19283866&quot;
   }
 }</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -85,7 +97,7 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "database.data.extractors.current.export.id": "Semicolon-separated_id",
     "database.data.extractors.current.id": "Semicolon-separated_id",
-    "git-widget-placeholder": "feature/v2",
+    "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "D:/Projects/2025/haarstudio-pauli/src/lib/assets/gallery",
@@ -101,6 +113,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecapSpentCounter">
+    <option name="endsOfQuotaMs" value="1770753645854" />
+    <option name="spentUsd" value="0.04409025" />
+  </component>
+  <component name="RecapUselessUpdatesCounter">
+    <option name="suspendCountdown" value="7" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets\gallery" />

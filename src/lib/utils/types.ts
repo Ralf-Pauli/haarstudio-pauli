@@ -8,7 +8,7 @@ type Category = {
 type Services = {
     id: number;
     name: string;
-    price: number;
+    price: number|string;
     sub_services: Services[] | null;
 }
 
