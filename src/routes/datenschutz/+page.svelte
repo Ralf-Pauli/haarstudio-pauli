@@ -2,7 +2,7 @@
     import type { PageProps } from "./$types";
 
     let { data }: PageProps = $props();
-    const privacy = data.privacy;
+    let privacy = $derived(data.privacy);
 </script>
 
 <div class="max-w-3xl mx-auto py-10 px-4">

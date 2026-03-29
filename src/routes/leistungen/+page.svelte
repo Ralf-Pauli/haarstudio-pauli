@@ -5,12 +5,19 @@
     import type { Category as CategoryType } from '$lib/utils/types';
 
     let { data }: PageProps = $props();
-    const categories = data.categories;
+    let categories = $derived(data.categories);
 
     let activeCategory = $state(
-        categories.find((category : CategoryType) => category.name === data.tabsValueParam) ||
-            categories[0],
+        data.categories.find((category : CategoryType) => category.name === data.tabsValueParam) ||
+            data.categories[0],
     );
+
+    $effect(() => {
+        const found = data.categories.find((category : CategoryType) => category.name === data.tabsValueParam);
+        if (found && found.name !== activeCategory.name) {
+            activeCategory = found;
+        }
+    });
 </script>
 
 <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-5 md:gap-20">

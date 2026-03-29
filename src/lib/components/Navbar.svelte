@@ -98,7 +98,6 @@
                             {item.name}
                         </a>
                     {/each}
-                    <!-- <ThemeToggle /> -->
                 </div>
             </div>
         </div>

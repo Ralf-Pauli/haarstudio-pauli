@@ -84,3 +84,14 @@
     --color-input: var(--input);
     --color-foreground: var(--foreground);
 }
+
+@utility section-title {
+    font-weight: 700;
+    display: inline;
+    border-bottom-color: var(--primary);
+    margin-bottom: 0.5rem;
+    text-decoration-line: underline;
+    text-decoration-color: var(--primary);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}

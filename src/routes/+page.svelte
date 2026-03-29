@@ -15,9 +15,9 @@
 
     const COLUMNS_PER_ROW = 3;
     let {data}: PageProps = $props();
-    const categories: Category[] = data.categories;
+    let categories: Category[] = $derived(data.categories);
 
-    let categoryRows = chunkCategoriesIntoRows(categories, COLUMNS_PER_ROW);
+    let categoryRows = $derived(chunkCategoriesIntoRows(data.categories, COLUMNS_PER_ROW));
 
     function chunkCategoriesIntoRows(categories: Category[], columns: number): any[] {
         const rows: any[] = [];
@@ -60,7 +60,7 @@
                     {#each row as category}
                         <a href="/leistungen?tab={category.name}" class="flex flex-col items-center text-center w-60">
                             <div class="flex flex-col items-center text-center w-60">
-                                <div class="text-lg font-bold border-b-primary pb-1 underline decoration-primary decoration-2 underline-offset-4">{category.name}</div>
+                                <div class="text-lg section-title">{category.name}</div>
                                 <img class="w-full h-40 object-cover rounded-md mt-2" src={getCategoryImage(category?.image)} alt={category.name}/>
                             </div>
                         </a>

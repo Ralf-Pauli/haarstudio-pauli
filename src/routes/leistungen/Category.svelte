@@ -23,7 +23,7 @@
         {#if otherServices.length > 0}
             <div class="md:w-1/2 px-6 pb-10">
                 <div class="flex gap-2 items-center">
-                    <div class="inline font-bold border-b-primary pb-1 mb-2 underline decoration-primary decoration-2 underline-offset-4">
+                    <div class="section-title">
                         Sonstige Leistungen
                     </div>
                 </div>
@@ -47,7 +47,7 @@
     {:else}
         <div class="md:w-1/2 px-6 pb-10">
             <div class="flex gap-2 items-center">
-                <div class="inline font-bold border-b-primary pb-1 mb-2 underline decoration-primary decoration-2 underline-offset-4">{category.name}</div>
+                <div class="section-title">{category.name}</div>
             </div>
             <div class="flex flex-col gap-1 ml-6 mt-3">
                 {#each category.services as service, index}

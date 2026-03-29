@@ -4,7 +4,7 @@
     import type {PageProps} from "./$types";
 
     let {data}: PageProps = $props();
-    const contact = data.contact;
+    let contact = $derived(data.contact);
 </script>
 
 <Map/>
@@ -56,7 +56,7 @@
             {#each contact.openingHours as openingHour}
                 <div class="">
                     <div class="dark:text-zinc-400 text-zinc-600">{openingHour.days}:</div>
-                    {#if openingHour.closed}
+                    {#if !openingHour.closed}
                         <div>{openingHour.hours}</div>
                     {:else}
                         <div>Geschlossen</div>

@@ -2,7 +2,7 @@
     import type { PageProps } from "./$types";
 
     let { data }: PageProps = $props();
-    const imprint = data.imprint;
+    let imprint = $derived(data.imprint);
 </script>
 
 <div class="max-w-3xl mx-auto py-10 px-4">

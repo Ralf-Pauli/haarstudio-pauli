@@ -7,18 +7,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="update categories.json">
-      <change afterPath="$PROJECT_DIR$/src/routes/datenschutz/+page.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/impressum/+page.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/kontakt/+page.ts" afterDir="false" />
+    <list default="true" id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="Update categories and strucutre">
+      <change afterPath="$PROJECT_DIR$/src/lib/assets/Instagram.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/utils/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Footer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Navbar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/datenschutz/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/datenschutz/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/galerie/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/galerie/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/galerie/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/galerie/+page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/impressum/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/impressum/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/kontakt/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/kontakt/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/leistungen/Category.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/Category.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/data/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/categories.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/data/contact.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/contact.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/Service.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/Service.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +30,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="123" />
+    <option name="cachedIndexableFilesCount" value="749" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -107,7 +111,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "javascript.preferred.runtime.type.id": "node",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "D:/Projects/2025/haarstudio-pauli",
+    "last_opened_file_path": "D:/Projects/2025/haarstudio-pauli/src/lib/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -129,11 +133,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets" />
       <recent name="D:\Projects\2025\haarstudio-pauli\src\routes\kontakt" />
       <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets\gallery" />
       <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets\categories" />
       <recent name="D:\Projects\2025\haarstudio-pauli\static\data" />
-      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets\galerie" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\2025\haarstudio-pauli\src\lib" />
@@ -181,7 +185,7 @@
       <workItem from="1765302519163" duration="8377000" />
       <workItem from="1770389859233" duration="1477000" />
       <workItem from="1772215981427" duration="455000" />
-      <workItem from="1774800109760" duration="888000" />
+      <workItem from="1774800109760" duration="1512000" />
     </task>
     <task id="LOCAL-00001" summary="Update dependencies and remove cms">
       <option name="closed" value="true" />
@@ -247,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769198953048</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Update categories and strucutre">
+      <option name="closed" value="true" />
+      <created>1774801015844</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1774801015844</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +285,7 @@
     <MESSAGE value="upload dummy images" />
     <MESSAGE value="fix types" />
     <MESSAGE value="update categories.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="update categories.json" />
+    <MESSAGE value="Update categories and strucutre" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update categories and strucutre" />
   </component>
 </project>
