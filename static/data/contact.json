@@ -3,12 +3,10 @@
     "street": "Östlicher Stadtgraben 32",
     "zipcode": "94469",
     "city": "Deggendorf",
-    "country": "Deutschland",
-    "googleMapsUrl": ""
+    "country": "Deutschland"
   },
   "contact": {
     "phone": "0151 24235034",
-    "phoneDisplay": "0151 24235034",
     "email": "info@haarstudio-pauli.de"
   },
   "socialMedia": [

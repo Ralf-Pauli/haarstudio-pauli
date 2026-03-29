@@ -140,11 +140,6 @@
             "price": 36
           }
         ]
-      },
-      {
-        "id": 206,
-        "name": "American Airtouch (Dauer 45 Min.)",
-        "price": 51.5
       }
     ]
   },
@@ -173,21 +168,19 @@
   },
   {
     "id": 4,
-    "name": "Coloration",
+    "name": "Farbe & Highlights",
     "image": "coloration.jpg",
     "services": [
       {
         "id": 401,
         "name": "Farbe / Tönung je nach Menge / Aufwand",
         "price": "36 - 77"
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "name": "Bleaching",
-    "image": "bleaching.jpg",
-    "services": [
+      },
+      {
+        "id": 206,
+        "name": "American Airtouch (Dauer 45 Min.)",
+        "price": 51.5
+      },
       {
         "id": 501,
         "name": "Strähnen / Highlights",
@@ -224,14 +217,7 @@
             "price": 100
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": 6,
-    "name": "Glossing – Shinefinity",
-    "image": "glossing.jpg",
-    "services": [
+      },
       {
         "id": 601,
         "name": "Glossing",
@@ -272,54 +258,9 @@
     ]
   },
   {
-    "id": 7,
-    "name": "Keratin Pflegezusatz",
-    "image": "keratin.jpg",
-    "services": [
-      {
-        "id": 701,
-        "name": "Keraphlex",
-        "sub_services": [
-          {
-            "id": 7001,
-            "name": "Kurzes Haar",
-            "price": 5
-          },
-          {
-            "id": 7002,
-            "name": "Langes Haar",
-            "price": 10
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 8,
-    "name": "Augenbrauen / Wimpern",
-    "image": "augenbrauen.jpg",
-    "services": [
-      {
-        "id": 801,
-        "name": "Wimpern färben",
-        "price": 11.5
-      },
-      {
-        "id": 802,
-        "name": "Augenbrauen färben",
-        "price": 8
-      },
-      {
-        "id": 803,
-        "name": "Augenbrauen zupfen",
-        "price": 10.5
-      }
-    ]
-  },
-  {
-    "id": 9,
-    "name": "Dauerwelle",
-    "image": "dauerwelle.jpg",
+    "id": 5,
+    "name": "Umformung & Styling",
+    "image": "bleaching.jpg",
     "services": [
       {
         "id": 901,
@@ -336,14 +277,7 @@
             "price": 111
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": 10,
-    "name": "Hochsteckfrisuren",
-    "image": "hochsteckfrisuren.jpg",
-    "services": [
+      },
       {
         "id": 1001,
         "name": "Teilhochstecken",
@@ -362,10 +296,41 @@
     ]
   },
   {
-    "id": 11,
-    "name": "Pflege – System Professional",
-    "image": "pflege.jpg",
+    "id": 6,
+    "name": "Haarpflege & Kosmetik",
+    "image": "color_fresh.jpg",
     "services": [
+      {
+        "id": 701,
+        "name": "Keraphlex",
+        "sub_services": [
+          {
+            "id": 7001,
+            "name": "Kurzes Haar",
+            "price": 5
+          },
+          {
+            "id": 7002,
+            "name": "Langes Haar",
+            "price": 10
+          }
+        ]
+      },
+      {
+        "id": 801,
+        "name": "Wimpern färben",
+        "price": 11.5
+      },
+      {
+        "id": 802,
+        "name": "Augenbrauen färben",
+        "price": 8
+      },
+      {
+        "id": 803,
+        "name": "Augenbrauen zupfen",
+        "price": 10.5
+      },
       {
         "id": 1101,
         "name": "Purify Kopfhautbehandlung",

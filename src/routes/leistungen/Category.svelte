@@ -1,15 +1,15 @@
 <script lang="ts">
     import Service from "./Service.svelte";
-    import type { Category } from "$utils/types";
+    import type { Category as CategoryType } from "$utils/types";
     import { formatPrice } from "$lib/utils";
 
-    let { category }: { category: Category } = $props();
+    let { category }: { category: CategoryType } = $props();
 
     let serviceWithSubServices = category.services.filter(
-        (service: any) => service.sub_services.length > 0
+        (service: any) => service.sub_services && service.sub_services.length > 0
     );
     let otherServices = category.services.filter(
-        (service: any) => service.sub_services.length === 0
+        (service: any) => !service.sub_services || service.sub_services.length === 0
     );
 </script>
 
