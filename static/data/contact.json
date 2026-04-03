@@ -8,7 +8,6 @@
   },
   "contact": {
     "phone": "0151 24235034",
-    "phoneDisplay": "",
     "email": "info@haarstudio-pauli.de"
   },
   "socialMedia": [
@@ -25,6 +24,11 @@
     {
       "days": "Dienstag bis Freitag",
       "hours": "09:00 - 18:00",
+      "closed": false
+    },
+    {
+      "days": "Samstag",
+      "hours": "08:00 - 13:00",
       "closed": false
     },
     {
