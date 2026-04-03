@@ -168,7 +168,7 @@
   },
   {
     "id": 4,
-    "name": "Farbe & Highlights",
+    "name": "Farbe \u0026 Highlights",
     "image": "coloration.jpg",
     "services": [
       {
@@ -259,7 +259,7 @@
   },
   {
     "id": 5,
-    "name": "Umformung & Styling",
+    "name": "Umformung \u0026 Styling",
     "image": "styling.jpg",
     "services": [
       {
@@ -297,7 +297,7 @@
   },
   {
     "id": 6,
-    "name": "Haarpflege & Kosmetik",
+    "name": "Haarpflege \u0026 Kosmetik",
     "image": "cosmetic.jpg",
     "services": [
       {
