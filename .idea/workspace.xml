@@ -7,8 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="update opening hours">
+    <list default="true" id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="commit conig">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Footer.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +175,7 @@
       <workItem from="1774800109760" duration="1995000" />
       <workItem from="1774976341247" duration="385000" />
       <workItem from="1775207666105" duration="819000" />
-      <workItem from="1775215724298" duration="3178000" />
+      <workItem from="1775215724298" duration="2494000" />
     </task>
     <task id="LOCAL-00001" summary="Update dependencies and remove cms">
       <option name="closed" value="true" />
@@ -272,23 +273,7 @@
       <option name="project" value="LOCAL" />
       <updated>1775217735611</updated>
     </task>
-    <task id="LOCAL-00013" summary="fix footer">
-      <option name="closed" value="true" />
-      <created>1775218245097</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1775218245097</updated>
-    </task>
-    <task id="LOCAL-00014" summary="update opening hours">
-      <option name="closed" value="true" />
-      <created>1775218732967</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1775218732968</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,8 +303,6 @@
     <MESSAGE value="overall improvements to layout" />
     <MESSAGE value="overall improvements" />
     <MESSAGE value="commit conig" />
-    <MESSAGE value="fix footer" />
-    <MESSAGE value="update opening hours" />
-    <option name="LAST_COMMIT_MESSAGE" value="update opening hours" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit conig" />
   </component>
 </project>
