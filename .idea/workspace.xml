@@ -7,30 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="overall improvements to layout">
-      <change afterPath="$PROJECT_DIR$/src/lib/assets/categories/cosmetic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/assets/categories/styling.jpg" afterDir="false" />
+    <list default="true" id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="commit conig">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/assets/categories/bleaching.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/assets/categories/color_fresh.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/assets/categories/coloration.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/assets/categories/damen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/assets/categories/damen.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/assets/categories/herren.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/assets/categories/herren.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/assets/categories/img_20200701_214421_1765315914757.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/assets/categories/kinder.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/assets/gallery/IMG_20200815_204410.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/assets/gallery/IMG_20200815_204527.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/assets/gallery/IMG_20200815_204555.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/assets/gallery/IMG_20200815_204648.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/assets/gallery/IMG_20200815_204658.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/assets/gallery/IMG_20200816_200935.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/assets/gallery/IMG_20200816_200937.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/assets/gallery/IMG_20200816_201006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/assets/hero.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/assets/hero.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Footer.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/kontakt/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/kontakt/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/data/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/categories.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/data/contact.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/contact.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="569" />
+    <option name="cachedIndexableFilesCount" value="574" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -119,7 +98,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "javascript.preferred.runtime.type.id": "node",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "D:/Projects/2025/haarstudio-pauli/src/lib/assets/categories",
+    "last_opened_file_path": "D:/Projects/2025/haarstudio-pauli/src/lib/assets/gallery",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -141,10 +120,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets\gallery" />
       <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets\categories" />
       <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets" />
       <recent name="D:\Projects\2025\haarstudio-pauli\src\routes\kontakt" />
-      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets\gallery" />
       <recent name="D:\Projects\2025\haarstudio-pauli\static\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -196,7 +175,7 @@
       <workItem from="1774800109760" duration="1995000" />
       <workItem from="1774976341247" duration="385000" />
       <workItem from="1775207666105" duration="819000" />
-      <workItem from="1775215724298" duration="1691000" />
+      <workItem from="1775215724298" duration="2494000" />
     </task>
     <task id="LOCAL-00001" summary="Update dependencies and remove cms">
       <option name="closed" value="true" />
@@ -278,7 +257,23 @@
       <option name="project" value="LOCAL" />
       <updated>1774801644042</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="overall improvements">
+      <option name="closed" value="true" />
+      <created>1775217715511</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1775217715511</updated>
+    </task>
+    <task id="LOCAL-00012" summary="commit conig">
+      <option name="closed" value="true" />
+      <created>1775217735611</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1775217735611</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +301,8 @@
     <MESSAGE value="update categories.json" />
     <MESSAGE value="Update categories and strucutre" />
     <MESSAGE value="overall improvements to layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="overall improvements to layout" />
+    <MESSAGE value="overall improvements" />
+    <MESSAGE value="commit conig" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit conig" />
   </component>
 </project>

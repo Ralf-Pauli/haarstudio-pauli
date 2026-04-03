@@ -1,6 +1,6 @@
 <script lang="ts">
     import FacebookImage from "$lib/assets/facebook.png";
-    import InstagramImage from "$lib/assets/instagram.png";
+    import InstagramImage from "$lib/assets/Instagram.png";
     import { siteConfig } from "$lib/config";
 
     const socialMedia = [{
