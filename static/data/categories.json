@@ -260,7 +260,7 @@
   {
     "id": 5,
     "name": "Umformung & Styling",
-    "image": "bleaching.jpg",
+    "image": "styling.jpg",
     "services": [
       {
         "id": 901,
@@ -298,7 +298,7 @@
   {
     "id": 6,
     "name": "Haarpflege & Kosmetik",
-    "image": "color_fresh.jpg",
+    "image": "cosmetic.jpg",
     "services": [
       {
         "id": 701,

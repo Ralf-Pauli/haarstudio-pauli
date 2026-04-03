@@ -1,6 +1,7 @@
 <script lang="ts">
     import Map from "$lib/components/Map.svelte";
     import FacebookImage from "$lib/assets/facebook.png";
+    import InstagramImage from "$lib/assets/Instagram.png";
     import type {PageProps} from "./$types";
 
     let {data}: PageProps = $props();
@@ -40,6 +41,9 @@
                     <a href={media.url} target="_blank" class="items-center flex">
                         {#if media.name === 'Facebook'}
                             <img src={FacebookImage} alt="{media.name}" class="h-4 inline mr-2"/>
+                        {/if}
+                        {#if media.name === 'Instagram'}
+                            <img src={InstagramImage} alt="{media.name}" class="h-4 inline mr-2"/>
                         {/if}
                         <span class="hover:underline hover:decoration-primary"> {media.name}</span>
                     </a>

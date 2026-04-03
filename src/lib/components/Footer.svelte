@@ -15,7 +15,7 @@
 </script>
 
 <footer class="w-full pb-3 flex flex-col gap-3 sm:grid grid-cols-1 sm:grid-cols-3 mx-auto pt-4 inset-x-0 h-16 max-w-5xl sticky top-[100vh] text-sm text-center">
-    <p class="flex-shrink-0 md:text-left">&copy; {new Date().getFullYear()} {siteConfig.name}</p>
+    <p class="shrink-0 md:text-left">&copy; {new Date().getFullYear()} {siteConfig.name}</p>
     <div class="mx-auto">
         {#each socialMedia as item}
             <a href={item.url} target="_blank" aria-label={item.name}>
