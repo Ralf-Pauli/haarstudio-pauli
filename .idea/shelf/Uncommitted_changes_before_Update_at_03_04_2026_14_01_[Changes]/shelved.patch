@@ -1,0 +1,219 @@
+Index: static/data/categories.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>[\r\n  {\r\n    \"id\": 1,\r\n    \"name\": \"Herren\",\r\n    \"image\": \"herren.jpg\",\r\n    \"services\": [\r\n      {\r\n        \"id\": 101,\r\n        \"name\": \"Kranzschnitt\",\r\n        \"price\": 15\r\n      },\r\n      {\r\n        \"id\": 102,\r\n        \"name\": \"Haarschnitt\",\r\n        \"price\": 23\r\n      },\r\n      {\r\n        \"id\": 103,\r\n        \"name\": \"Maschinenschnitt\",\r\n        \"sub_services\": [\r\n          {\r\n            \"id\": 1001,\r\n            \"name\": \"Einfach\",\r\n            \"price\": 16\r\n          },\r\n          {\r\n            \"id\": 1002,\r\n            \"name\": \"Buzzcut\",\r\n            \"price\": 23\r\n          }\r\n        ]\r\n      },\r\n      {\r\n        \"id\": 104,\r\n        \"name\": \"Bart\",\r\n        \"sub_services\": [\r\n          {\r\n            \"id\": 1003,\r\n            \"name\": \"Maschinenbartschnitt\",\r\n            \"price\": 5.5\r\n          },\r\n          {\r\n            \"id\": 1004,\r\n            \"name\": \"Konturrasur mit Barttrimmen\",\r\n            \"price\": 7.5\r\n          }\r\n        ]\r\n      },\r\n      {\r\n        \"id\": 105,\r\n        \"name\": \"Farbe\",\r\n        \"price\": 21\r\n      },\r\n      {\r\n        \"id\": 106,\r\n        \"name\": \"Oberkopf Strähnen\",\r\n        \"price\": 25\r\n      },\r\n      {\r\n        \"id\": 107,\r\n        \"name\": \"Graukaschierung\",\r\n        \"price\": 17\r\n      },\r\n      {\r\n        \"id\": 108,\r\n        \"name\": \"Waschen, Styling\",\r\n        \"price\": 11\r\n      },\r\n      {\r\n        \"id\": 109,\r\n        \"name\": \"Kopfmassage mit Haarwasser\",\r\n        \"price\": 5.5\r\n      },\r\n      {\r\n        \"id\": 110,\r\n        \"name\": \"Permanente Umformung\",\r\n        \"price\": 37\r\n      }\r\n    ]\r\n  },\r\n  {\r\n    \"id\": 2,\r\n    \"name\": \"Damen\",\r\n    \"image\": \"damen.jpg\",\r\n    \"services\": [\r\n      {\r\n        \"id\": 201,\r\n        \"name\": \"Calligraphy Cut\",\r\n        \"price\": 47\r\n      },\r\n      {\r\n        \"id\": 202,\r\n        \"name\": \"Haarschnitt\",\r\n        \"sub_services\": [\r\n          {\r\n            \"id\": 2001,\r\n            \"name\": \"Spitzen\",\r\n            \"price\": 20\r\n          },\r\n          {\r\n            \"id\": 2002,\r\n            \"name\": \"Komplett\",\r\n            \"price\": 32\r\n          }\r\n        ]\r\n      },\r\n      {\r\n        \"id\": 203,\r\n        \"name\": \"Waschen, Schneiden, Föhnen\",\r\n        \"sub_services\": [\r\n          {\r\n            \"id\": 2003,\r\n            \"name\": \"Spitzen\",\r\n            \"price\": 48\r\n          },\r\n          {\r\n            \"id\": 2004,\r\n            \"name\": \"Komplett\",\r\n            \"price\": 53\r\n          }\r\n        ]\r\n      },\r\n      {\r\n        \"id\": 204,\r\n        \"name\": \"Pony schneiden\",\r\n        \"price\": 6\r\n      },\r\n      {\r\n        \"id\": 205,\r\n        \"name\": \"Waschen, Föhnen\",\r\n        \"sub_services\": [\r\n          {\r\n            \"id\": 2005,\r\n            \"name\": \"Kurz\",\r\n            \"price\": 30.5\r\n          },\r\n          {\r\n            \"id\": 2006,\r\n            \"name\": \"Lang\",\r\n            \"price\": 36\r\n          }\r\n        ]\r\n      }\r\n    ]\r\n  },\r\n  {\r\n    \"id\": 3,\r\n    \"name\": \"Kinder\",\r\n    \"image\": \"kinder.jpg\",\r\n    \"services\": [\r\n      {\r\n        \"id\": 301,\r\n        \"name\": \"Haarschnitt\",\r\n        \"sub_services\": [\r\n          {\r\n            \"id\": 3001,\r\n            \"name\": \"Bis 5 Jahre\",\r\n            \"price\": 18\r\n          },\r\n          {\r\n            \"id\": 3002,\r\n            \"name\": \"Bis 10 Jahre\",\r\n            \"price\": 21\r\n          }\r\n        ]\r\n      }\r\n    ]\r\n  },\r\n  {\r\n    \"id\": 4,\r\n    \"name\": \"Farbe & Highlights\",\r\n    \"image\": \"coloration.jpg\",\r\n    \"services\": [\r\n      {\r\n        \"id\": 401,\r\n        \"name\": \"Farbe / Tönung je nach Menge / Aufwand\",\r\n        \"price\": \"36 - 77\"\r\n      },\r\n      {\r\n        \"id\": 206,\r\n        \"name\": \"American Airtouch (Dauer 45 Min.)\",\r\n        \"price\": 51.5\r\n      },\r\n      {\r\n        \"id\": 501,\r\n        \"name\": \"Strähnen / Highlights\",\r\n        \"sub_services\": [\r\n          {\r\n            \"id\": 5001,\r\n            \"name\": \"Ca. 20 Stück\",\r\n            \"price\": 42\r\n          },\r\n          {\r\n            \"id\": 5002,\r\n            \"name\": \"Je weitere Strähne\",\r\n            \"price\": 1.2\r\n          }\r\n        ]\r\n      },\r\n      {\r\n        \"id\": 502,\r\n        \"name\": \"Farbabzug nach Menge / Aufwand\",\r\n        \"price\": \"36 - 77\"\r\n      },\r\n      {\r\n        \"id\": 503,\r\n        \"name\": \"Aufhellung\",\r\n        \"sub_services\": [\r\n          {\r\n            \"id\": 5003,\r\n            \"name\": \"Ansatz\",\r\n            \"price\": 55\r\n          },\r\n          {\r\n            \"id\": 5004,\r\n            \"name\": \"Komplett\",\r\n            \"price\": 100\r\n          }\r\n        ]\r\n      },\r\n      {\r\n        \"id\": 601,\r\n        \"name\": \"Glossing\",\r\n        \"sub_services\": [\r\n          {\r\n            \"id\": 6001,\r\n            \"name\": \"Kurzes Haar\",\r\n            \"price\": 25\r\n          },\r\n          {\r\n            \"id\": 6002,\r\n            \"name\": \"Mittellanges Haar\",\r\n            \"price\": 33.5\r\n          },\r\n          {\r\n            \"id\": 6003,\r\n            \"name\": \"Langes Haar\",\r\n            \"price\": 65\r\n          }\r\n        ]\r\n      },\r\n      {\r\n        \"id\": 602,\r\n        \"name\": \"Painting / Balayage\",\r\n        \"sub_services\": [\r\n          {\r\n            \"id\": 6004,\r\n            \"name\": \"Mittellanges Haar\",\r\n            \"price\": 120\r\n          },\r\n          {\r\n            \"id\": 6005,\r\n            \"name\": \"Langes Haar\",\r\n            \"price\": 250\r\n          }\r\n        ]\r\n      }\r\n    ]\r\n  },\r\n  {\r\n    \"id\": 5,\r\n    \"name\": \"Umformung & Styling\",\r\n    \"image\": \"bleaching.jpg\",\r\n    \"services\": [\r\n      {\r\n        \"id\": 901,\r\n        \"name\": \"Dauerwelle (inkl. Waschen u. Föhnen)\",\r\n        \"sub_services\": [\r\n          {\r\n            \"id\": 9001,\r\n            \"name\": \"Kurzes Haar\",\r\n            \"price\": 73\r\n          },\r\n          {\r\n            \"id\": 9002,\r\n            \"name\": \"Langes Haar\",\r\n            \"price\": 111\r\n          }\r\n        ]\r\n      },\r\n      {\r\n        \"id\": 1001,\r\n        \"name\": \"Teilhochstecken\",\r\n        \"price\": 40\r\n      },\r\n      {\r\n        \"id\": 1002,\r\n        \"name\": \"Einfache Hochsteckfrisur\",\r\n        \"price\": 65\r\n      },\r\n      {\r\n        \"id\": 1003,\r\n        \"name\": \"Hochzeitfrisur mit 2× Probestecken\",\r\n        \"price\": 180\r\n      }\r\n    ]\r\n  },\r\n  {\r\n    \"id\": 6,\r\n    \"name\": \"Haarpflege & Kosmetik\",\r\n    \"image\": \"color_fresh.jpg\",\r\n    \"services\": [\r\n      {\r\n        \"id\": 701,\r\n        \"name\": \"Keraphlex\",\r\n        \"sub_services\": [\r\n          {\r\n            \"id\": 7001,\r\n            \"name\": \"Kurzes Haar\",\r\n            \"price\": 5\r\n          },\r\n          {\r\n            \"id\": 7002,\r\n            \"name\": \"Langes Haar\",\r\n            \"price\": 10\r\n          }\r\n        ]\r\n      },\r\n      {\r\n        \"id\": 801,\r\n        \"name\": \"Wimpern färben\",\r\n        \"price\": 11.5\r\n      },\r\n      {\r\n        \"id\": 802,\r\n        \"name\": \"Augenbrauen färben\",\r\n        \"price\": 8\r\n      },\r\n      {\r\n        \"id\": 803,\r\n        \"name\": \"Augenbrauen zupfen\",\r\n        \"price\": 10.5\r\n      },\r\n      {\r\n        \"id\": 1101,\r\n        \"name\": \"Purify Kopfhautbehandlung\",\r\n        \"price\": 11\r\n      },\r\n      {\r\n        \"id\": 1102,\r\n        \"name\": \"Pflegebehandlung f. strapaziertes Haar\",\r\n        \"price\": 7.5\r\n      },\r\n      {\r\n        \"id\": 1103,\r\n        \"name\": \"Marula Oil Blend Behandlung\",\r\n        \"price\": 4\r\n      }\r\n    ]\r\n  }\r\n]\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/static/data/categories.json b/static/data/categories.json
+--- a/static/data/categories.json	(revision d9a35b8c96a7c1fb6e9643704db1ad43286ab830)
++++ b/static/data/categories.json	(date 1775217053698)
+@@ -260,7 +260,7 @@
+   {
+     "id": 5,
+     "name": "Umformung & Styling",
+-    "image": "bleaching.jpg",
++    "image": "styling.jpg",
+     "services": [
+       {
+         "id": 901,
+@@ -298,7 +298,7 @@
+   {
+     "id": 6,
+     "name": "Haarpflege & Kosmetik",
+-    "image": "color_fresh.jpg",
++    "image": "cosmetic.jpg",
+     "services": [
+       {
+         "id": 701,
+Index: src/lib/components/Footer.svelte
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><script lang=\"ts\">\r\n    import FacebookImage from \"$lib/assets/facebook.png\";\r\n    import InstagramImage from \"$lib/assets/instagram.png\";\r\n    import { siteConfig } from \"$lib/config\";\r\n\r\n    const socialMedia = [{\r\n        name: \"Facebook\",\r\n        url: siteConfig.social.facebook,\r\n        icon: FacebookImage\r\n    }, {\r\n        name: \"Instagram\",\r\n        url: siteConfig.social.instagram,\r\n        icon: InstagramImage\r\n    }]\r\n</script>\r\n\r\n<footer class=\"w-full pb-3 flex flex-col gap-3 sm:grid grid-cols-1 sm:grid-cols-3 mx-auto pt-4 inset-x-0 h-16 max-w-5xl sticky top-[100vh] text-sm text-center\">\r\n    <p class=\"flex-shrink-0 md:text-left\">&copy; {new Date().getFullYear()} {siteConfig.name}</p>\r\n    <div class=\"mx-auto\">\r\n        {#each socialMedia as item}\r\n            <a href={item.url} target=\"_blank\" aria-label={item.name}>\r\n                <enhanced:img src={item.icon} alt={item.name} class=\"inline w-4 h-4 mx-2\"/>\r\n            </a>\r\n        {/each}\r\n    </div>\r\n    <div class=\"md:ml-auto pb-3\">\r\n        <a href=\"/impressum\">Impressum</a>\r\n        <span>|</span>\r\n        <a href=\"/datenschutz\">Datenschutz</a>\r\n    </div>\r\n</footer>\r\n\r\n<style>\r\n    footer a:hover {\r\n        text-decoration: underline;\r\n    }\r\n</style>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/lib/components/Footer.svelte b/src/lib/components/Footer.svelte
+--- a/src/lib/components/Footer.svelte	(revision d9a35b8c96a7c1fb6e9643704db1ad43286ab830)
++++ b/src/lib/components/Footer.svelte	(date 1774976692202)
+@@ -15,7 +15,7 @@
+ </script>
+ 
+ <footer class="w-full pb-3 flex flex-col gap-3 sm:grid grid-cols-1 sm:grid-cols-3 mx-auto pt-4 inset-x-0 h-16 max-w-5xl sticky top-[100vh] text-sm text-center">
+-    <p class="flex-shrink-0 md:text-left">&copy; {new Date().getFullYear()} {siteConfig.name}</p>
++    <p class="shrink-0 md:text-left">&copy; {new Date().getFullYear()} {siteConfig.name}</p>
+     <div class="mx-auto">
+         {#each socialMedia as item}
+             <a href={item.url} target="_blank" aria-label={item.name}>
+Index: src/routes/kontakt/+page.svelte
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><script lang=\"ts\">\r\n    import Map from \"$lib/components/Map.svelte\";\r\n    import FacebookImage from \"$lib/assets/facebook.png\";\r\n    import type {PageProps} from \"./$types\";\r\n\r\n    let {data}: PageProps = $props();\r\n    let contact = $derived(data.contact);\r\n</script>\r\n\r\n<Map/>\r\n<div class=\"contact-info my-10 sm:my-20 max-w-5xl mx-auto gap-10 sm:gap-4 flex flex-col sm:flex-row justify-between text-center\">\r\n    <div>\r\n        <h4 class=\"mb-3 text-xl font-semibold underline decoration-primary decoration-1 underline-offset-3\">Kontakt</h4>\r\n        <div>\r\n            <div class=\"flex flex-col mb-1\">\r\n                <p class=\"dark:text-zinc-400 text-zinc-600\">Anschrift:</p>\r\n                <div>\r\n                    <div>\r\n                        {contact.address.street}\r\n                    </div>\r\n                    <div>\r\n                        {contact.address.zipcode} {contact.address.city}\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"flex flex-col mb-1\">\r\n                <p class=\"dark:text-zinc-400 text-zinc-600\">Telefon:</p>\r\n                <a class=\"hover:underline hover:decoration-primary\"\r\n                   href=\"tel:{contact.contact.phone}\">{contact.contact.phone}</a>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n    <div>\r\n        <h4 class=\"mb-3 text-xl font-semibold underline decoration-primary decoration-1 underline-offset-3\">Social\r\n            Media</h4>\r\n        <div class=\"flex flex-col items-center gap-2\">\r\n            {#each contact.socialMedia as media}\r\n                <div>\r\n                    <a href={media.url} target=\"_blank\" class=\"items-center flex\">\r\n                        {#if media.name === 'Facebook'}\r\n                            <img src={FacebookImage} alt=\"{media.name}\" class=\"h-4 inline mr-2\"/>\r\n                        {/if}\r\n                        <span class=\"hover:underline hover:decoration-primary\"> {media.name}</span>\r\n                    </a>\r\n                </div>\r\n            {/each}\r\n        </div>\r\n    </div>\r\n\r\n    <div>\r\n        <h4 class=\"mb-3 text-xl font-semibold underline decoration-primary decoration-1 underline-offset-3\">\r\n            Öffnungszeiten\r\n        </h4>\r\n        <div class=\"flex flex-col gap-1\">\r\n            {#each contact.openingHours as openingHour}\r\n                <div class=\"\">\r\n                    <div class=\"dark:text-zinc-400 text-zinc-600\">{openingHour.days}:</div>\r\n                    {#if !openingHour.closed}\r\n                        <div>{openingHour.hours}</div>\r\n                    {:else}\r\n                        <div>Geschlossen</div>\r\n                    {/if}\r\n                </div>\r\n            {/each}\r\n        </div>\r\n    </div>\r\n\r\n    <div>\r\n        <h4 class=\"mb-3 text-xl font-semibold underline decoration-primary decoration-1 underline-offset-3\">\r\n            Rechtliches</h4>\r\n        <div class=\"flex flex-col gap-1\">\r\n            <a href=\"/impressum\" class=\"hover:underline hover:decoration-primary\">Impressum</a>\r\n            <a href=\"/datenschutz\" class=\"hover:underline hover:decoration-primary\">Datenschutz</a>\r\n        </div>\r\n    </div>\r\n</div>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/routes/kontakt/+page.svelte b/src/routes/kontakt/+page.svelte
+--- a/src/routes/kontakt/+page.svelte	(revision d9a35b8c96a7c1fb6e9643704db1ad43286ab830)
++++ b/src/routes/kontakt/+page.svelte	(date 1775207868839)
+@@ -1,6 +1,7 @@
+ <script lang="ts">
+     import Map from "$lib/components/Map.svelte";
+     import FacebookImage from "$lib/assets/facebook.png";
++    import InstagramImage from "$lib/assets/Instagram.png";
+     import type {PageProps} from "./$types";
+ 
+     let {data}: PageProps = $props();
+@@ -40,6 +41,9 @@
+                     <a href={media.url} target="_blank" class="items-center flex">
+                         {#if media.name === 'Facebook'}
+                             <img src={FacebookImage} alt="{media.name}" class="h-4 inline mr-2"/>
++                        {/if}
++                        {#if media.name === 'Instagram'}
++                            <img src={InstagramImage} alt="{media.name}" class="h-4 inline mr-2"/>
+                         {/if}
+                         <span class="hover:underline hover:decoration-primary"> {media.name}</span>
+                     </a>
+Index: static/data/contact.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"address\": {\r\n    \"street\": \"Östlicher Stadtgraben 32\",\r\n    \"zipcode\": \"94469\",\r\n    \"city\": \"Deggendorf\",\r\n    \"country\": \"Deutschland\"\r\n  },\r\n  \"contact\": {\r\n    \"phone\": \"0151 24235034\",\r\n    \"email\": \"info@haarstudio-pauli.de\"\r\n  },\r\n  \"socialMedia\": [\r\n    {\r\n      \"name\": \"Facebook\",\r\n      \"url\": \"https://www.facebook.com/p/Haarstudio-Pauli-61553966530565/\"\r\n    }\r\n  ],\r\n  \"openingHours\": [\r\n    {\r\n      \"days\": \"Montag bis Freitag\",\r\n      \"hours\": \"08:00 - 17:00\",\r\n      \"closed\": false\r\n    },\r\n    {\r\n      \"days\": \"Sonntag\",\r\n      \"hours\": null,\r\n      \"closed\": true\r\n    }\r\n  ]\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/static/data/contact.json b/static/data/contact.json
+--- a/static/data/contact.json	(revision d9a35b8c96a7c1fb6e9643704db1ad43286ab830)
++++ b/static/data/contact.json	(date 1775207868845)
+@@ -13,6 +13,10 @@
+     {
+       "name": "Facebook",
+       "url": "https://www.facebook.com/p/Haarstudio-Pauli-61553966530565/"
++    },
++    {
++      "name": "Instagram",
++      "url": "https://www.instagram.com/haarstudiopauli/"
+     }
+   ],
+   "openingHours": [
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AIDiffSettings\">\r\n    <option name=\"showAIDiff\" value=\"true\" />\r\n  </component>\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"011d15eb-b499-4ffe-9a7e-b86182854b4a\" name=\"Changes\" comment=\"Update categories and strucutre\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/lib/assets/Instagram.png\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/app.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/app.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/lib/components/Footer.svelte\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/lib/components/Footer.svelte\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/lib/components/Navbar.svelte\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/lib/components/Navbar.svelte\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/routes/+page.svelte\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/routes/+page.svelte\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/routes/datenschutz/+page.svelte\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/routes/datenschutz/+page.svelte\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/routes/galerie/+page.svelte\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/routes/galerie/+page.svelte\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/routes/galerie/+page.ts\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/routes/galerie/+page.ts\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/routes/impressum/+page.svelte\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/routes/impressum/+page.svelte\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/routes/kontakt/+page.svelte\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/routes/kontakt/+page.svelte\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/routes/layout.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/routes/layout.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/routes/leistungen/+page.svelte\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/routes/leistungen/+page.svelte\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/routes/leistungen/Category.svelte\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/routes/leistungen/Category.svelte\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/routes/leistungen/Service.svelte\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/routes/leistungen/Service.svelte\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"EmbeddingIndexingInfo\">\r\n    <option name=\"cachedIndexableFilesCount\" value=\"749\" />\r\n    <option name=\"fileBasedEmbeddingIndicesEnabled\" value=\"true\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"+page\" />\r\n        <option value=\"TypeScript File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"ref/services\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;history&quot;: [\r\n    {\r\n      &quot;state&quot;: &quot;OPEN&quot;\r\n    }\r\n  ],\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GitHubPullRequestState\">{\r\n  &quot;prStates&quot;: [\r\n    {\r\n      &quot;id&quot;: {\r\n        &quot;id&quot;: &quot;PR_kwDOJ3KQ9M627ECy&quot;,\r\n        &quot;number&quot;: 41\r\n      },\r\n      &quot;lastSeen&quot;: 1764867559955\r\n    }\r\n  ]\r\n}</component>\r\n  <component name=\"GithubProjectSettings\">\r\n    <option name=\"branchProtectionPatterns\">\r\n      <list>\r\n        <option value=\"main\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;git@github.com:Ralf-Pauli/haarstudio-pauli.git&quot;,\r\n    &quot;accountId&quot;: &quot;879a7459-4da8-4df5-8c4f-378a19283866&quot;\r\n  }\r\n}</component>\r\n  <component name=\"McpProjectServerCommands\">\r\n    <commands />\r\n    <urls />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 4\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"36IXBSGxRCU1Cnlw2YutiPWph9y\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"RunOnceActivity.MCP Project settings loaded\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"RunOnceActivity.typescript.service.memoryLimit.init\": \"true\",\r\n    \"codeWithMe.voiceChat.enabledByDefault\": \"false\",\r\n    \"com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1\": \"true\",\r\n    \"database.data.extractors.current.export.id\": \"Semicolon-separated_id\",\r\n    \"database.data.extractors.current.id\": \"Semicolon-separated_id\",\r\n    \"git-widget-placeholder\": \"develop\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"javascript.preferred.runtime.type.id\": \"node\",\r\n    \"junie.onboarding.icon.badge.shown\": \"true\",\r\n    \"last_opened_file_path\": \"D:/Projects/2025/haarstudio-pauli/src/lib/assets\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"npm.dev.executor\": \"Run\",\r\n    \"settings.editor.selected.configurable\": \"configurable.tailwindcss\",\r\n    \"to.speed.mode.migration.done\": \"true\",\r\n    \"ts.external.directory.path\": \"D:\\\\Projects\\\\2025\\\\haarstudio-pauli\\\\node_modules\\\\typescript\\\\lib\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecapSpentCounter\">\r\n    <option name=\"endsOfQuotaMs\" value=\"1773345768227\" />\r\n    <option name=\"spentUsd\" value=\"0.00412825\" />\r\n  </component>\r\n  <component name=\"RecapUselessUpdatesCounter\">\r\n    <option name=\"suspendCountdown\" value=\"3\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"D:\\Projects\\2025\\haarstudio-pauli\\src\\lib\\assets\" />\r\n      <recent name=\"D:\\Projects\\2025\\haarstudio-pauli\\src\\routes\\kontakt\" />\r\n      <recent name=\"D:\\Projects\\2025\\haarstudio-pauli\\src\\lib\\assets\\gallery\" />\r\n      <recent name=\"D:\\Projects\\2025\\haarstudio-pauli\\src\\lib\\assets\\categories\" />\r\n      <recent name=\"D:\\Projects\\2025\\haarstudio-pauli\\static\\data\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"D:\\Projects\\2025\\haarstudio-pauli\\src\\lib\" />\r\n      <recent name=\"D:\\Projects\\2025\\haarstudio-pauli\\src\\lib\\components\" />\r\n      <recent name=\"D:\\Projects\\2025\\haarstudio-pauli\\src\\lib\\components\\util\" />\r\n      <recent name=\"D:\\Projects\\2025\\haarstudio-pauli\\src\\lib\\assets\" />\r\n      <recent name=\"D:\\Projects\\2025\\haarstudio-pauli\\static\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"dev\" type=\"js.build_tools.npm\" nameIsGenerated=\"true\">\r\n      <package-json value=\"$PROJECT_DIR$/package.json\" />\r\n      <command value=\"run\" />\r\n      <scripts>\r\n        <script value=\"dev\" />\r\n      </scripts>\r\n      <node-interpreter value=\"project\" />\r\n      <envs />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-WS-261.22158.274\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"011d15eb-b499-4ffe-9a7e-b86182854b4a\" name=\"Changes\" comment=\"\" />\r\n      <created>1764694924363</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1764694924363</updated>\r\n      <workItem from=\"1764694925699\" duration=\"1705000\" />\r\n      <workItem from=\"1764699926753\" duration=\"2183000\" />\r\n      <workItem from=\"1764702160516\" duration=\"14138000\" />\r\n      <workItem from=\"1764788509908\" duration=\"4750000\" />\r\n      <workItem from=\"1764874155727\" duration=\"2666000\" />\r\n      <workItem from=\"1764956038563\" duration=\"606000\" />\r\n      <workItem from=\"1765297685647\" duration=\"464000\" />\r\n      <workItem from=\"1765298154900\" duration=\"4061000\" />\r\n      <workItem from=\"1765302269431\" duration=\"238000\" />\r\n      <workItem from=\"1765302519163\" duration=\"8377000\" />\r\n      <workItem from=\"1770389859233\" duration=\"1477000\" />\r\n      <workItem from=\"1772215981427\" duration=\"455000\" />\r\n      <workItem from=\"1774800109760\" duration=\"1512000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Update dependencies and remove cms\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1764715777959</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1764715777959</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Remove files\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1764715808544</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1764715808544</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"add .nvmrc\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1764716159722</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1764716159722</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Simplify category json\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1764878717717</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1764878717717</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Improve Navbar and mobile integration\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1765303880049</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1765303880049</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"upload dummy images\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1765308704835</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1765308704835</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"fix types\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1765308978791</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1765308978791</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"update categories.json\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1769198953048</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1769198953048</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Update categories and strucutre\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1774801015844</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1774801015844</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"10\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Update dependencies and remove cms\" />\r\n    <MESSAGE value=\"Remove files\" />\r\n    <MESSAGE value=\"add .nvmrc\" />\r\n    <MESSAGE value=\"Simplify category json\" />\r\n    <MESSAGE value=\"Improve Navbar and mobile integration\" />\r\n    <MESSAGE value=\"upload dummy images\" />\r\n    <MESSAGE value=\"fix types\" />\r\n    <MESSAGE value=\"update categories.json\" />\r\n    <MESSAGE value=\"Update categories and strucutre\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Update categories and strucutre\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision d9a35b8c96a7c1fb6e9643704db1ad43286ab830)
++++ b/.idea/workspace.xml	(date 1775217423172)
+@@ -7,22 +7,30 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="Update categories and strucutre">
+-      <change afterPath="$PROJECT_DIR$/src/lib/assets/Instagram.png" afterDir="false" />
++    <list default="true" id="011d15eb-b499-4ffe-9a7e-b86182854b4a" name="Changes" comment="overall improvements to layout">
++      <change afterPath="$PROJECT_DIR$/src/lib/assets/categories/cosmetic.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/lib/assets/categories/styling.jpg" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/lib/assets/categories/bleaching.jpg" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/lib/assets/categories/color_fresh.jpg" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/lib/assets/categories/coloration.jpg" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/lib/assets/categories/damen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/assets/categories/damen.jpg" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/lib/assets/categories/herren.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/assets/categories/herren.jpg" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/lib/assets/categories/img_20200701_214421_1765315914757.jpg" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/lib/assets/categories/kinder.jpg" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/lib/assets/gallery/IMG_20200815_204410.jpg" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/lib/assets/gallery/IMG_20200815_204527.jpg" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/lib/assets/gallery/IMG_20200815_204555.jpg" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/lib/assets/gallery/IMG_20200815_204648.jpg" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/lib/assets/gallery/IMG_20200815_204658.jpg" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/lib/assets/gallery/IMG_20200816_200935.jpg" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/lib/assets/gallery/IMG_20200816_200937.jpg" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/lib/assets/gallery/IMG_20200816_201006.jpg" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/lib/assets/hero.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/assets/hero.jpg" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/lib/components/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Footer.svelte" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/lib/components/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Navbar.svelte" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/routes/datenschutz/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/datenschutz/+page.svelte" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/routes/galerie/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/galerie/+page.svelte" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/routes/galerie/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/galerie/+page.ts" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/routes/impressum/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/impressum/+page.svelte" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/routes/kontakt/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/kontakt/+page.svelte" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/routes/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/layout.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/+page.svelte" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/Category.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/Category.svelte" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/routes/leistungen/Service.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/leistungen/Service.svelte" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/static/data/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/categories.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/static/data/contact.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/data/contact.json" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -30,7 +38,7 @@
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
+   <component name="EmbeddingIndexingInfo">
+-    <option name="cachedIndexableFilesCount" value="749" />
++    <option name="cachedIndexableFilesCount" value="569" />
+     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+   </component>
+   <component name="FileTemplateManagerImpl">
+@@ -111,7 +119,7 @@
+     "ignore.virus.scanning.warn.message": "true",
+     "javascript.preferred.runtime.type.id": "node",
+     "junie.onboarding.icon.badge.shown": "true",
+-    "last_opened_file_path": "D:/Projects/2025/haarstudio-pauli/src/lib/assets",
++    "last_opened_file_path": "D:/Projects/2025/haarstudio-pauli/src/lib/assets/categories",
+     "node.js.detected.package.eslint": "true",
+     "node.js.detected.package.tslint": "true",
+     "node.js.selected.package.eslint": "(autodetect)",
+@@ -133,10 +141,10 @@
+   </component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
++      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets\categories" />
+       <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets" />
+       <recent name="D:\Projects\2025\haarstudio-pauli\src\routes\kontakt" />
+       <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets\gallery" />
+-      <recent name="D:\Projects\2025\haarstudio-pauli\src\lib\assets\categories" />
+       <recent name="D:\Projects\2025\haarstudio-pauli\static\data" />
+     </key>
+     <key name="MoveFile.RECENT_KEYS">
+@@ -185,7 +193,10 @@
+       <workItem from="1765302519163" duration="8377000" />
+       <workItem from="1770389859233" duration="1477000" />
+       <workItem from="1772215981427" duration="455000" />
+-      <workItem from="1774800109760" duration="1512000" />
++      <workItem from="1774800109760" duration="1995000" />
++      <workItem from="1774976341247" duration="385000" />
++      <workItem from="1775207666105" duration="819000" />
++      <workItem from="1775215724298" duration="1691000" />
+     </task>
+     <task id="LOCAL-00001" summary="Update dependencies and remove cms">
+       <option name="closed" value="true" />
+@@ -259,7 +270,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1774801015844</updated>
+     </task>
+-    <option name="localTasksCounter" value="10" />
++    <task id="LOCAL-00010" summary="overall improvements to layout">
++      <option name="closed" value="true" />
++      <created>1774801644042</created>
++      <option name="number" value="00010" />
++      <option name="presentableId" value="LOCAL-00010" />
++      <option name="project" value="LOCAL" />
++      <updated>1774801644042</updated>
++    </task>
++    <option name="localTasksCounter" value="11" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -286,6 +305,7 @@
+     <MESSAGE value="fix types" />
+     <MESSAGE value="update categories.json" />
+     <MESSAGE value="Update categories and strucutre" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Update categories and strucutre" />
++    <MESSAGE value="overall improvements to layout" />
++    <option name="LAST_COMMIT_MESSAGE" value="overall improvements to layout" />
+   </component>
+ </project>
+\ No newline at end of file

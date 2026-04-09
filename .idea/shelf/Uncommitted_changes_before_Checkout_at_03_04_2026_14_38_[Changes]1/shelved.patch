@@ -1,0 +1,17 @@
+Index: svelte.config.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import adapter from '@sveltejs/adapter-cloudflare';\r\nimport {vitePreprocess} from '@sveltejs/vite-plugin-svelte';\r\n\r\n/** @type {import('@sveltejs/kit').Config} */\r\nconst config = {\r\n    // Consult https://svelte.dev/docs/kit/integrations\r\n    // for more information about preprocessors\r\n    preprocess: vitePreprocess(),\r\n    kit: {\r\n        adapter: adapter({\r\n            routes: {\r\n                include: ['/*'],\r\n                exclude: ['<all>']\r\n            }\r\n        }),\r\n        alias: {\r\n            $components: \"src/lib/components\",\r\n            \"$components/*\": \"src/lib/components/*\",\r\n            $lib: \"./src/lib\",\r\n            \"$lib/*\": \"./src/lib/*\",\r\n            $utils: \"./src/lib/utils\"\r\n        }\r\n    }\r\n};\r\n\r\nexport default config;\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/svelte.config.js b/svelte.config.js
+--- a/svelte.config.js	(revision e859b24bf30f0f680d9322d9bdb160b83fe610c6)
++++ b/svelte.config.js	(date 1775219863077)
+@@ -1,5 +1,5 @@
+ import adapter from '@sveltejs/adapter-cloudflare';
+-import {vitePreprocess} from '@sveltejs/vite-plugin-svelte';
++import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+ 
+ /** @type {import('@sveltejs/kit').Config} */
+ const config = {
