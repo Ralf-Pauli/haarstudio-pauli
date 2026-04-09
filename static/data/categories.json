@@ -7,12 +7,12 @@
       {
         "id": 101,
         "name": "Kranzschnitt",
-        "price": 15
+        "price": 25
       },
       {
         "id": 102,
         "name": "Haarschnitt",
-        "price": 23
+        "price": 25
       },
       {
         "id": 103,
@@ -21,12 +21,17 @@
           {
             "id": 1001,
             "name": "Einfach",
-            "price": 16
+            "price": 20
           },
           {
             "id": 1002,
             "name": "Buzzcut",
-            "price": 23
+            "price": 38
+          },
+          {
+            "id": 1005,
+            "name": "Fadecut Seiten mit Waschen u. Stylen",
+            "price": 32
           }
         ]
       },
@@ -37,29 +42,29 @@
           {
             "id": 1003,
             "name": "Maschinenbartschnitt",
-            "price": 5.5
+            "price": 7.5
           },
           {
             "id": 1004,
             "name": "Konturrasur mit Barttrimmen",
-            "price": 7.5
+            "price": 15
           }
         ]
       },
       {
         "id": 105,
         "name": "Farbe",
-        "price": 21
+        "price": 38
       },
       {
         "id": 106,
         "name": "Oberkopf Strähnen",
-        "price": 25
+        "price": 35
       },
       {
         "id": 107,
         "name": "Graukaschierung",
-        "price": 17
+        "price": 23
       },
       {
         "id": 108,
@@ -74,7 +79,12 @@
       {
         "id": 110,
         "name": "Permanente Umformung",
-        "price": 37
+        "price": 50
+      },
+      {
+        "id": 111,
+        "name": "Haar Tattoo / Design",
+        "price": 5
       }
     ]
   },
@@ -83,11 +93,6 @@
     "name": "Damen",
     "image": "damen.jpg",
     "services": [
-      {
-        "id": 201,
-        "name": "Calligraphy Cut",
-        "price": 47
-      },
       {
         "id": 202,
         "name": "Haarschnitt",
@@ -110,20 +115,30 @@
         "sub_services": [
           {
             "id": 2003,
-            "name": "Spitzen",
-            "price": 48
+            "name": "Spitzen kurzes Haar",
+            "price": 38
+          },
+          {
+            "id": 2007,
+            "name": "Spitzen langes Haar",
+            "price": 49
           },
           {
             "id": 2004,
-            "name": "Komplett",
-            "price": 53
+            "name": "Komplett kurzes Haar",
+            "price": 57
+          },
+          {
+            "id": 2008,
+            "name": "Komplett langes Haar",
+            "price": 67
           }
         ]
       },
       {
         "id": 204,
-        "name": "Pony schneiden",
-        "price": 6
+        "name": "Pony schneiden / Curtain Bangs",
+        "price": 12
       },
       {
         "id": 205,
@@ -132,14 +147,19 @@
           {
             "id": 2005,
             "name": "Kurz",
-            "price": 30.5
+            "price": 35
           },
           {
             "id": 2006,
             "name": "Lang",
-            "price": 36
+            "price": 40
           }
         ]
+      },
+      {
+        "id": 207,
+        "name": "Waschen, Schneiden, Stylen",
+        "price": 35
       }
     ]
   },
@@ -168,18 +188,49 @@
   },
   {
     "id": 4,
-    "name": "Farbe \u0026 Highlights",
+    "name": "Farbe & Highlights",
     "image": "coloration.jpg",
     "services": [
       {
         "id": 401,
-        "name": "Farbe / Tönung je nach Menge / Aufwand",
-        "price": "36 - 77"
-      },
-      {
-        "id": 206,
-        "name": "American Airtouch (Dauer 45 Min.)",
-        "price": 51.5
+        "name": "Farbe / Tönung",
+        "sub_services": [
+          {
+            "id": 4001,
+            "name": "Ansatz 30 ml",
+            "price": 45
+          },
+          {
+            "id": 4002,
+            "name": "60 ml",
+            "price": 55
+          },
+          {
+            "id": 4003,
+            "name": "80 ml",
+            "price": 60
+          },
+          {
+            "id": 4004,
+            "name": "100 ml",
+            "price": 65
+          },
+          {
+            "id": 4005,
+            "name": "120 ml",
+            "price": 71
+          },
+          {
+            "id": 4006,
+            "name": "140 ml",
+            "price": 77
+          },
+          {
+            "id": 4007,
+            "name": "160 ml",
+            "price": 83
+          }
+        ]
       },
       {
         "id": 501,
@@ -187,20 +238,25 @@
         "sub_services": [
           {
             "id": 5001,
-            "name": "Ca. 20 Stück",
-            "price": 42
+            "name": "Ansatz Oberkopf",
+            "price": 52
           },
           {
-            "id": 5002,
-            "name": "Je weitere Strähne",
-            "price": 1.2
+            "id": 5005,
+            "name": "Ansatz ganzer Kopf",
+            "price": 66
+          },
+          {
+            "id": 5006,
+            "name": "Ganzer Kopf kurzes Haar",
+            "price": 56
+          },
+          {
+            "id": 5007,
+            "name": "Ganzer Kopf langes Haar",
+            "price": 120
           }
         ]
-      },
-      {
-        "id": 502,
-        "name": "Farbabzug nach Menge / Aufwand",
-        "price": "36 - 77"
       },
       {
         "id": 503,
@@ -209,14 +265,34 @@
           {
             "id": 5003,
             "name": "Ansatz",
-            "price": 55
+            "price": 60
+          },
+          {
+            "id": 5008,
+            "name": "Kurzes Haar",
+            "price": 80
           },
           {
             "id": 5004,
-            "name": "Komplett",
+            "name": "Halblanges Haar",
             "price": 100
+          },
+          {
+            "id": 5009,
+            "name": "Blondiervorgang",
+            "price": 140
           }
         ]
+      },
+      {
+        "id": 504,
+        "name": "Face Framing mit Gloss",
+        "price": 50
+      },
+      {
+        "id": 505,
+        "name": "Ansatzverblendung od. Abmattierung",
+        "price": "ab 40,00"
       },
       {
         "id": 601,
@@ -229,13 +305,13 @@
           },
           {
             "id": 6002,
-            "name": "Mittellanges Haar",
-            "price": 33.5
+            "name": "Schulterlanges Haar",
+            "price": 38
           },
           {
             "id": 6003,
             "name": "Langes Haar",
-            "price": 65
+            "price": 52
           }
         ]
       },
@@ -245,13 +321,13 @@
         "sub_services": [
           {
             "id": 6004,
-            "name": "Mittellanges Haar",
-            "price": 120
+            "name": "Schulterlanges Haar",
+            "price": 240
           },
           {
             "id": 6005,
             "name": "Langes Haar",
-            "price": 250
+            "price": 290
           }
         ]
       }
@@ -259,7 +335,7 @@
   },
   {
     "id": 5,
-    "name": "Umformung \u0026 Styling",
+    "name": "Umformung & Styling",
     "image": "styling.jpg",
     "services": [
       {
@@ -269,7 +345,7 @@
           {
             "id": 9001,
             "name": "Kurzes Haar",
-            "price": 73
+            "price": 85
           },
           {
             "id": 9002,
@@ -281,12 +357,17 @@
       {
         "id": 1001,
         "name": "Teilhochstecken",
-        "price": 40
+        "price": "ab 45,00"
       },
       {
         "id": 1002,
         "name": "Einfache Hochsteckfrisur",
-        "price": 65
+        "price": 85
+      },
+      {
+        "id": 1004,
+        "name": "Probehochstecken",
+        "price": 40
       },
       {
         "id": 1003,
@@ -297,25 +378,9 @@
   },
   {
     "id": 6,
-    "name": "Haarpflege \u0026 Kosmetik",
+    "name": "Haarpflege & Kosmetik",
     "image": "cosmetic.jpg",
     "services": [
-      {
-        "id": 701,
-        "name": "Keraphlex",
-        "sub_services": [
-          {
-            "id": 7001,
-            "name": "Kurzes Haar",
-            "price": 5
-          },
-          {
-            "id": 7002,
-            "name": "Langes Haar",
-            "price": 10
-          }
-        ]
-      },
       {
         "id": 801,
         "name": "Wimpern färben",
@@ -334,17 +399,32 @@
       {
         "id": 1101,
         "name": "Purify Kopfhautbehandlung",
-        "price": 11
+        "price": 16
       },
       {
         "id": 1102,
-        "name": "Pflegebehandlung f. strapaziertes Haar",
-        "price": 7.5
+        "name": "Pflegebehandlung f. strapaziertes Haar mit Conditioner",
+        "price": 8
+      },
+      {
+        "id": 1104,
+        "name": "Intensivpflege f. strapaziertes Haar",
+        "price": 16
       },
       {
         "id": 1103,
         "name": "Marula Oil Blend Behandlung",
         "price": 4
+      },
+      {
+        "id": 1105,
+        "name": "Haarewaschen",
+        "price": 5
+      },
+      {
+        "id": 1106,
+        "name": "Haarverdichtung neue Klebestreifen",
+        "price": 5
       }
     ]
   }
