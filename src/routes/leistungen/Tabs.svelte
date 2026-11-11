@@ -9,7 +9,7 @@
 </script>
 
 <div role="tablist" aria-label="Kategorien"
-     class="mt-10 flex gap-x-10 overflow-x-auto border-b border-rule md:flex-wrap md:overflow-visible">
+     class="mt-10 flex gap-x-10 overflow-x-auto overflow-y-hidden border-b border-rule md:flex-wrap md:overflow-visible">
     {#each categories as category, index (category.id)}
         <Tab {category} {index}
              isActive={activeCategory.id === category.id}

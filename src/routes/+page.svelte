@@ -1,6 +1,5 @@
 <script lang="ts">
     import type {PageProps} from './$types';
-    import BookingWidget from "$components/BookingWidget.svelte";
     import OpeningStatus from "$components/OpeningStatus.svelte";
     import {siteConfig} from "$lib/config";
     import {categoryLabel, categoryNumber, getCategoryImage, getGalleryImage} from "$lib/categories";
@@ -24,7 +23,7 @@
 
 <!-- Hero -->
 <section class="container-page flex flex-col gap-8 pt-7 md:flex-row md:items-center md:gap-12 md:pt-10">
-    <div class="flex-[1_1_520px] ">
+    <div class="md:flex-[1_1_520px]">
         <p class="mb-3.5 text-sm font-medium text-brand md:mb-7 md:font-display md:text-[22px] md:font-normal md:italic">Ihr Friseur am Stadtgraben · Deggendorf</p>
         <h1 class="font-display text-[60px] font-bold leading-[0.95] tracking-[-0.015em] md:text-[96px]">Haarstudio<br>Pauli</h1>
         <p class="mt-5 max-w-[460px] text-base leading-[1.55] text-soft md:mt-9 md:text-lg md:leading-[1.6]">
@@ -35,7 +34,7 @@
             <a href="/leistungen" class="py-2.5 underline underline-offset-[6px] hover:text-brand">Alle Preise ansehen</a>
         </div>
     </div>
-    <figure class="m-0 flex-[1_1_380px]">
+    <figure class="m-0 md:flex-[1_1_380px]">
         <enhanced:img src="$lib/assets/hero.jpg" alt="Innenansicht des Haarstudio Pauli mit Bedienplätzen und Produktregal"
                       class="block h-[300px] w-full rounded-[20px] object-cover object-[40%_50%] md:h-[560px] md:rounded-none"/>
     </figure>
@@ -115,4 +114,3 @@
     <OpeningStatus/>
 </section>
 
-<BookingWidget/>

@@ -26,7 +26,7 @@
   <button
     onclick={scrollToTop}
     transition:fade
-    class="fixed bottom-24 right-5 h-12 w-12 rounded-full bg-text p-3 text-background shadow-lg hover:opacity-85 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 md:bottom-5"
+    class="fixed bottom-5 right-5 h-12 w-12 rounded-full bg-text p-3 text-background shadow-lg hover:opacity-85 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
     aria-label="Nach oben">
     <ArrowUp class="h-6 w-6" />
   </button>

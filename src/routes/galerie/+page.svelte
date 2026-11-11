@@ -81,11 +81,11 @@
     </div>
 
     <div role="tablist" aria-label="Nach Kategorie filtern"
-         class="mt-12 flex gap-x-8 overflow-x-auto border-b border-rule md:flex-wrap md:overflow-visible">
+         class="mt-12 flex gap-x-8 overflow-x-auto overflow-y-hidden border-b border-rule md:flex-wrap md:overflow-visible">
         {#each filters as f (f.id)}
             {@const selected = f.id === active}
             <button type="button" role="tab" aria-selected={selected} onclick={() => pick(f.id)}
-                    class="-mb-px min-h-11 shrink-0 cursor-pointer whitespace-nowrap border-b-[3px] py-3.5 font-display text-xl md:text-[22px] transition-colors {selected ? 'border-primary font-bold text-text' : 'border-transparent font-medium text-muted hover:text-text'}">
+                    class="min-h-11 shrink-0 cursor-pointer whitespace-nowrap border-b-[3px] py-3.5 font-display text-xl md:text-[22px] transition-colors {selected ? 'border-primary font-bold text-text' : 'border-transparent font-medium text-muted hover:text-text'}">
                 {#if f.no}<span class="mr-2 align-[5px] font-sans text-[13px] font-semibold {selected ? 'text-brand' : 'text-faint'}">{f.no}</span>{/if}{f.label}
                 <span class="font-sans text-sm font-medium text-faint">({count(f.id)})</span>
             </button>
