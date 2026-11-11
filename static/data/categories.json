@@ -5,14 +5,14 @@
     "image": "herren.jpg",
     "services": [
       {
-        "id": 101,
-        "name": "Kranzschnitt",
-        "price": 25
+        "id": 112,
+        "name": "Waschen, Schneiden, Stylen mit Kopfmassage",
+        "price": 38
       },
       {
         "id": 102,
         "name": "Haarschnitt",
-        "price": 25
+        "price": 30
       },
       {
         "id": 103,
@@ -24,8 +24,8 @@
             "price": 20
           },
           {
-            "id": 1002,
-            "name": "Buzzcut",
+            "id": 1006,
+            "name": "Fadecut mit Waschen u. Stylen",
             "price": 38
           },
           {
@@ -59,12 +59,12 @@
       {
         "id": 106,
         "name": "Oberkopf Strähnen",
-        "price": 35
+        "price": 55
       },
       {
         "id": 107,
         "name": "Graukaschierung",
-        "price": 23
+        "price": 35
       },
       {
         "id": 108,
@@ -72,19 +72,9 @@
         "price": 11
       },
       {
-        "id": 109,
-        "name": "Kopfmassage mit Haarwasser",
-        "price": 5.5
-      },
-      {
         "id": 110,
-        "name": "Permanente Umformung",
-        "price": 50
-      },
-      {
-        "id": 111,
-        "name": "Haar Tattoo / Design",
-        "price": 5
+        "name": "Dauerwelle",
+        "price": 80
       }
     ]
   },
@@ -94,18 +84,33 @@
     "image": "damen.jpg",
     "services": [
       {
+        "id": 204,
+        "name": "Pony schneiden",
+        "price": 12
+      },
+      {
+        "id": 206,
+        "name": "Curtain Bangs",
+        "price": 24
+      },
+      {
         "id": 202,
-        "name": "Haarschnitt",
+        "name": "Trockenhaarschnitt",
         "sub_services": [
           {
-            "id": 2001,
-            "name": "Spitzen",
-            "price": 20
+            "id": 2009,
+            "name": "Kurzes Haar",
+            "price": 42
           },
           {
-            "id": 2002,
-            "name": "Komplett",
-            "price": 32
+            "id": 2010,
+            "name": "Halblanges / langes Haar",
+            "price": 55
+          },
+          {
+            "id": 2011,
+            "name": "Aufwändiger Trockenhaarschnitt",
+            "price": 63
           }
         ]
       },
@@ -114,31 +119,16 @@
         "name": "Waschen, Schneiden, Föhnen",
         "sub_services": [
           {
-            "id": 2003,
-            "name": "Spitzen kurzes Haar",
-            "price": 38
+            "id": 2012,
+            "name": "Kurzes Haar",
+            "price": 63
           },
           {
-            "id": 2007,
-            "name": "Spitzen langes Haar",
-            "price": 49
-          },
-          {
-            "id": 2004,
-            "name": "Komplett kurzes Haar",
-            "price": 57
-          },
-          {
-            "id": 2008,
-            "name": "Komplett langes Haar",
-            "price": 67
+            "id": 2013,
+            "name": "Halblanges / langes Haar",
+            "price": 73
           }
         ]
-      },
-      {
-        "id": 204,
-        "name": "Pony schneiden / Curtain Bangs",
-        "price": 12
       },
       {
         "id": 205,
@@ -151,15 +141,20 @@
           },
           {
             "id": 2006,
-            "name": "Lang",
-            "price": 40
+            "name": "Halblang / Lang",
+            "price": 46
           }
         ]
       },
       {
-        "id": 207,
-        "name": "Waschen, Schneiden, Stylen",
-        "price": 35
+        "id": 208,
+        "name": "Glätten",
+        "price": 5
+      },
+      {
+        "id": 209,
+        "name": "Glätteisen-Locken od. Wellen",
+        "price": 20
       }
     ]
   },
@@ -173,16 +168,21 @@
         "name": "Haarschnitt",
         "sub_services": [
           {
-            "id": 3001,
-            "name": "Bis 5 Jahre",
-            "price": 18
-          },
-          {
             "id": 3002,
-            "name": "Bis 10 Jahre",
+            "name": "Kurzhaarschnitt bis 10 Jahre",
             "price": 21
           }
         ]
+      },
+      {
+        "id": 111,
+        "name": "Haircut Tattoo",
+        "price": 5
+      },
+      {
+        "id": 302,
+        "name": "Lange Haare, wie bei Erwachsenen",
+        "price": "-15% Rabatt"
       }
     ]
   },
@@ -193,44 +193,8 @@
     "services": [
       {
         "id": 401,
-        "name": "Farbe / Tönung",
-        "sub_services": [
-          {
-            "id": 4001,
-            "name": "Ansatz 30 ml",
-            "price": 45
-          },
-          {
-            "id": 4002,
-            "name": "60 ml",
-            "price": 55
-          },
-          {
-            "id": 4003,
-            "name": "80 ml",
-            "price": 60
-          },
-          {
-            "id": 4004,
-            "name": "100 ml",
-            "price": 65
-          },
-          {
-            "id": 4005,
-            "name": "120 ml",
-            "price": 71
-          },
-          {
-            "id": 4006,
-            "name": "140 ml",
-            "price": 77
-          },
-          {
-            "id": 4007,
-            "name": "160 ml",
-            "price": 83
-          }
-        ]
+        "name": "Farbe / Tönung (je nach Menge / Aufwand)",
+        "price": "ab 55,00"
       },
       {
         "id": 501,
@@ -239,22 +203,22 @@
           {
             "id": 5001,
             "name": "Ansatz Oberkopf",
-            "price": 52
+            "price": 72
           },
           {
             "id": 5005,
             "name": "Ansatz ganzer Kopf",
-            "price": 66
+            "price": 86
           },
           {
-            "id": 5006,
-            "name": "Ganzer Kopf kurzes Haar",
-            "price": 56
+            "id": 5010,
+            "name": "Oberkopf (kurz, halblang, lang)",
+            "price": 76
           },
           {
-            "id": 5007,
-            "name": "Ganzer Kopf langes Haar",
-            "price": 120
+            "id": 5011,
+            "name": "Ganzer Kopf (kurz, halblang, lang)",
+            "price": 140
           }
         ]
       },
@@ -265,17 +229,17 @@
           {
             "id": 5003,
             "name": "Ansatz",
-            "price": 60
-          },
-          {
-            "id": 5008,
-            "name": "Kurzes Haar",
-            "price": 80
+            "price": 90
           },
           {
             "id": 5004,
             "name": "Halblanges Haar",
             "price": 100
+          },
+          {
+            "id": 5012,
+            "name": "Langes Haar",
+            "price": 140
           },
           {
             "id": 5009,
@@ -285,49 +249,43 @@
         ]
       },
       {
-        "id": 504,
-        "name": "Face Framing mit Gloss",
-        "price": 50
-      },
-      {
         "id": 505,
         "name": "Ansatzverblendung od. Abmattierung",
         "price": "ab 40,00"
       },
       {
         "id": 601,
-        "name": "Glossing",
-        "sub_services": [
-          {
-            "id": 6001,
-            "name": "Kurzes Haar",
-            "price": 25
-          },
-          {
-            "id": 6002,
-            "name": "Schulterlanges Haar",
-            "price": 38
-          },
-          {
-            "id": 6003,
-            "name": "Langes Haar",
-            "price": 52
-          }
-        ]
+        "name": "Glossing ~ Shinefinity (kurz, halblang, lang)",
+        "price": "ab 35,00"
       },
       {
-        "id": 602,
-        "name": "Painting / Balayage",
+        "id": 603,
+        "name": "Highlights Airtouch / Babylight",
+        "price": 320
+      },
+      {
+        "id": 604,
+        "name": "Highlights Airtouch / Babylight mit Zwischenfarbe und Veredelung",
+        "price": 380
+      },
+      {
+        "id": 605,
+        "name": "Demi Permanente Smooth Filler Treatment",
         "sub_services": [
           {
-            "id": 6004,
-            "name": "Schulterlanges Haar",
-            "price": 240
+            "id": 6007,
+            "name": "Kurzes Haar",
+            "price": 50
           },
           {
-            "id": 6005,
+            "id": 6008,
+            "name": "Halblanges Haar",
+            "price": 100
+          },
+          {
+            "id": 6009,
             "name": "Langes Haar",
-            "price": 290
+            "price": 154
           }
         ]
       }
@@ -344,35 +302,30 @@
         "sub_services": [
           {
             "id": 9001,
-            "name": "Kurzes Haar",
-            "price": 85
+            "name": "Klassik kurzes Haar",
+            "price": 100
           },
           {
             "id": 9002,
-            "name": "Langes Haar",
-            "price": 111
+            "name": "Halblanges / langes Haar",
+            "price": 130
           }
         ]
       },
       {
         "id": 1001,
         "name": "Teilhochstecken",
-        "price": "ab 45,00"
+        "price": 65
       },
       {
         "id": 1002,
-        "name": "Einfache Hochsteckfrisur",
-        "price": 85
-      },
-      {
-        "id": 1004,
-        "name": "Probehochstecken",
-        "price": 40
+        "name": "Hochsteckfrisur",
+        "price": 86
       },
       {
         "id": 1003,
-        "name": "Hochzeitfrisur mit 2× Probestecken",
-        "price": 180
+        "name": "Hochzeitsfrisur mit 2× Probestecken",
+        "price": 350
       }
     ]
   },
@@ -389,12 +342,17 @@
       {
         "id": 802,
         "name": "Augenbrauen färben",
-        "price": 8
+        "price": 10
       },
       {
         "id": 803,
         "name": "Augenbrauen zupfen",
         "price": 10.5
+      },
+      {
+        "id": 804,
+        "name": "Make-Up, Schminken",
+        "price": 45
       },
       {
         "id": 1101,
@@ -403,28 +361,13 @@
       },
       {
         "id": 1102,
-        "name": "Pflegebehandlung f. strapaziertes Haar mit Conditioner",
+        "name": "Schnellpflege f. strapaziertes Haar",
         "price": 8
       },
       {
         "id": 1104,
         "name": "Intensivpflege f. strapaziertes Haar",
         "price": 16
-      },
-      {
-        "id": 1103,
-        "name": "Marula Oil Blend Behandlung",
-        "price": 4
-      },
-      {
-        "id": 1105,
-        "name": "Haarewaschen",
-        "price": 5
-      },
-      {
-        "id": 1106,
-        "name": "Haarverdichtung neue Klebestreifen",
-        "price": 5
       }
     ]
   }
