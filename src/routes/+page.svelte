@@ -3,7 +3,7 @@
     import BookingWidget from "$components/BookingWidget.svelte";
     import OpeningStatus from "$components/OpeningStatus.svelte";
     import {siteConfig} from "$lib/config";
-    import {categoryLabel, categoryNumber, getCategoryImage} from "$lib/categories";
+    import {categoryLabel, categoryNumber, getCategoryImage, getGalleryImage} from "$lib/categories";
 
     let {data}: PageProps = $props();
     let categories = $derived(data.categories);
@@ -14,8 +14,6 @@
         {src: "kinder.jpg", alt: "Kinderfrisur mit Spange"},
         {src: "cosmetic.jpg", alt: "Pflegebehandlung für lange Haare"},
     ];
-    const galleryImages = import.meta.glob('$lib/assets/gallery/*.{jpg,png,webp}', {eager: true, query: '?url', import: 'default'}) as Record<string, string>;
-    const galleryUrl = (file: string) => Object.entries(galleryImages).find(([k]) => k.endsWith(`/${file}`))?.[1] ?? "";
 
     const hasAbout = $derived(!!(siteConfig.about.quote || siteConfig.about.text));
 </script>
@@ -58,7 +56,7 @@
             <a href="/leistungen?tab={encodeURIComponent(category.name)}"
                class="group flex items-center gap-3.5 border-b border-rule py-3.5 no-underline md:gap-6 md:py-6">
                 <span class="w-[22px] flex-none text-xs font-semibold text-brand md:w-10 md:font-display md:text-lg md:font-normal">{categoryNumber(i)}</span>
-                <img src={getCategoryImage(category.image)} alt="" loading="lazy"
+                <enhanced:img src={getCategoryImage(category.image)} alt="" sizes="72px" loading="lazy"
                      class="h-16 w-[52px] flex-none rounded-[10px] object-cover md:h-[88px] md:w-[72px] md:rounded-none"/>
                 <span class="min-w-0 flex-1">
                     <span class="block font-display text-[22px] font-bold leading-[1.05] md:text-4xl md:font-normal md:leading-none group-hover:text-brand">{categoryLabel(category)}</span>
@@ -105,7 +103,7 @@
     </div>
     <div class="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-3">
         {#each galleryPreview as photo}
-            <img src={galleryUrl(photo.src)} alt={photo.alt} loading="lazy"
+            <enhanced:img src={getGalleryImage(photo.src)} alt={photo.alt} sizes="(min-width: 768px) 25vw, 50vw" loading="lazy"
                  class="h-[150px] w-full rounded-xl object-cover md:h-[360px] md:rounded-none"/>
         {/each}
     </div>

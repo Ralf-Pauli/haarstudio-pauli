@@ -1,17 +1,26 @@
 import type { Category } from "$lib/utils/types";
 
-// Resolve category images at build time.
+// Resolve images at build time as @sveltejs/enhanced-img pictures (use with <enhanced:img src={...}>).
 const categoryImages = import.meta.glob("$lib/assets/categories/*.{jpg,png,webp}", {
     eager: true,
-    query: "?url",
+    query: { enhanced: true },
     import: "default"
 }) as Record<string, string>;
 
-export function getCategoryImage(filename: string | undefined): string {
+const galleryImages = import.meta.glob("$lib/assets/gallery/*.{jpg,png,webp}", {
+    eager: true,
+    query: { enhanced: true },
+    import: "default"
+}) as Record<string, string>;
+
+function find(images: Record<string, string>, filename: string | undefined): string {
     if (!filename) return "";
-    const key = Object.keys(categoryImages).find((k) => k.endsWith(`/${filename}`));
-    return key ? categoryImages[key] : "";
+    const key = Object.keys(images).find((k) => k.endsWith(`/${filename}`));
+    return key ? images[key] : "";
 }
+
+export const getCategoryImage = (filename: string | undefined) => find(categoryImages, filename);
+export const getGalleryImage = (filename: string | undefined) => find(galleryImages, filename);
 
 export function categoryNumber(index: number): string {
     return String(index + 1).padStart(2, "0");

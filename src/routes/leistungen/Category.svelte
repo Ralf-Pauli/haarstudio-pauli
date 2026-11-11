@@ -24,7 +24,7 @@
 
 <!-- Bildband der gewählten Kategorie -->
 <section class="mt-8 flex flex-col gap-6 md:flex-row md:items-stretch md:gap-10">
-    <img src={getCategoryImage(category.image)} alt=""
+    <enhanced:img src={getCategoryImage(category.image)} alt="" sizes="(min-width: 768px) 50vw, 100vw"
          class="h-44 w-full min-w-0 object-cover md:h-60 md:flex-[1_1_360px]"/>
     <div class="flex flex-col justify-between gap-6 py-2 md:flex-[1_1_420px]">
         <div>
