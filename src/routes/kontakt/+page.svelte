@@ -25,7 +25,7 @@
 </div>
 
 <!-- Öffnungszeiten -->
-<section id="zeiten" class="container-page pt-12 md:pt-20">
+<section id="zeiten" class="container-page pt-8 md:pt-10">
     <h2 class="section-heading mb-4 md:mb-8">Öffnungszeiten</h2>
     <OpeningStatus/>
 </section>
@@ -33,7 +33,7 @@
 <!-- Adresse & Karte -->
 <section class="container-page pt-12 md:pt-24">
     <div class="flex flex-wrap items-stretch gap-x-20 gap-y-12">
-        <div class="flex flex-[1_1_340px] flex-col gap-7">
+        <div class="flex flex-[1_1_420px] flex-col gap-7">
             <h2 class="section-heading">Adresse &amp; Kontakt</h2>
             <div class="flex flex-col gap-3">
                 <a href={routeUrl} target="_blank" rel="noopener noreferrer"
@@ -41,7 +41,7 @@
                     <span class="flex size-12 flex-none items-center justify-center rounded-full bg-secondary text-brand"><MapPin class="size-5"/></span>
                     <span>
                         <span class="block text-[13px] text-muted">Adresse · Route planen ↗</span>
-                        <span class="block font-display text-[28px] font-bold leading-[1.1]">{contact.address.street}<br>{contact.address.zipcode} {contact.address.city}</span>
+                        <span class="block font-display text-2xl font-bold leading-[1.15]"><span class="whitespace-nowrap">{contact.address.street}</span><br>{contact.address.zipcode} {contact.address.city}</span>
                     </span>
                 </a>
                 <a href="tel:{contact.contact.phone.replaceAll(' ', '')}"
@@ -49,7 +49,7 @@
                     <span class="flex size-12 flex-none items-center justify-center rounded-full bg-secondary text-brand"><Phone class="size-5"/></span>
                     <span>
                         <span class="block text-[13px] text-muted">Telefon</span>
-                        <span class="block font-display text-[28px] font-bold leading-[1.1]">{contact.contact.phone}</span>
+                        <span class="block font-display text-2xl font-bold leading-[1.15]">{contact.contact.phone}</span>
                     </span>
                 </a>
             </div>

@@ -122,7 +122,9 @@
         <div class="flex min-h-0 flex-1 items-center justify-center gap-6 py-4">
             <button type="button" onclick={() => step(-1)} aria-label="Vorheriges Bild"
                     class="hidden size-14 flex-none cursor-pointer items-center justify-center border border-[#5a545a] hover:bg-white/10 md:flex"><ArrowLeft class="size-5"/></button>
-            <enhanced:img src={current.asset} alt={current.alt} class="max-h-[72vh] min-w-0 max-w-[min(100%,1100px)] object-contain"/>
+            <div class="flex h-full min-h-0 min-w-0 flex-1 items-center justify-center">
+                <enhanced:img src={current.asset} alt={current.alt} class="block h-auto max-h-[72vh] w-auto max-w-[min(100%,1100px)] object-contain"/>
+            </div>
             <button type="button" onclick={() => step(1)} aria-label="Nächstes Bild"
                     class="hidden size-14 flex-none cursor-pointer items-center justify-center border border-[#5a545a] hover:bg-white/10 md:flex"><ArrowRight class="size-5"/></button>
         </div>

@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { untrack } from "svelte";
     import Tabs from "./Tabs.svelte";
     import type { PageProps } from "./$types";
     import Category from "./Category.svelte";
@@ -14,9 +15,8 @@
 
     $effect(() => {
         const found = data.categories.find((category : CategoryType) => category.name === data.tabsValueParam);
-        if (found && found.name !== activeCategory.name) {
-            activeCategory = found;
-        }
+        // Only react to the ?tab= param; untrack so manual tab changes are not overwritten.
+        if (found) untrack(() => (activeCategory = found));
     });
 
     let index = $derived(Math.max(0, categories.findIndex((c: CategoryType) => c.id === activeCategory.id)));
