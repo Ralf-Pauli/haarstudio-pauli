@@ -20,7 +20,7 @@
 </svelte:head>
 
 <div class="container-page pt-4 md:pt-8">
-    <h1 class="font-display text-[44px] font-bold leading-[0.95] tracking-[-0.015em] md:text-[64px]">Kontakt<span class="text-primary">.</span></h1>
+    <h1 class="font-display text-[44px] font-bold leading-[0.95] tracking-[-0.015em] md:text-[64px]">Kontakt</h1>
     <p class="mt-6 max-w-[520px] text-lg leading-[1.6] text-soft">Öffnungszeiten, Adresse und alle Wege zu uns – auf einen Blick.</p>
 </div>
 
@@ -41,7 +41,7 @@
                     <span class="flex size-12 flex-none items-center justify-center rounded-full bg-primary text-[#141311]"><MapPin class="size-5"/></span>
                     <span>
                         <span class="block text-[13px] text-muted">Adresse · Route planen ↗</span>
-                        <span class="block font-display text-[28px] font-bold leading-[1.1]">{contact.address.street}, {contact.address.zipcode} {contact.address.city}</span>
+                        <span class="block font-display text-[28px] font-bold leading-[1.1]">{contact.address.street}<br>{contact.address.zipcode} {contact.address.city}</span>
                     </span>
                 </a>
                 <a href="tel:{contact.contact.phone.replaceAll(' ', '')}"

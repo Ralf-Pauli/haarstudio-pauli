@@ -32,9 +32,9 @@
         </div>
     </div>
 
-    <div class="rounded-2xl border border-rule px-5 py-2">
+    <div>
         {#each status?.week ?? [] as day (day.index)}
-            <div class="flex items-center justify-between border-b border-rule py-3 text-base last:border-b-0 md:text-[17px] {day.today ? 'font-semibold text-brand' : ''} {day.closed && !day.today ? 'text-faint' : ''}">
+            <div class="flex items-center justify-between border-b border-rule py-3 text-base md:text-[17px] {day.today ? 'font-semibold text-brand' : ''} {day.closed && !day.today ? 'text-faint' : ''}">
                 <span class="flex items-center gap-2.5">
                     {#if day.today}<span aria-hidden="true" class="size-1.5 rounded-full bg-primary"></span>{/if}{day.name}
                 </span>

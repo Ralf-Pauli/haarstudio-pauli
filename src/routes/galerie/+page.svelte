@@ -73,7 +73,7 @@
 
 <div class="container-page pt-4 md:pt-8">
     <div class="flex flex-wrap items-end justify-between gap-5">
-        <h1 class="font-display text-[44px] font-bold leading-[0.95] tracking-[-0.015em] md:text-[64px]">Galerie<span class="text-primary">.</span></h1>
+        <h1 class="font-display text-[44px] font-bold leading-[0.95] tracking-[-0.015em] md:text-[64px]">Galerie</h1>
         <p class="max-w-[420px] text-[17px] leading-[1.6] text-soft">
             Ein Blick auf unsere Arbeiten und in den Salon. Mehr Neues gibt es täglich auf
             <a class="underline hover:text-brand" href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer">Instagram</a>.
