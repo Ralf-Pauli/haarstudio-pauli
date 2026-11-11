@@ -1,6 +1,6 @@
 <script lang="ts">
     import { Button } from "$lib/components/ui/button";
-    import { ChevronLeft, ChevronRight } from "lucide-svelte";
+    import { ChevronLeft, ChevronRight } from "@lucide/svelte";
     import Tab from "./Tab.svelte";
     import type { Category } from "$utils/types";
 

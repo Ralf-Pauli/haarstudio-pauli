@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
-  import { ArrowUp } from "lucide-svelte";
+  import { ArrowUp } from "@lucide/svelte";
 
   let showButton = false;
 
