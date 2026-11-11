@@ -16,7 +16,7 @@
 
 <div class="grid gap-x-16 gap-y-8 md:grid-cols-2">
     <!-- Status: editorial, rule-based instead of a filled card -->
-    <div class="flex flex-col justify-between gap-8 rounded-2xl border border-primary/40 bg-primary/10 p-6 md:p-8">
+    <div class="flex flex-col justify-between gap-8 rounded-2xl bg-background shadow-[0_1px_2px_rgba(0,0,0,.06),0_8px_24px_rgba(0,0,0,.08)] dark:shadow-none dark:ring-1 dark:ring-rule p-6 md:p-8">
         <div class="text-sm font-semibold uppercase tracking-[0.08em] text-brand">{status?.todayName ?? "Heute"}</div>
         <div aria-live="polite">
             <div class="flex items-center gap-3.5">

@@ -37,16 +37,16 @@
             <h2 class="section-heading">Adresse &amp; Kontakt</h2>
             <div class="flex flex-col gap-3">
                 <a href={routeUrl} target="_blank" rel="noopener noreferrer"
-                   class="flex items-center gap-3.5 rounded-2xl border border-primary/40 bg-primary/10 p-4 no-underline transition-colors hover:bg-primary/20">
-                    <span class="flex size-12 flex-none items-center justify-center rounded-full bg-primary text-[#141311]"><MapPin class="size-5"/></span>
+                   class="flex items-center gap-3.5 rounded-2xl bg-background shadow-[0_1px_2px_rgba(0,0,0,.06),0_8px_24px_rgba(0,0,0,.08)] dark:shadow-none dark:ring-1 dark:ring-rule p-4 no-underline transition-shadow hover:shadow-[0_2px_4px_rgba(0,0,0,.08),0_12px_32px_rgba(0,0,0,.12)] dark:hover:ring-primary">
+                    <span class="flex size-12 flex-none items-center justify-center rounded-full bg-secondary text-brand"><MapPin class="size-5"/></span>
                     <span>
                         <span class="block text-[13px] text-muted">Adresse · Route planen ↗</span>
                         <span class="block font-display text-[28px] font-bold leading-[1.1]">{contact.address.street}<br>{contact.address.zipcode} {contact.address.city}</span>
                     </span>
                 </a>
                 <a href="tel:{contact.contact.phone.replaceAll(' ', '')}"
-                   class="flex items-center gap-3.5 rounded-2xl border border-primary/40 bg-primary/10 p-4 no-underline transition-colors hover:bg-primary/20">
-                    <span class="flex size-12 flex-none items-center justify-center rounded-full bg-primary text-[#141311]"><Phone class="size-5"/></span>
+                   class="flex items-center gap-3.5 rounded-2xl bg-background shadow-[0_1px_2px_rgba(0,0,0,.06),0_8px_24px_rgba(0,0,0,.08)] dark:shadow-none dark:ring-1 dark:ring-rule p-4 no-underline transition-shadow hover:shadow-[0_2px_4px_rgba(0,0,0,.08),0_12px_32px_rgba(0,0,0,.12)] dark:hover:ring-primary">
+                    <span class="flex size-12 flex-none items-center justify-center rounded-full bg-secondary text-brand"><Phone class="size-5"/></span>
                     <span>
                         <span class="block text-[13px] text-muted">Telefon</span>
                         <span class="block font-display text-[28px] font-bold leading-[1.1]">{contact.contact.phone}</span>
