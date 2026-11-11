@@ -1,13 +1,20 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @layer base {
     :root {
-        --text: #181611;
-        --background: #e9e7e9;
-        --primary: #b8801e;
-        --secondary: #f5f3f0;
+        --text: #141311;
+        --background: #f3f1ec;
+        --primary: #d9971f;
+        --secondary: #eae6de;
         --accent: #1da4cd;
+        --soft: #3a3631;
+        --muted: #5a544c;
+        --faint: #6b655c;
+        --rule: #d6d1c8;
+        --brand: #b0700f;
         --radius: 0.5rem;
         margin-left: calc(100vw - 100%);
         margin-right: 0;
@@ -17,19 +24,28 @@
         --border: 216 34% 17%;
         --input: 216 34% 17%;
 
-
         --text: #eeece7;
         --background: #191719;
         --foreground: 213 31% 91%;
         --primary: #e1a847;
-        --secondary: #0f0d0a;
+        --secondary: #262226;
         --accent: #32b9e2;
+        --soft: #c9c4be;
+        --muted: #ada7a0;
+        --faint: #8f8981;
+        --rule: #3a353a;
+        --brand: #e1a847;
     }
 
     body {
         background-color: var(--background);
         color: var(--text);
+        font-family: var(--font-sans);
         font-feature-settings: "rlig" 1, "calt" 1;
+    }
+
+    h1, h2, h3, h4 {
+        font-family: var(--font-display);
     }
 
     body,
@@ -75,6 +91,9 @@
 }
 
 @theme inline {
+    --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+    --font-sans: "Inter Tight", ui-sans-serif, system-ui, sans-serif;
+
     --color-text: var(--text);
     --color-background: var(--background);
     --color-primary: var(--primary);
@@ -83,6 +102,70 @@
     --color-border: var(--border);
     --color-input: var(--input);
     --color-foreground: var(--foreground);
+    --color-soft: var(--soft);
+    --color-muted: var(--muted);
+    --color-faint: var(--faint);
+    --color-rule: var(--rule);
+    --color-brand: var(--brand);
+}
+
+/* Shared editorial building blocks */
+@utility container-page {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 80rem;
+    padding-inline: 1.25rem;
+
+    @media (min-width: 48rem) {
+        padding-inline: 2.5rem;
+    }
+}
+
+@utility section-heading {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    font-size: 2rem;
+    line-height: 1;
+
+    @media (min-width: 48rem) {
+        font-size: 3rem;
+    }
+}
+
+@utility btn-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.75rem;
+    border-radius: 9999px;
+    background-color: var(--text);
+    color: var(--background);
+    font-weight: 500;
+    padding: 0.875rem 1.5rem;
+    text-decoration: none;
+    transition: opacity 0.2s;
+
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+@utility btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.75rem;
+    border-radius: 9999px;
+    border: 1px solid var(--text);
+    font-weight: 500;
+    padding: 0.75rem 1.375rem;
+    text-decoration: none;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: var(--secondary);
+    }
 }
 
 @utility section-title {

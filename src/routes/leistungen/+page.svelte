@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { untrack } from "svelte";
     import Tabs from "./Tabs.svelte";
     import type { PageProps } from "./$types";
     import Category from "./Category.svelte";
@@ -14,22 +15,27 @@
 
     $effect(() => {
         const found = data.categories.find((category : CategoryType) => category.name === data.tabsValueParam);
-        if (found && found.name !== activeCategory.name) {
-            activeCategory = found;
-        }
+        // Only react to the ?tab= param; untrack so manual tab changes are not overwritten.
+        if (found) untrack(() => (activeCategory = found));
     });
+
+    let index = $derived(Math.max(0, categories.findIndex((c: CategoryType) => c.id === activeCategory.id)));
 </script>
 
-<div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-5 md:gap-20">
-    <Tabs { categories } bind:activeCategory={ activeCategory } />
-    <div class="flex gap-3 pt-3 w-full">
-        {#key activeCategory}
-            {#if activeCategory === null}
-                <div class="m-auto w-8 h-8 border-4 border-dashed rounded-full animate-spin border-t-primary"></div>
-            {:else}
-                <Category category={ activeCategory }/>
-            {/if}
-        {/key}
-    </div>
-</div>
+<svelte:head>
+    <title>Leistungen & Preise – Haarstudio Pauli</title>
+</svelte:head>
 
+<div class="container-page pt-4 md:pt-8">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+        <h1 class="font-display text-4xl font-bold leading-none tracking-[-0.015em] md:text-5xl">Leistungen &amp; Preise</h1>
+        <p class="text-[15px] text-muted">Preise inkl. MwSt. · Endpreis nach Haarlänge &amp; Aufwand</p>
+    </div>
+
+    <Tabs { categories } bind:activeCategory={ activeCategory } />
+
+    {#key activeCategory.id}
+        <Category category={ activeCategory } {index} total={categories.length}/>
+    {/key}
+
+</div>

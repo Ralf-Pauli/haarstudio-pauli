@@ -3,6 +3,9 @@
     "id": 1,
     "name": "Herren",
     "image": "herren.jpg",
+    "shortName": "Herren",
+    "tagline": "Fade, Maschinenschnitt, Bart",
+    "from": "20 €",
     "services": [
       {
         "id": 112,
@@ -82,6 +85,9 @@
     "id": 2,
     "name": "Damen",
     "image": "damen.jpg",
+    "shortName": "Damen",
+    "tagline": "Schneiden, Föhnen, Pony",
+    "from": "35 €",
     "services": [
       {
         "id": 204,
@@ -162,6 +168,9 @@
     "id": 3,
     "name": "Kinder",
     "image": "kinder.jpg",
+    "shortName": "Kinder",
+    "tagline": "Kinderschnitt bis 10 Jahre",
+    "from": "21 €",
     "services": [
       {
         "id": 301,
@@ -190,6 +199,9 @@
     "id": 4,
     "name": "Farbe & Highlights",
     "image": "coloration.jpg",
+    "shortName": "Farbe",
+    "tagline": "Strähnen, Aufhellung, Babylights, Glossing",
+    "from": "35 €",
     "services": [
       {
         "id": 401,
@@ -295,6 +307,9 @@
     "id": 5,
     "name": "Umformung & Styling",
     "image": "styling.jpg",
+    "shortName": "Styling",
+    "tagline": "Dauerwelle, Hochsteck- & Brautfrisuren",
+    "from": "65 €",
     "services": [
       {
         "id": 901,
@@ -333,6 +348,9 @@
     "id": 6,
     "name": "Haarpflege & Kosmetik",
     "image": "cosmetic.jpg",
+    "shortName": "Pflege",
+    "tagline": "Kopfhaut, Pflege, Wimpern, Make-up",
+    "from": "8 €",
     "services": [
       {
         "id": 801,

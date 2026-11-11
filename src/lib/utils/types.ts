@@ -1,7 +1,11 @@
 type Category = {
     id: number;
     name: string;
-    icon: string;
+    image?: string;
+    shortName?: string;
+    tagline?: string;
+    from?: string;
+    icon?: string;
     services: Services[];
 }
 
