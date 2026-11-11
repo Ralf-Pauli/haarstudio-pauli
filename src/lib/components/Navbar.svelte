@@ -3,15 +3,17 @@
     import {page} from "$app/state";
     import {fly, fade} from "svelte/transition";
     import {cubicOut} from "svelte/easing";
+    import {Menu, X} from "@lucide/svelte";
     import ThemeToggle from "$components/ThemeToggle.svelte";
+    import {siteConfig} from "$lib/config";
 
     let {isMobileMenuOpen = $bindable(false)} = $props();
 
     let pathName = $state(page.url.pathname);
 
     const menuItems = [
-        {name: "Hauptseite", url: "/"},
-        {name: "Leistungen", url: "/leistungen"},
+        {name: "Start", url: "/"},
+        {name: "Leistungen & Preise", url: "/leistungen"},
         {name: "Galerie", url: "/galerie"},
         {name: "Kontakt", url: "/kontakt"},
     ];
@@ -53,53 +55,46 @@
 
 <svelte:window onkeydown={handleKeydown}/>
 
-<nav class="mb-2">
-    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div class="relative flex h-16 items-center justify-between">
-            <!-- Mobile menu button -->
-            <div class="flex items-center sm:hidden">
-                <button
-                        onclick={toggleMobileMenu}
-                        class="inline-flex items-center justify-center rounded-md p-2 text-text hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition-colors"
-                        aria-controls="mobile-menu"
-                        aria-expanded={isMobileMenuOpen}
-                        aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+<header class="border-b border-rule md:border-b-0">
+    <div class="container-page flex items-center justify-between gap-x-10 gap-y-5 py-3 md:flex-wrap md:py-7">
+        <!-- Logo -->
+        <a href="/" class="flex shrink-0 items-center gap-2 md:gap-3 focus:outline-none" aria-label="{siteConfig.name} – Startseite">
+            <enhanced:img class="block h-[34px] w-auto md:h-[52px]" src="$lib/assets/logo.png" alt=""/>
+            <enhanced:img class="block h-[22px] w-auto md:h-[34px]" src="$lib/assets/logoName.png" alt={siteConfig.name}/>
+        </a>
+
+        <!-- Desktop menu -->
+        <nav aria-label="Hauptnavigation" class="hidden md:flex md:flex-wrap md:items-center md:gap-x-11 md:gap-y-2">
+            {#each menuItems as item}
+                <a
+                        href={item.url}
+                        class="nav-item font-display py-2 text-2xl"
+                        class:navActive={isActive(item.url)}
+                        aria-current={isActive(item.url) ? "page" : undefined}
                 >
-                    <span class="sr-only">{isMobileMenuOpen ? "Close" : "Open"} main menu</span>
-                    {#if isMobileMenuOpen}
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
-                        </svg>
-                    {:else}
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-                        </svg>
-                    {/if}
-                </button>
-            </div>
-
-            <!-- Logo -->
-            <div class="flex flex-1 items-center justify-center sm:justify-start">
-                <a href="/" class="flex flex-shrink-0 items-center gap-2 focus:outline-none">
-                    <enhanced:img class="block h-9 w-auto" src="$lib/assets/logo.png" alt="Logo"/>
-                    <enhanced:img class="block h-9 w-auto" src="$lib/assets/logoName.png" alt="Logo Name"/>
+                    {item.name}
                 </a>
+            {/each}
+            <a href={siteConfig.bookingUrl} target="_blank" rel="noopener noreferrer" class="btn-pill font-sans text-[15px]">Termin reservieren →</a>
+            <ThemeToggle/>
+        </nav>
 
-                <!-- Desktop menu -->
-                <div class="hidden sm:ml-auto sm:flex sm:items-center sm:space-x-1">
-                    {#each menuItems as item}
-                        <a
-                                href={item.url}
-                                class="nav-item px-2 pt-2 pb-1 mb-1 text-sm mx-2"
-                                class:navActive={isActive(item.url)}
-                                aria-current={isActive(item.url) ? "page" : undefined}
-                        >
-                            {item.name}
-                        </a>
-                    {/each}
-                </div>
-            </div>
+        <!-- Mobile controls -->
+        <div class="flex items-center md:hidden">
+            <ThemeToggle/>
+            <button
+                    onclick={toggleMobileMenu}
+                    class="inline-flex size-11 items-center justify-center rounded-md text-text focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                    aria-controls="mobile-menu"
+                    aria-expanded={isMobileMenuOpen}
+                    aria-label={isMobileMenuOpen ? "Menü schließen" : "Menü öffnen"}
+            >
+                {#if isMobileMenuOpen}
+                    <X class="size-6"/>
+                {:else}
+                    <Menu class="size-6"/>
+                {/if}
+            </button>
         </div>
     </div>
 
@@ -107,7 +102,7 @@
     {#if isMobileMenuOpen}
         <!-- Backdrop -->
         <div
-                class="fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
+                class="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm"
                 transition:fade={{ duration: 250 }}
                 onclick={closeMobileMenu}
                 role="presentation"
@@ -115,35 +110,32 @@
 
         <!-- Menu Panel -->
         <div
-                class="fixed inset-y-0 right-0 w-full max-w-xs bg-background shadow-2xl z-50"
+                id="mobile-menu"
+                class="fixed inset-y-0 right-0 z-50 w-full max-w-xs bg-background shadow-2xl"
                 transition:fly={{ x: 300, duration: 350, easing: cubicOut }}
                 role="dialog"
                 aria-modal="true"
-                aria-label="Mobile navigation"
+                aria-label="Mobile Navigation"
         >
-            <div class="h-full flex flex-col">
-                <!-- Header -->
-                <div class="flex items-center justify-between p-4 border-b border-white/10">
-                    <h2 class="text-lg font-bold text-primary">Menu</h2>
+            <div class="flex h-full flex-col">
+                <div class="flex items-center justify-between border-b border-rule p-4">
+                    <h2 class="font-display text-lg font-bold text-brand">Menü</h2>
                     <button
                             onclick={closeMobileMenu}
-                            class="p-2 rounded-lg hover:bg-white/5 transition-colors focus:outline-none"
-                            aria-label="Close menu"
+                            class="inline-flex size-11 items-center justify-center rounded-lg transition-colors hover:bg-secondary focus:outline-none"
+                            aria-label="Menü schließen"
                     >
-                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
-                        </svg>
+                        <X class="size-5"/>
                     </button>
                 </div>
 
-                <!-- Navigation Links -->
-                <nav class="flex-1 overflow-y-auto p-4">
+                <nav class="flex-1 overflow-y-auto p-4" aria-label="Mobile Navigation">
                     <ul class="space-y-1">
                         {#each mobileMenuItems as item, i}
                             <li style="animation-delay: {i * 40}ms" class="menu-item-animate">
                                 <a
                                         href={item.url}
-                                        class="mobile-nav-link block px-4 py-3 rounded-lg transition-all duration-200"
+                                        class="mobile-nav-link block rounded-lg px-4 py-3 transition-colors"
                                         class:mobile-nav-active={isActive(item.url)}
                                         aria-current={isActive(item.url) ? "page" : undefined}
                                 >
@@ -156,57 +148,39 @@
             </div>
         </div>
     {/if}
-</nav>
+</header>
 
 <style>
     .nav-item {
-        position: relative;
         border-bottom: 2px solid transparent;
-        transition: border-bottom-color 0.2s ease-in-out;
+        text-decoration: none;
+        transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
     }
 
     @media (hover: hover) and (pointer: fine) {
         .nav-item:hover {
-            border-bottom-color: #bf8d30;
-        }
-
-        .navActive:hover {
-            border-bottom-color: #d19555;
+            color: var(--brand);
         }
     }
 
     .navActive {
         border-bottom-color: var(--primary);
-        font-weight: bold;
-    }
-
-    /* Mobile menu animations */
-    .menu-item-animate {
-        opacity: 0;
-        transform: translateX(10px);
-        animation: slideIn 0.3s ease-out forwards;
-    }
-
-    @keyframes slideIn {
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
     }
 
     .mobile-nav-link {
-        font-size: 1rem;
+        font-family: var(--font-display);
+        font-size: 1.25rem;
     }
 
     @media (hover: hover) and (pointer: fine) {
         .mobile-nav-link:hover {
-            background: rgba(255, 255, 255, 0.05);
+            background: var(--secondary);
         }
     }
 
     .mobile-nav-active {
-        background: rgba(var(--primary-rgb, 209, 149, 85), 0.15);
-        color: var(--primary);
+        background: var(--secondary);
+        color: var(--brand);
         font-weight: 600;
     }
 </style>

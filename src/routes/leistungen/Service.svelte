@@ -2,35 +2,15 @@
     import { formatPrice } from "$lib/utils";
     import type { Services } from "$lib/utils/types";
 
-    let { service }: { service: Services } = $props();
+    let { title, items }: { title: string; items: Services[] } = $props();
 </script>
 
-<div class="md:w-1/2 px-6 pb-10">
-    {#if service.sub_services && service.sub_services.length > 0}
-        <div class="flex gap-2 items-center">
-            <div class="section-title">{service.name}</div>
+<div class="border-t-2 border-text pt-[18px]">
+    <h3 class="mb-2 font-display text-[22px] font-bold">{title}</h3>
+    {#each items as item (item.id)}
+        <div class="flex items-baseline justify-between gap-5 border-b border-rule py-3 text-base">
+            <span>{item.name}</span>
+            <span class="flex-none font-semibold tabular-nums">{formatPrice(item.price)}</span>
         </div>
-        <div class="flex flex-col gap-1 ml-6 mt-3">
-            {#each service.sub_services as subService, index}
-                {#if index % 2 === 1 && index > 0}
-                    <div class="flex bg-zinc-800 p-2 rounded-md">
-                        <div>{subService.name}</div>
-                        <div class="font-bold ml-auto">{formatPrice(subService.price)}</div>
-                    </div>
-                {:else}
-                    <div class="flex p-2">
-                        <div>{subService.name}</div>
-                        <div class="font-bold ml-auto">{formatPrice(subService.price)}</div>
-                    </div>
-                {/if}
-            {/each}
-        </div>
-    {:else}
-        <div class="flex items-center">
-            <div class="inline">{service.name}</div>
-            {#if service.price !== null}
-                <div class="font-bold ml-auto">{formatPrice(service.price)}</div>
-            {/if}
-        </div>
-    {/if}
+    {/each}
 </div>

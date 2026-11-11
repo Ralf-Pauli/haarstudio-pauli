@@ -1,22 +1,26 @@
 <script lang="ts">
     import type { Category } from "$utils/types";
+    import { categoryLabel, categoryNumber } from "$lib/categories";
 
     let {
         category,
-        activeCategory = $bindable(),
+        index,
         isActive = false,
+        onselect,
     }: {
         category: Category;
-        activeCategory: Category;
+        index: number;
         isActive?: boolean;
+        onselect: () => void;
     } = $props();
 </script>
 
-<button class="m-2 p-1 pl-2 w-full text-left border-solid border-b-2 md:border-b-0 md:border-l-2 whitespace-nowrap cursor-pointer"
-        class:border-primary={isActive}
-        class:border-transparent={!isActive}
-        onclick={() =>
-        activeCategory = category}
+<button
+        type="button"
+        role="tab"
+        aria-selected={isActive}
+        class="-mb-px min-h-11 shrink-0 cursor-pointer whitespace-nowrap border-b-[3px] py-3.5 font-display text-xl md:text-2xl transition-colors {isActive ? 'border-primary font-bold text-text' : 'border-transparent font-medium text-muted hover:text-text'}"
+        onclick={onselect}
 >
-    {category.name}
+    <span class="mr-2.5 align-[6px] font-sans text-sm font-semibold {isActive ? 'text-brand' : 'text-faint'}">{categoryNumber(index)}</span>{categoryLabel(category)}
 </button>
