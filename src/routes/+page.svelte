@@ -28,7 +28,7 @@
 <section class="container-page flex flex-col gap-8 pt-7 md:flex-row md:items-end md:gap-12 md:pt-10">
     <div class="flex-[1_1_520px] md:pb-6">
         <p class="mb-3.5 text-sm font-medium text-brand md:mb-7 md:font-display md:text-[22px] md:font-normal md:italic">Ihr Friseur am Stadtgraben · Deggendorf</p>
-        <h1 class="font-display text-[60px] font-bold leading-[0.95] tracking-[-0.015em] md:text-[128px]">Haarstudio<br>Pauli<span class="text-primary">.</span></h1>
+        <h1 class="font-display text-[60px] font-bold leading-[0.95] tracking-[-0.015em] md:text-[96px]">Haarstudio<br>Pauli</h1>
         <p class="mt-5 max-w-[460px] text-base leading-[1.55] text-soft md:mt-9 md:text-lg md:leading-[1.6]">
             Schneiden, färben, hochstecken – für Damen, Herren und Kinder. Ohne Hektik, mit ehrlicher Beratung und Preisen, die vorher feststehen.
         </p>
@@ -40,13 +40,12 @@
     <figure class="m-0 flex-[1_1_380px]">
         <enhanced:img src="$lib/assets/hero.jpg" alt="Innenansicht des Haarstudio Pauli mit Bedienplätzen und Produktregal"
                       class="block h-[300px] w-full rounded-[20px] object-cover object-[40%_50%] md:h-[560px] md:rounded-none"/>
-        <figcaption class="mt-2.5 hidden text-[13px] text-muted md:block">Der Salon, {siteConfig.address.street}</figcaption>
     </figure>
     <a href="/leistungen" class="-mt-4 w-fit py-2.5 text-[15px] font-medium underline underline-offset-[5px] md:hidden">Alle Preise ansehen →</a>
 </section>
 
 <!-- Leistungen -->
-<section id="karte" class="container-page pt-12 md:pt-32">
+<section id="karte" class="container-page pt-12 md:pt-24">
     <div class="flex flex-wrap items-baseline justify-between gap-4 border-b-2 border-text pb-2.5 md:border-b md:pb-5">
         <h2 class="section-heading">Leistungen</h2>
         <a href="/leistungen" class="py-2 text-sm font-medium hover:text-brand md:py-2.5 md:text-[17px]">
@@ -97,7 +96,7 @@
 {/if}
 
 <!-- Galerie-Vorschau -->
-<section id="galerie" class="container-page pt-12 md:pt-32">
+<section id="galerie" class="container-page pt-12 md:pt-24">
     <div class="mb-3.5 flex flex-wrap items-baseline justify-between gap-4 border-b-2 border-text pb-2.5 md:mb-6 md:border-b md:pb-5">
         <h2 class="section-heading">Galerie</h2>
         <a href="/galerie" class="py-2 text-sm font-medium hover:text-brand md:py-2.5 md:text-[17px]">
@@ -113,7 +112,7 @@
 </section>
 
 <!-- Öffnungszeiten -->
-<section id="zeiten" class="container-page pt-12 md:pt-28">
+<section id="zeiten" class="container-page pt-12 md:pt-24">
     <h2 class="section-heading mb-4 md:mb-8">Öffnungszeiten</h2>
     <OpeningStatus/>
 </section>

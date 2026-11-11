@@ -71,9 +71,9 @@
     <title>Galerie – Haarstudio Pauli</title>
 </svelte:head>
 
-<div class="container-page pt-6 md:pt-12">
+<div class="container-page pt-4 md:pt-8">
     <div class="flex flex-wrap items-end justify-between gap-5">
-        <h1 class="font-display text-[56px] font-bold leading-[0.95] tracking-[-0.015em] md:text-[104px]">Galerie<span class="text-primary">.</span></h1>
+        <h1 class="font-display text-[44px] font-bold leading-[0.95] tracking-[-0.015em] md:text-[64px]">Galerie<span class="text-primary">.</span></h1>
         <p class="max-w-[420px] text-[17px] leading-[1.6] text-soft">
             Ein Blick auf unsere Arbeiten und in den Salon. Mehr Neues gibt es täglich auf
             <a class="underline hover:text-brand" href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer">Instagram</a>.
@@ -108,16 +108,6 @@
         {/each}
     </div>
 
-    <section class="mt-16 flex flex-wrap items-center justify-between gap-6 rounded-3xl bg-secondary p-6 md:mt-24 md:px-12 md:py-10">
-        <div>
-            <div class="font-display text-[32px] font-bold leading-[1.05] md:text-[44px]">Gefällt Ihnen ein Look?</div>
-            <div class="mt-2 text-[17px] text-soft">Bringen Sie das Foto einfach zum Termin mit – wir beraten Sie gern.</div>
-        </div>
-        <div class="flex flex-wrap items-center gap-5">
-            <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" class="py-2.5 font-semibold underline underline-offset-[6px] hover:text-brand">@haarstudiopauli</a>
-            <a href={siteConfig.bookingUrl} target="_blank" rel="noopener noreferrer" class="btn-pill">Termin reservieren →</a>
-        </div>
-    </section>
 </div>
 
 <!-- Lightbox -->

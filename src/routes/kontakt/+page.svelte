@@ -1,7 +1,7 @@
 <script lang="ts">
     import Map from "$lib/components/Map.svelte";
     import OpeningStatus from "$components/OpeningStatus.svelte";
-    import {Phone} from "@lucide/svelte";
+    import {Phone, Instagram, Facebook} from "@lucide/svelte";
     import {siteConfig} from "$lib/config";
     import type {PageProps} from "./$types";
 
@@ -19,24 +19,24 @@
     <title>Kontakt – Haarstudio Pauli</title>
 </svelte:head>
 
-<div class="container-page pt-6 md:pt-12">
-    <h1 class="font-display text-[56px] font-bold leading-[0.95] tracking-[-0.015em] md:text-[104px]">Kontakt<span class="text-primary">.</span></h1>
+<div class="container-page pt-4 md:pt-8">
+    <h1 class="font-display text-[44px] font-bold leading-[0.95] tracking-[-0.015em] md:text-[64px]">Kontakt<span class="text-primary">.</span></h1>
     <p class="mt-6 max-w-[520px] text-lg leading-[1.6] text-soft">Öffnungszeiten, Adresse und alle Wege zu uns – auf einen Blick.</p>
 </div>
 
 <!-- Öffnungszeiten -->
-<section id="zeiten" class="container-page pt-14 md:pt-28">
+<section id="zeiten" class="container-page pt-12 md:pt-20">
     <h2 class="section-heading mb-4 md:mb-8">Öffnungszeiten</h2>
     <OpeningStatus/>
 </section>
 
 <!-- Adresse & Karte -->
-<section class="container-page pt-14 md:pt-32">
+<section class="container-page pt-12 md:pt-24">
     <div class="flex flex-wrap items-stretch gap-x-20 gap-y-12">
         <div class="flex flex-[1_1_340px] flex-col gap-7">
             <h2 class="section-heading">Adresse &amp; Kontakt</h2>
             <div>
-                <div class="font-display text-[32px] font-bold leading-[1.1] md:text-[44px]">
+                <div class="font-display text-[28px] font-bold leading-[1.1]">
                     {contact.address.street}<br>{contact.address.zipcode} {contact.address.city}
                 </div>
                 <a href={routeUrl} target="_blank" rel="noopener noreferrer" class="btn-outline mt-5 text-[15px]">Route planen ↗</a>
@@ -53,7 +53,8 @@
                 <div class="mt-1 flex flex-wrap gap-2.5">
                     {#each contact.socialMedia as media}
                         <a href={media.url} target="_blank" rel="noopener noreferrer"
-                           class="rounded-full border border-rule px-[18px] py-[11px] text-[15px] no-underline transition-colors hover:bg-secondary">{media.name} ↗</a>
+                           class="inline-flex items-center gap-2 rounded-full border border-rule px-[18px] py-[11px] text-[15px] no-underline transition-colors hover:bg-secondary">
+                            {#if media.name === 'Instagram'}<Instagram class="size-4"/>{:else if media.name === 'Facebook'}<Facebook class="size-4"/>{/if}{media.name} ↗</a>
                     {/each}
                 </div>
             </div>

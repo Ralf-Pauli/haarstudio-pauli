@@ -55,32 +55,32 @@
 
 <svelte:window onkeydown={handleKeydown}/>
 
-<header class="border-b border-rule md:border-b-0">
-    <div class="container-page flex items-center justify-between gap-x-10 gap-y-5 py-3 md:flex-wrap md:py-7">
+<header class="border-b border-rule lg:border-b-0">
+    <div class="container-page flex items-center justify-between gap-x-8 py-3 lg:py-4">
         <!-- Logo -->
-        <a href="/" class="flex shrink-0 items-center gap-2 md:gap-3 focus:outline-none" aria-label="{siteConfig.name} – Startseite">
-            <enhanced:img class="block h-[34px] w-auto md:h-[52px]" src="$lib/assets/logo.png" alt=""/>
-            <enhanced:img class="block h-[22px] w-auto md:h-[34px]" src="$lib/assets/logoName.png" alt={siteConfig.name}/>
+        <a href="/" class="flex shrink-0 items-center gap-2 lg:gap-3 focus:outline-none" aria-label="{siteConfig.name} – Startseite">
+            <enhanced:img class="block h-[34px] w-auto lg:h-11" src="$lib/assets/logo.png" alt=""/>
+            <enhanced:img class="block h-[22px] w-auto lg:h-7" src="$lib/assets/logoName.png" alt={siteConfig.name}/>
         </a>
 
         <!-- Desktop menu -->
-        <nav aria-label="Hauptnavigation" class="hidden md:flex md:flex-wrap md:items-center md:gap-x-11 md:gap-y-2">
+        <nav aria-label="Hauptnavigation" class="hidden lg:flex lg:items-center lg:gap-x-8">
             {#each menuItems as item}
                 <a
                         href={item.url}
-                        class="nav-item font-display py-2 text-2xl"
+                        class="nav-item font-display py-1.5 text-xl whitespace-nowrap"
                         class:navActive={isActive(item.url)}
                         aria-current={isActive(item.url) ? "page" : undefined}
                 >
                     {item.name}
                 </a>
             {/each}
-            <a href={siteConfig.bookingUrl} target="_blank" rel="noopener noreferrer" class="btn-pill font-sans text-[15px]">Termin reservieren →</a>
+            <a href={siteConfig.bookingUrl} target="_blank" rel="noopener noreferrer" class="btn-pill whitespace-nowrap font-sans text-sm">Termin reservieren →</a>
             <ThemeToggle/>
         </nav>
 
         <!-- Mobile controls -->
-        <div class="flex items-center md:hidden">
+        <div class="flex items-center lg:hidden">
             <ThemeToggle/>
             <button
                     onclick={toggleMobileMenu}
