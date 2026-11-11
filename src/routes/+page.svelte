@@ -25,8 +25,8 @@
 </svelte:head>
 
 <!-- Hero -->
-<section class="container-page flex flex-col gap-8 pt-7 md:flex-row md:items-end md:gap-12 md:pt-10">
-    <div class="flex-[1_1_520px] md:pb-6">
+<section class="container-page flex flex-col gap-8 pt-7 md:flex-row md:items-center md:gap-12 md:pt-10">
+    <div class="flex-[1_1_520px] ">
         <p class="mb-3.5 text-sm font-medium text-brand md:mb-7 md:font-display md:text-[22px] md:font-normal md:italic">Ihr Friseur am Stadtgraben · Deggendorf</p>
         <h1 class="font-display text-[60px] font-bold leading-[0.95] tracking-[-0.015em] md:text-[96px]">Haarstudio<br>Pauli</h1>
         <p class="mt-5 max-w-[460px] text-base leading-[1.55] text-soft md:mt-9 md:text-lg md:leading-[1.6]">

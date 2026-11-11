@@ -7,14 +7,14 @@
     :root {
         --text: #141311;
         --background: #f3f1ec;
-        --primary: #c4861c;
+        --primary: #d9971f;
         --secondary: #eae6de;
         --accent: #1da4cd;
         --soft: #3a3631;
         --muted: #5a544c;
         --faint: #6b655c;
         --rule: #d6d1c8;
-        --brand: #7a5310;
+        --brand: #b0700f;
         --radius: 0.5rem;
         margin-left: calc(100vw - 100%);
         margin-right: 0;

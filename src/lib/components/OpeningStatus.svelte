@@ -16,7 +16,7 @@
 
 <div class="grid gap-x-16 gap-y-8 md:grid-cols-2">
     <!-- Status: editorial, rule-based instead of a filled card -->
-    <div class="flex flex-col justify-between gap-8 border-t-2 border-primary pt-5">
+    <div class="flex flex-col justify-between gap-8 rounded-2xl border border-primary/40 bg-primary/10 p-6 md:p-8">
         <div class="text-sm font-semibold uppercase tracking-[0.08em] text-brand">{status?.todayName ?? "Heute"}</div>
         <div aria-live="polite">
             <div class="flex items-center gap-3.5">
@@ -32,9 +32,9 @@
         </div>
     </div>
 
-    <div class="border-t-2 border-text">
+    <div class="rounded-2xl border border-rule px-5 py-2">
         {#each status?.week ?? [] as day (day.index)}
-            <div class="flex items-center justify-between border-b border-rule py-3 text-base md:text-[17px] {day.today ? 'font-semibold text-brand' : ''} {day.closed && !day.today ? 'text-faint' : ''}">
+            <div class="flex items-center justify-between border-b border-rule py-3 text-base last:border-b-0 md:text-[17px] {day.today ? 'font-semibold text-brand' : ''} {day.closed && !day.today ? 'text-faint' : ''}">
                 <span class="flex items-center gap-2.5">
                     {#if day.today}<span aria-hidden="true" class="size-1.5 rounded-full bg-primary"></span>{/if}{day.name}
                 </span>

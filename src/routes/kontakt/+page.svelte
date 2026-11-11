@@ -1,7 +1,7 @@
 <script lang="ts">
     import Map from "$lib/components/Map.svelte";
     import OpeningStatus from "$components/OpeningStatus.svelte";
-    import {Phone, Instagram, Facebook} from "@lucide/svelte";
+    import {Phone, MapPin, Instagram, Facebook} from "@lucide/svelte";
     import {siteConfig} from "$lib/config";
     import type {PageProps} from "./$types";
 
@@ -35,21 +35,26 @@
     <div class="flex flex-wrap items-stretch gap-x-20 gap-y-12">
         <div class="flex flex-[1_1_340px] flex-col gap-7">
             <h2 class="section-heading">Adresse &amp; Kontakt</h2>
-            <div>
-                <div class="font-display text-[28px] font-bold leading-[1.1]">
-                    {contact.address.street}<br>{contact.address.zipcode} {contact.address.city}
-                </div>
-                <a href={routeUrl} target="_blank" rel="noopener noreferrer" class="btn-outline mt-5 text-[15px]">Route planen ↗</a>
-            </div>
-
-            <div class="flex flex-col gap-3.5 border-t border-text pt-6">
-                <a href="tel:{contact.contact.phone.replaceAll(' ', '')}" class="flex items-center gap-3.5 no-underline">
-                    <span class="flex size-12 flex-none items-center justify-center rounded-full border border-text"><Phone class="size-5"/></span>
+            <div class="flex flex-col gap-3">
+                <a href={routeUrl} target="_blank" rel="noopener noreferrer"
+                   class="flex items-center gap-3.5 rounded-2xl border border-primary/40 bg-primary/10 p-4 no-underline transition-colors hover:bg-primary/20">
+                    <span class="flex size-12 flex-none items-center justify-center rounded-full bg-primary text-[#141311]"><MapPin class="size-5"/></span>
+                    <span>
+                        <span class="block text-[13px] text-muted">Adresse · Route planen ↗</span>
+                        <span class="block font-display text-[28px] font-bold leading-[1.1]">{contact.address.street}, {contact.address.zipcode} {contact.address.city}</span>
+                    </span>
+                </a>
+                <a href="tel:{contact.contact.phone.replaceAll(' ', '')}"
+                   class="flex items-center gap-3.5 rounded-2xl border border-primary/40 bg-primary/10 p-4 no-underline transition-colors hover:bg-primary/20">
+                    <span class="flex size-12 flex-none items-center justify-center rounded-full bg-primary text-[#141311]"><Phone class="size-5"/></span>
                     <span>
                         <span class="block text-[13px] text-muted">Telefon</span>
                         <span class="block font-display text-[28px] font-bold leading-[1.1]">{contact.contact.phone}</span>
                     </span>
                 </a>
+            </div>
+
+            <div class="flex flex-col gap-3.5">
                 <div class="mt-1 flex flex-wrap gap-2.5">
                     {#each contact.socialMedia as media}
                         <a href={media.url} target="_blank" rel="noopener noreferrer"
