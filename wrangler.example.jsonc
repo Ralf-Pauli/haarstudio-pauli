@@ -1,0 +1,23 @@
+// Example Cloudflare configuration for local development with bindings.
+// Copy to `wrangler.jsonc` (git-ignored) and fill in the ids from the Cloudflare dashboard.
+// In production the same bindings are configured in the Pages dashboard
+// (Settings > Bindings), see docs/admin-setup.md.
+{
+	"name": "haarstudio-pauli",
+	"compatibility_date": "2026-01-01",
+	"compatibility_flags": ["nodejs_als"],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "haarstudio-admin",
+			"database_id": "<D1 database id>",
+			"migrations_dir": "migrations"
+		}
+	],
+	"r2_buckets": [
+		{
+			"binding": "UPLOADS",
+			"bucket_name": "haarstudio-uploads"
+		}
+	]
+}
