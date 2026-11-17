@@ -66,7 +66,7 @@ R2: 10 GB, D1: 5 GB). A Workers paid plan or R2 beyond 10 GB would be the first 
 
 1. **Foundations (this PR):** schema, Access verification, security headers, data layer, admin shell, build-time
    content fetch, setup guide.
-2. Price editor (draft → preview → publish → deploy hook).
+2. **Price editor (done):** edit, draft, preview with the real public components, publish + deploy hook, versions, discard.
 3. Texts editor and public pages reading `texts.json`.
 4. Gallery: upload (also from phone), reorder, delete; image download into the build.
 5. Preview mode for the public pages, restore UI.
