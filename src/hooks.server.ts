@@ -52,7 +52,7 @@ export const handle: Handle = async ({ event, resolve }) => {
     response.headers.set("x-frame-options", "SAMEORIGIN");
 
     if (admin) {
-        response.headers.set("cache-control", "no-store");
+        if (!response.headers.has("cache-control")) response.headers.set("cache-control", "no-store");
         response.headers.set("x-robots-tag", "noindex, nofollow");
         response.headers.set("x-frame-options", "DENY");
     }

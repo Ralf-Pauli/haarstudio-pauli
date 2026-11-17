@@ -48,15 +48,25 @@ export const textsSchema = v.object({
 
 export const galleryFilters = ["herren", "damen", "kinder", "farbe", "styling", "pflege", "salon"] as const;
 
+const imageId = v.pipe(
+    v.string(),
+    v.regex(/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/, "Ungültige Bild-ID"),
+);
+
+/** A photo is either an uploaded image (`imageId`) or one of the photos shipped with the site (`builtin`). */
 export const gallerySchema = v.pipe(
     v.array(
-        v.object({
-            id: requiredText(64),
-            imageId: requiredText(64),
-            title: requiredText(120),
-            alt: text(200),
-            filter: v.picklist(galleryFilters),
-        }),
+        v.pipe(
+            v.object({
+                id: requiredText(64),
+                imageId: v.optional(imageId),
+                builtin: v.optional(v.pipe(v.string(), v.regex(/^[a-z0-9-]{1,40}$/, "Ungültiger Bildname"))),
+                title: requiredText(120),
+                alt: text(200),
+                filter: v.picklist(galleryFilters),
+            }),
+            v.check((e) => (e.imageId === undefined) !== (e.builtin === undefined), "Ein Foto braucht genau eine Bildquelle"),
+        ),
     ),
     v.maxLength(500),
 );

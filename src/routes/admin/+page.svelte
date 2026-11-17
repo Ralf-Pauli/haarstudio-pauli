@@ -41,6 +41,8 @@
                 </dl>
                 {#if doc.key === "prices"}
                     <a href="/admin/preise" class="btn-pill mt-auto self-start">Bearbeiten</a>
+                {:else if doc.key === "gallery"}
+                    <a href="/admin/galerie" class="btn-pill mt-auto self-start">Bearbeiten</a>
                 {:else}
                     <span class="mt-auto text-sm text-faint">Bearbeiten folgt in einem nächsten Schritt</span>
                 {/if}

@@ -48,16 +48,27 @@ Pages project → Settings → Variables and secrets (production):
 
 ## 5. Build variables (publishing)
 
-Create an API token with **D1 read** permission (Account → API tokens), then in the Pages project add:
+The build pulls the published content from D1 and the uploaded photos from R2.
+
+1. Create an API token with **D1 read** permission (Account > API tokens).
+2. Create an **R2 API token** with **Object Read only** for the bucket `haarstudio-uploads` (R2 > Manage R2 API tokens).
+   This gives an access key id and a secret access key.
+
+In the Pages project add (Settings > Variables and secrets, production **and** preview if you use it):
 
 | Name | Value |
 |---|---|
 | `CF_ACCOUNT_ID` | your account id |
-| `CF_API_TOKEN` | the token (as secret) |
+| `CF_API_TOKEN` | the D1 token (secret) |
 | `D1_DATABASE_ID` | the id from step 1 |
+| `R2_BUCKET_NAME` | `haarstudio-uploads` |
+| `R2_ACCESS_KEY_ID` | from the R2 token |
+| `R2_SECRET_ACCESS_KEY` | from the R2 token (secret) |
 
-`scripts/fetch-content.mjs` runs before every build and writes the published content to `static/data/`.
-When these variables are missing it does nothing.
+`scripts/fetch-content.mjs` runs before every build. It writes the published prices to `static/data/categories.json`
+and the gallery to `static/data/gallery.json`, and downloads the uploaded photos into `src/lib/assets/uploads/`
+so `enhanced:img` can optimize them. When the D1 variables are missing it does nothing. When they are set and
+anything fails (D1, R2, a missing or broken photo) **the build fails on purpose**, so the live site keeps its old content.
 
 ## 6. Deploy hook
 
