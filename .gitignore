@@ -1,5 +1,9 @@
 node_modules
 
+# Local Cloudflare bindings config (see wrangler.example.jsonc)
+wrangler.jsonc
+.dev.vars
+
 # Output
 .output
 .vercel

@@ -5,8 +5,9 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build",
+		"build": "node scripts/fetch-content.mjs && vite build",
 		"preview": "vite preview",
+		"test:access": "node --experimental-transform-types scripts/test-access.mjs",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
@@ -35,5 +36,9 @@
 	},
 	"engines": {
 		"node": ">=22.12"
+	},
+	"dependencies": {
+		"jose": "^6.2.17",
+		"valibot": "^1.5.0"
 	}
 }
