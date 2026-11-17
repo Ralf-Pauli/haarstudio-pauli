@@ -171,3 +171,16 @@ export async function restoreVersionToDraft(
 
     return saveDraft(db, key, JSON.parse(version.data), email);
 }
+
+/** Throws away unpublished changes: the draft becomes the published version again. */
+export async function discardDraft(db: D1Database, key: DocumentKey, email: string): Promise<Ok | ContentError> {
+    const row = await db.prepare("SELECT published FROM documents WHERE key = ?1").bind(key).first<{ published: string | null }>();
+    if (!row?.published) return { ok: false, message: "Es gibt keinen veröffentlichten Stand, auf den zurückgesetzt werden kann." };
+
+    const ts = now();
+    await db.batch([
+        db.prepare("UPDATE documents SET draft = published, updated_at = ?2, updated_by = ?3 WHERE key = ?1").bind(key, ts, email),
+        db.prepare("INSERT INTO audit_log (at, email, action, detail) VALUES (?1, ?2, 'discard_draft', ?3)").bind(ts, email, key),
+    ]);
+    return { ok: true };
+}
