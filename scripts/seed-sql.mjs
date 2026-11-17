@@ -10,7 +10,8 @@ const now = new Date().toISOString();
 
 const prices = JSON.parse(readFileSync(new URL("../static/data/categories.json", import.meta.url), "utf-8"));
 const texts = { quote: "", author: "", text: "", holidayNote: "", directions: [] };
-const gallery = [];
+const builtin = JSON.parse(readFileSync(new URL("../src/lib/content/gallery-builtin.json", import.meta.url), "utf-8"));
+const gallery = builtin.map((p) => ({ id: `builtin-${p.builtin}`, builtin: p.builtin, title: p.title, alt: p.alt, filter: p.filter }));
 
 const docs = { prices, texts, gallery };
 

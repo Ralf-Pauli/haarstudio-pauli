@@ -1,0 +1,9 @@
+[
+  { "builtin": "damen", "filter": "damen", "title": "Wellen & Volumen", "alt": "Lange blonde Haare mit Volumen, im Wind" },
+  { "builtin": "herren", "filter": "herren", "title": "Kurzhaarschnitt mit Kontur", "alt": "Herrenschnitt mit Kamm und Konturen" },
+  { "builtin": "coloration", "filter": "farbe", "title": "Kupferrot, frisch gefärbt", "alt": "Kupferrotes Haar wird mit Holzkamm gekämmt" },
+  { "builtin": "hero", "filter": "salon", "title": "Unser Salon am Stadtgraben", "alt": "Innenansicht des Salons mit Bedienplätzen und Regal" },
+  { "builtin": "styling", "filter": "styling", "title": "Hochsteckfrisur", "alt": "Hochsteckfrisur mit Haarnadeln" },
+  { "builtin": "kinder", "filter": "kinder", "title": "Kinderschnitt mit Spange", "alt": "Kinderfrisur mit Haarspange" },
+  { "builtin": "cosmetic", "filter": "pflege", "title": "Intensivpflege", "alt": "Pflegebehandlung für lange Haare" }
+]

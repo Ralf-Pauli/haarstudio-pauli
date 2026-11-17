@@ -25,3 +25,8 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Written by scripts/fetch-content.mjs from the published admin content
+src/lib/assets/uploads/
+static/data/gallery.json
+static/data/texts.json
